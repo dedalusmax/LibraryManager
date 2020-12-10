@@ -8,5 +8,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryApp.BusinessLayer\LibraryApp.BusinessLayer.csproj" />
+    <ProjectReference Include="..\LibraryApp.DomainLayer\LibraryApp.DomainLayer.csproj" />
+    <ProjectReference Include="..\LibraryApp.PersistanceLayer\LibraryApp.PersistanceLayer.csproj" />
+  </ItemGroup>
+
 
 </Project>

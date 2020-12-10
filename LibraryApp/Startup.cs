@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryApp.BusinessLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,8 @@ namespace LibraryApp
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+
+			services.RegisterBussinessServices();
 
 			// Register the Swagger generator, defining 1 or more Swagger documents
 			services.AddSwaggerGen();

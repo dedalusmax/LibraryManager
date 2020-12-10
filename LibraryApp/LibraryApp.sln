@@ -4,12 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp", "LibraryApp.csproj", "{5B35B6AC-4011-4442-A5CF-ABA09986E347}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B} = {4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B}
+		{F68023A9-FF2E-4649-8FF9-601E7740C94C} = {F68023A9-FF2E-4649-8FF9-601E7740C94C}
+		{1638A7E8-0B00-4716-A109-F93191E28248} = {1638A7E8-0B00-4716-A109-F93191E28248}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp.DomainLayer", "..\LibraryApp.DomainLayer\LibraryApp.DomainLayer.csproj", "{1638A7E8-0B00-4716-A109-F93191E28248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.DomainLayer", "..\LibraryApp.DomainLayer\LibraryApp.DomainLayer.csproj", "{1638A7E8-0B00-4716-A109-F93191E28248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp.BusinessLayer", "..\LibraryApp.BusinessLayer\LibraryApp.BusinessLayer.csproj", "{F68023A9-FF2E-4649-8FF9-601E7740C94C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.BusinessLayer", "..\LibraryApp.BusinessLayer\LibraryApp.BusinessLayer.csproj", "{F68023A9-FF2E-4649-8FF9-601E7740C94C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B} = {4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp.PersistanceLayer", "..\LibraryApp.PersistanceLayer\LibraryApp.PersistanceLayer.csproj", "{4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.PersistanceLayer", "..\LibraryApp.PersistanceLayer\LibraryApp.PersistanceLayer.csproj", "{4F23BD7E-F03E-4CD8-8F5B-2C6C519F5C9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1638A7E8-0B00-4716-A109-F93191E28248} = {1638A7E8-0B00-4716-A109-F93191E28248}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
