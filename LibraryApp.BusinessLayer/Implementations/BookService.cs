@@ -1,37 +1,56 @@
 ﻿using LibraryApp.BusinessLayer.Interfaces;
 using LibraryApp.DomainLayer.Entities;
+using LibraryApp.PersistanceLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LibraryApp.BusinessLayer.Implementations
 {
 	internal class BookService : IBookService
 	{
-		public Task<Book> Create(Book book)
+		private readonly IRepository<Book> _repository;
+
+		public BookService(IRepository<Book> repository)
 		{
-			throw new NotImplementedException($"Creating ");
+			_repository = repository;
 		}
 
-		public Task Delete(Guid id)
+		public async Task<Book> Create(Book book, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException($"Deleting {id}");
+			
+			await _repository.Insert(book, cancellationToken);
+			return book;
 		}
 
-		public Task<Book> Get(Guid id)
+		public async Task<Guid> Delete(Guid id, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException($"Getting {id}");
+			await _repository.Delete(id, cancellationToken);
+			return id;
 		}
 
-		public Task<IEnumerable<Book>> GetAll()
+		public async Task<Book> Get(Guid id, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException("Getting all");
+			var book = await _repository.Get(
+				filter: dbBook => dbBook.Id == id,
+				cancellationToken: cancellationToken);
+
+			return book;
 		}
 
-		public Task Update(Book book)
+		public async Task<IEnumerable<Book>> GetAll(CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException($"Updating {book.Id}");
+			var books = await _repository.GetAll(cancellationToken: cancellationToken);
+
+			return books;
+		}
+
+		public async Task<Book> Update(Book book, CancellationToken cancellationToken)
+		{
+			await _repository.Update(book, cancellationToken);
+			return book;
 		}
 	}
 }
