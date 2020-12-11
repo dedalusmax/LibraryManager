@@ -8,8 +8,8 @@ using Microsoft.Extensions.Logging;
 namespace LibraryApp.Controllers
 {
     [ApiController]
-    [Route("[controller]/[action]")]
-    public abstract class BaseController : ControllerBase
+	[Route("[controller]/[action]")]
+	public abstract class BaseController : ControllerBase
     {
     }
 }

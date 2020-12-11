@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LibraryApp.BusinessLayer;
+using LibraryApp.PersistanceLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -26,9 +28,18 @@ namespace LibraryApp
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddCors(options =>
+			{
+				options.AddPolicy("CorsPolicy",
+					builder => builder.AllowAnyOrigin()
+					.AllowAnyMethod()
+					.AllowAnyHeader());
+			});
+
 			services.AddControllers();
 
 			services.RegisterBussinessServices();
+			services.ConfigurePersistanceLayer(Configuration);
 
 			// Register the Swagger generator, defining 1 or more Swagger documents
 			services.AddSwaggerGen();
@@ -52,6 +63,13 @@ namespace LibraryApp
 			{
 				app.UseDeveloperExceptionPage();
 			}
+
+			app.UseForwardedHeaders(new ForwardedHeadersOptions
+			{
+				ForwardedHeaders = ForwardedHeaders.All
+			});
+
+			app.UseStaticFiles();
 
 			app.UseHttpsRedirection();
 

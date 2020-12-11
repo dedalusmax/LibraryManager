@@ -11,7 +11,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 	{
 		public Task<Book> Create(Book book)
 		{
-			throw new NotImplementedException($"Creating {book.Id}");
+			throw new NotImplementedException($"Creating ");
 		}
 
 		public Task Delete(Guid id)
