@@ -1,4 +1,6 @@
 ﻿using LibraryApp.DomainLayer;
+using LibraryApp.PersistanceLayer.Interfaces;
+using LibraryApp.PersistanceLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +24,8 @@ namespace LibraryApp.PersistanceLayer
 
             // Configure context for DI
             services.AddTransient<ApplicationDbContext>();
+
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
         }
     }
 }
