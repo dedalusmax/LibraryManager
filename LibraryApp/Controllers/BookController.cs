@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.Controllers
 {
-	public class BookController : ControllerBase
+	public class BookController : BaseController
 	{
 		private readonly IBookService _bookService;
 
