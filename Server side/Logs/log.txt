@@ -75,3 +75,9 @@ Entity id: ec8e6530-fc25-4814-88eb-8413d0f38029
 2020-12-15 13:11:41.7562|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-12-15 13:11:41.7562|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
 2020-12-15 13:11:46.6119|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-12-15 15:24:01.5433|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-12-15 15:24:01.5775|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-12-15 15:24:01.5814|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-15 15:24:01.5814|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-15 15:24:01.5814|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2020-12-15 15:25:38.6408|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
