@@ -1,4 +1,5 @@
 ﻿using LibraryApp.DomainLayer.Entities;
+using LibraryApp.DomainLayer.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace LibraryApp.BusinessLayer.Interfaces
 {
 	public interface IBookService
 	{
-		Task<IEnumerable<Book>> GetAll(CancellationToken cancellationToken);
+		Task<PagedList<Book>> GetAll(BookParameters bookParameters, CancellationToken cancellationToken);
 		Task<Book> Get(Guid id, CancellationToken cancellationToken);
 		Task<Book> Create(Book book, CancellationToken cancellationToken);
 		Task<Book> Update(Book book, CancellationToken cancellationToken);
