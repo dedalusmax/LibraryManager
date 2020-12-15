@@ -5,8 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using LibraryApp.BusinessLayer.Interfaces;
 using LibraryApp.DomainLayer.Entities;
+using LibraryApp.DomainLayer.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace LibraryApp.Controllers
 {
@@ -20,9 +22,23 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
+		public async Task<IActionResult> GetAll([FromQuery] BookParameters bookParameters, CancellationToken cancellationToken)
 		{
-			return Ok(await _bookService.GetAll(cancellationToken));
+			var books = await _bookService.GetAll(bookParameters, cancellationToken);
+
+			var metadata = new
+			{
+				books.TotalCount,
+				books.PageSize,
+				books.CurrentPage,
+				books.TotalPages,
+				books.HasNext,
+				books.HasPrevios
+			};
+
+			Response.Headers.Add("pagination", JsonConvert.SerializeObject(metadata));
+
+			return Ok(books);
 		}
 
 		[HttpGet("{id}")]
