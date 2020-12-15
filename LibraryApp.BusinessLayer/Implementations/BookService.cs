@@ -1,5 +1,7 @@
-﻿using LibraryApp.BusinessLayer.Exceptions;
+﻿using FluentValidation.Results;
+using LibraryApp.BusinessLayer.Exceptions;
 using LibraryApp.BusinessLayer.Interfaces;
+using LibraryApp.BusinessLayer.Validators;
 using LibraryApp.DomainLayer.Entities;
 using LibraryApp.PersistanceLayer.Interfaces;
 using Microsoft.Extensions.Logging;
@@ -15,6 +17,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 	{
 		private readonly IRepository<Book> _repository;
 		private readonly ILogger<BookService> _logger;
+		private readonly BookValidator _validator = new BookValidator();
 
 		public BookService(IRepository<Book> repository, ILogger<BookService> logger)
 		{
@@ -24,6 +27,19 @@ namespace LibraryApp.BusinessLayer.Implementations
 
 		public async Task<Book> Create(Book book, CancellationToken cancellationToken)
 		{
+			ValidationResult result = _validator.Validate(book);
+
+			if(!result.IsValid)
+			{
+				ValidationException exception = new ValidationException(nameof(book));
+				foreach (ValidationFailure failure in result.Errors)
+				{
+					exception._errors.Add(failure.PropertyName, failure.ErrorMessage);
+				}
+
+				throw exception;
+			}
+
 			try
 			{
 				await _repository.Insert(book, cancellationToken);
@@ -75,6 +91,19 @@ namespace LibraryApp.BusinessLayer.Implementations
 
 		public async Task<Book> Update(Book book, CancellationToken cancellationToken)
 		{
+			ValidationResult result = _validator.Validate(book);
+
+			if (!result.IsValid)
+			{
+				ValidationException exception = new ValidationException(nameof(book));
+				foreach (ValidationFailure failure in result.Errors)
+				{
+					exception._errors.Add(failure.PropertyName, failure.ErrorMessage);
+				}
+
+				throw exception;
+			}
+
 			try
 			{
 				await _repository.Update(book, cancellationToken);

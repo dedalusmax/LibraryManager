@@ -12,8 +12,6 @@ namespace LibraryApp
 {
 	public class Program
 	{
-		private static object hostingContext;
-
 		public static void Main(string[] args)
 		{
 			CreateHostBuilder(args).Build().Run();
