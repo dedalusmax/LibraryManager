@@ -56,15 +56,13 @@ namespace LibraryApp.Controllers
 		[HttpPut]
 		public async Task<IActionResult> Update([FromBody] Book book, CancellationToken cancellationToken)
 		{
-			await _bookService.Update(book, cancellationToken);
-			return Ok();
+			return Ok(await _bookService.Update(book, cancellationToken));
 		}
 
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
 		{
-			await _bookService.Delete(id, cancellationToken);
-			return Ok();
+			return Ok(await _bookService.Delete(id, cancellationToken));
 		}
 
 	}
