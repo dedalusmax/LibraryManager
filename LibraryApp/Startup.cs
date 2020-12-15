@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using LibraryApp.Middleware.API.Middleware;
 
 namespace LibraryApp
 {
@@ -68,6 +69,8 @@ namespace LibraryApp
 			{
 				ForwardedHeaders = ForwardedHeaders.All
 			});
+
+			app.UseMiddleware<GlobalExceptionMiddleware>();
 
 			app.UseStaticFiles();
 

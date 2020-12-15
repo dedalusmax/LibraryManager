@@ -45,7 +45,7 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpDelete("{id}")]
-		public async Task<IActionResult> Delete([FromBody] Guid id, CancellationToken cancellationToken)
+		public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
 		{
 			await _bookService.Delete(id, cancellationToken);
 			return Ok();
