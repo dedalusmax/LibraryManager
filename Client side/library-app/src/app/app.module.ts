@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 
 
+
 import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookFormComponent } from './book-form/book-form.component';
@@ -31,9 +32,10 @@ import { BookService } from './shared/book.service';
     ReactiveFormsModule,
     MatButtonModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [BookService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // entryComponents: [BookFormComponent]
 })
 export class AppModule { }

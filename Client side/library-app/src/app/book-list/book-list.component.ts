@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BookService } from '../shared/book.service';
 import { tap, take } from 'rxjs/operators';
 import { Book } from '../shared/book.model';
-import { MatTableDataSource } from '@angular/material/table';
-import {MatDialog} from '@angular/material/dialog';
+import { MatTableDataSource, MatTable } from '@angular/material/table';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import { BookFormComponent } from '../book-form/book-form.component';
 
 @Component({
@@ -16,6 +16,8 @@ export class BookListComponent implements OnInit {
   dataSource: Book [];
   displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication'];
 
+  @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
+
   constructor(private bookService: BookService, public dialog: MatDialog) { }
 
   ngOnInit() {
@@ -27,8 +29,21 @@ export class BookListComponent implements OnInit {
       take(1)).subscribe(res => this.dataSource = Object.assign([], res));
   }
 
-  openDialog() {
-    this.dialog.open(BookFormComponent);
+  addBook() {
+    let dialogRef = this.dialog.open(BookFormComponent);
+    
+    dialogRef.afterClosed().pipe(take(1))
+      .subscribe((book: Book) => {
+
+        console.log(book);
+
+        if(!book) return;
+
+        this.dataSource.push(book);
+        this.table.renderRows();
+      })
   }
+
+  
 
 }

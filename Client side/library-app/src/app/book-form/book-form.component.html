@@ -3,7 +3,7 @@
     <mat-card-title>Add a book</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <form class="example-form" [formGroup]="bookForm" autocomplete="off">
+    <form class="example-form" [formGroup]="bookForm" autocomplete="off" (submit)="onSubmit(bookForm)">
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Title</mat-label>
         <input matInput placeholder="Title" formControlName="title" >
@@ -20,7 +20,7 @@
         <mat-label>Date Of Publication</mat-label>
         <input matInput placeholder="Date Of Publication" formControlName="dateOfPublication">
       </mat-form-field>
-      <button mat-raised-button mat-dialog-close color="primary" type="submit">ADD</button>
+      <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">ADD</button>
   </form>
   </mat-card-content>
 </mat-card>
