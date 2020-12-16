@@ -14,7 +14,7 @@ import { BookFormComponent } from '../book-form/book-form.component';
 export class BookListComponent implements OnInit {
 
   dataSource: Book [];
-  displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication'];
+  displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication', 'actions'];
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
@@ -42,6 +42,11 @@ export class BookListComponent implements OnInit {
         this.dataSource.push(book);
         this.table.renderRows();
       })
+  }
+
+  onDelete(id: string) {
+    this.bookService.deleteBook(id).subscribe(() => {
+      this.dataSource = this.dataSource.filter(book => book.id !== id)})
   }
 
   

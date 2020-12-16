@@ -18,6 +18,10 @@ formData: Book;
   }
   
   createBook(formData: Book) {
-    return this._http.post(`${this.url}/Create`, formData)
+    return this._http.post(`${this.url}/Create`, formData);
+  }
+
+  deleteBook(id) {
+    return this._http.delete(`${this.url}/Delete/${id}`);
   }
 }
