@@ -13,4 +13,5 @@ readonly url =  'https://localhost:5001/Book';
   getBooks() {
     return this.http.get(`${this.url}/GetAll`);
   }
+
 }
