@@ -16,10 +16,6 @@ export class BookFormComponent implements OnInit {
 
   bookForm: FormGroup;
 
-  editMode = false;
-
-  editSubscription: Subscription;
-
   constructor(
     private formBuilder: FormBuilder, 
     public bookService: BookService, 
