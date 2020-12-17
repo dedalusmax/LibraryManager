@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Book } from './book.model';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +11,8 @@ export class BookService {
 readonly url =  'https://localhost:5001/Book';
 
 formData: Book;
+
+startedEditing = new Subject<Book>();
 
   constructor(private _http: HttpClient) { }
 
@@ -33,4 +36,9 @@ formData: Book;
   deleteBook(id) {
     return this._http.delete(`${this.url}/Delete/${id}`);
   }
+
+  updateBook(formData: Book) {
+    return this._http.put(this.url + '/Update', formData)
+  }
+  
 }

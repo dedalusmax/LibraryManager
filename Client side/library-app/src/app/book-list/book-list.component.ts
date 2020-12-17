@@ -36,7 +36,7 @@ export class BookListComponent implements OnInit {
       );
   }
 
-  addBook() {
+  onCreate() {
     let dialogRef = this.dialog.open(BookFormComponent);
     
     dialogRef.afterClosed().pipe(take(1))
@@ -50,6 +50,31 @@ export class BookListComponent implements OnInit {
         this.table.renderRows();
       })
   }
+
+  onUpdate(book: Book) {
+
+    let dialogRef = this.dialog.open(BookFormComponent, {data: book});
+
+    // this.bookService.startedEditing.next(book);
+
+    dialogRef.afterClosed().pipe(take(1))
+      .subscribe((editedBook: Book) => {
+
+        console.log(editedBook);
+
+        if(!editedBook) return;
+
+        const index = this.dataSource.findIndex(b => b.id == book.id);
+
+        // update
+        this.dataSource[index] = editedBook;
+        
+        this.table.renderRows();
+          })
+    
+  }
+
+
 
   onDelete(id: string) {
     this.bookService.deleteBook(id).subscribe(() => {
