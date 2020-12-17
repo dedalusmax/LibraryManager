@@ -1,5 +1,6 @@
 <button mat-raised-button (click)="addBook()" class="add-button">Add book <mat-icon class="add-circle-icon">add_circle</mat-icon></button>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<div class="table-container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
@@ -42,4 +43,14 @@
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+
+</table>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 25]"
+                (page)="onPageChange($event)"
+                [pageSize]="paging.PageSize"
+                [length]="paging.TotalCount"
+></mat-paginator>
+</div>
+
+

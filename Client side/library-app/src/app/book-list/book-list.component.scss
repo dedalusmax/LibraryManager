@@ -1,9 +1,5 @@
 table {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    background: white;
+    width:100%
   }
 
 th {
@@ -15,6 +11,7 @@ th {
    margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .actions-button {
@@ -34,3 +31,9 @@ th {
 .add-circle-icon {
   margin-top: 15px;
 }
+
+.table-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
