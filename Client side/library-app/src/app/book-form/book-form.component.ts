@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, OnDestroy, Inject } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { BookService } from '../shared/book.service';
 import { take } from 'rxjs/operators';
 import { Book } from '../shared/book.model';
@@ -29,10 +29,10 @@ export class BookFormComponent implements OnInit {
   ngOnInit() {
 
     this.bookForm = this.formBuilder.group({
-      title: '',
-      author: '',
-      publisher: '',
-      dateOfPublication: new Date(),
+      title: ['', Validators.required],
+      author: ['', Validators.required],
+      publisher: ['', Validators.required],
+      dateOfPublication: [new Date(), Validators.required]
     })
 
     console.log(this.data)
@@ -49,25 +49,6 @@ export class BookFormComponent implements OnInit {
     
               console.log(this.bookForm);
     }
-
-    // this.editSubscription = this.bookService.startedEditing
-    //   .subscribe(
-    //     (book: Book) => {
-    //       this.editMode = true;
-
-          
-    //       this.bookForm.setValue({
-    //         id: book.id,
-    //         title: book.title,
-    //         author: book.author,
-    //         dateOfBirth: book.dateOfPublication
-    //       })
-
-    //       console.log(this.bookForm);
-    //     }
-    //   );
-
-    
 
   }
 
@@ -91,6 +72,21 @@ export class BookFormComponent implements OnInit {
   onClose(book: Book) {
     // if(!form.valid) return;
     this.dialogRef.close(book)
+  }
+
+  getErrorMessage() {
+    if (this.bookForm.controls.title.hasError('required')) {
+      return 'Title is required';
+    }
+    if (this.bookForm.controls.author.hasError('required')) {
+      return 'Author is required';
+    }
+    if (this.bookForm.controls.publisher.hasError('required')) {
+      return 'Publisher is required';
+    }
+    if (this.bookForm.controls.dateOfPublication.hasError('required')) {
+      return 'Date of publication is required';
+    }
   }
 
 

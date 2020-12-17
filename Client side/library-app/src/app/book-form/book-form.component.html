@@ -6,21 +6,25 @@
     <form class="example-form" [formGroup]="bookForm" autocomplete="off" (submit)="onSubmit(bookForm)">
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Title</mat-label>
-        <input matInput placeholder="Title" formControlName="title" >
+        <input matInput placeholder="Title" formControlName="title" required>
+        <mat-error *ngIf="bookForm.controls.title.touched && bookForm.controls.title.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Author</mat-label>
         <input matInput placeholder="Author" formControlName="author">
+        <mat-error *ngIf="bookForm.controls.author.touched && bookForm.controls.author.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Publisher</mat-label>
         <input matInput placeholder="Publisher" formControlName="publisher">
+        <mat-error *ngIf="bookForm.controls.publisher.touched && bookForm.controls.publisher.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Date Of Publication</mat-label>
         <input matInput placeholder="Date Of Publication" formControlName="dateOfPublication">
+        <mat-error *ngIf="bookForm.controls.dateOfPublication.touched && bookForm.controls.dateOfPublication.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
-      <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">ADD</button>
+      <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">{{data ? 'UPDATE' : 'ADD'}}</button>
   </form>
   </mat-card-content>
 </mat-card>
