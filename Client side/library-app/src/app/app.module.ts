@@ -22,6 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { TokenInterceptorService } from './shared/token-interceptor.service';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/auth-guard.service';
+import { MatSortModule } from '@angular/material/sort';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
@@ -47,6 +48,8 @@ export function tokenGetter() {
     MatDialogModule,
     MatIconModule,
     MatPaginatorModule,
+    MatSortModule,
+
     RouterModule.forRoot([
       { path: '', component: BookListComponent, canActivate: [AuthGuard]},
       { path: 'login', component: LoginComponent}
@@ -58,6 +61,7 @@ export function tokenGetter() {
         disallowedRoutes: []
       }
     })
+
 
   ],
   providers: [BookService,

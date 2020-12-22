@@ -1,32 +1,35 @@
 <div class="page-container">
 <button mat-raised-button (click)="onCreate()" class="add-button">Add book <mat-icon class="add-circle-icon">add_circle</mat-icon></button>
+<mat-form-field class="search-form-field">
+  <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter(searchKey)" appearance="outline">
+</mat-form-field>
 <div class="table-container">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8" (matSortChange)="onSortChange($event)">
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
   
     <!-- Title Column -->
     <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
       <td mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
   
     <!-- Author Column -->
     <ng-container matColumnDef="author">
-      <th mat-header-cell *matHeaderCellDef> Author </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Author </th>
       <td mat-cell *matCellDef="let element"> {{element.author}} </td>
     </ng-container>
   
     <!-- Publisher Column -->
     <ng-container matColumnDef="publisher">
-      <th mat-header-cell *matHeaderCellDef> Publisher </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Publisher </th>
       <td mat-cell *matCellDef="let element"> {{element.publisher}} </td>
     </ng-container>
   
     <!-- Date Of Publication Column -->
     <ng-container matColumnDef="dateOfPublication">
-      <th mat-header-cell *matHeaderCellDef> Date Of Publication </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Of Publication </th>
       <td mat-cell *matCellDef="let element"> {{element.dateOfPublication | date}} </td>
     </ng-container>
 
