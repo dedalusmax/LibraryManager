@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { JwtModule } from '@auth0/angular-jwt';
 
 
 
@@ -17,12 +18,21 @@ import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookFormComponent } from './book-form/book-form.component';
 import { BookService } from './shared/book.service';
+import { LoginComponent } from './login/login.component';
+import { TokenInterceptorService } from './shared/token-interceptor.service';
+import { RouterModule } from '@angular/router';
+import { AuthGuard } from './shared/auth-guard.service';
+
+export function tokenGetter() {
+  return localStorage.getItem('jwt');
+}
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
-    BookFormComponent
+    BookFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -36,9 +46,27 @@ import { BookService } from './shared/book.service';
     MatCardModule,
     MatDialogModule,
     MatIconModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    RouterModule.forRoot([
+      { path: '', component: BookListComponent, canActivate: [AuthGuard]},
+      { path: 'login', component: LoginComponent}
+    ]),
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        allowedDomains: ['localhost:5001'],
+        disallowedRoutes: []
+      }
+    })
+
   ],
-  providers: [BookService],
+  providers: [BookService,
+              {
+                provide: HTTP_INTERCEPTORS,
+                useClass: TokenInterceptorService,
+                multi: true
+              },
+             AuthGuard],
   bootstrap: [AppComponent],
   // entryComponents: [BookFormComponent]
 })

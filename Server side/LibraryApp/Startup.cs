@@ -14,6 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using LibraryApp.Middleware.API.Middleware;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
+
 
 namespace LibraryApp
 {
@@ -41,9 +44,26 @@ namespace LibraryApp
 
 			services.RegisterBussinessServices();
 			services.ConfigurePersistanceLayer(Configuration);
+			services.RegisterJwtAuthentication();
 
 			// Register the Swagger generator, defining 1 or more Swagger documents
-			services.AddSwaggerGen();
+			services.AddSwaggerGen(o => 
+			{
+				o.DescribeAllEnumsAsStrings();
+
+				o.SwaggerDoc("v1", new OpenApiInfo { Title = "Library App", Version = "1" });
+
+				o.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
+				{
+					Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+					Name = "Authorization",
+					In = ParameterLocation.Header,
+					Type = SecuritySchemeType.ApiKey
+				});
+			});
+
+			services.AddSwaggerGenNewtonsoftSupport();
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,13 +97,14 @@ namespace LibraryApp
 			});
 
 			app.UseMiddleware<GlobalExceptionMiddleware>();
-
+			
 			app.UseStaticFiles();
 
 			app.UseHttpsRedirection();
 
 			app.UseRouting();
 
+			app.UseAuthentication();
 			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>

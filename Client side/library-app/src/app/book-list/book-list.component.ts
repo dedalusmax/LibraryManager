@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { BookService } from '../shared/book.service';
 import { tap, take } from 'rxjs/operators';
 import { Book } from '../shared/book.model';
@@ -11,7 +11,7 @@ import { PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
-  styleUrls: ['./book-list.component.scss']
+  styleUrls: ['./book-list.component.scss'],
 })
 export class BookListComponent implements OnInit {
 
