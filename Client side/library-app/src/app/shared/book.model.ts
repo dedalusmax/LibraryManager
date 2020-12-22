@@ -4,4 +4,5 @@ export interface Book {
     author: string;
     publisher: string;
     dateOfPublication: Date;
+    isLended: boolean;
 }

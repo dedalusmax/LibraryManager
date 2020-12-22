@@ -12,25 +12,25 @@
     <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
-      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+      <td [ngClass]="{'lended': element.isLended}" mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
   
     <!-- Author Column -->
     <ng-container matColumnDef="author">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Author </th>
-      <td mat-cell *matCellDef="let element"> {{element.author}} </td>
+      <td [ngClass]="{'lended': element.isLended}" mat-cell *matCellDef="let element"> {{element.author}} </td>
     </ng-container>
   
     <!-- Publisher Column -->
     <ng-container matColumnDef="publisher">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Publisher </th>
-      <td mat-cell *matCellDef="let element"> {{element.publisher}} </td>
+      <td [ngClass]="{'lended': element.isLended}" mat-cell *matCellDef="let element"> {{element.publisher}} </td>
     </ng-container>
   
     <!-- Date Of Publication Column -->
     <ng-container matColumnDef="dateOfPublication">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Of Publication </th>
-      <td mat-cell *matCellDef="let element"> {{element.dateOfPublication | date}} </td>
+      <td [ngClass]="{'lended': element.isLended}" mat-cell *matCellDef="let element"> {{element.dateOfPublication | date}} </td>
     </ng-container>
 
     <ng-container matColumnDef="actions">
@@ -42,6 +42,15 @@
           <button mat-fab color="warn" class="actions-button" (click)="onDelete(element.id)">
             <mat-icon>delete</mat-icon>
           </button>
+          <div *ngIf="element.isLended; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock><button mat-raised-button color="warn" class="lend-return-button" (click)="onReturn(element.id)">
+              RETURN
+            </button></ng-template>
+            <ng-template #elseBlock><button mat-raised-button color="accent" class="lend-return-button" (click)="onLend(element.id)">
+              LEND
+            </button></ng-template>
+          
+          
       </td>
     </ng-container>
   

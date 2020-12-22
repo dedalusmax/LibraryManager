@@ -18,22 +18,26 @@ namespace LibraryApp.BusinessLayer.Implementations
 			_bookService = bookService;
 		}
 
-		public async Task Lend(Guid id, CancellationToken cancellationToken)
+		public async Task<Book> Lend(Guid id, CancellationToken cancellationToken)
 		{
 			var book = await _bookService.Get(id, cancellationToken);
 
 			book.IsLended = true;
 
 			await _bookService.Update(book, cancellationToken);
+
+			return book;
 		}
 
-		public async Task Return(Guid id, CancellationToken cancellationToken)
+		public async Task<Book> Return(Guid id, CancellationToken cancellationToken)
 		{
 			var book = await _bookService.Get(id, cancellationToken);
 
 			book.IsLended = false;
 
 			await _bookService.Update(book, cancellationToken);
+
+			return book;
 		}
 	}
 }

@@ -60,6 +60,8 @@ namespace LibraryApp
 					In = ParameterLocation.Header,
 					Type = SecuritySchemeType.ApiKey
 				});
+
+				
 			});
 
 			services.AddSwaggerGenNewtonsoftSupport();

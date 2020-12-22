@@ -10,6 +10,7 @@ import { PageEvent } from '@angular/material/paginator';
 import { SortingModel } from './sorting.model';
 import { Sort } from '@angular/material/sort';
 import { Subject, Subscription } from 'rxjs';
+import { LendService } from '../shared/lend.service';
 
 @Component({
   selector: 'app-book-list',
@@ -30,7 +31,7 @@ export class BookListComponent implements OnInit {
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
-  constructor(private bookService: BookService, public dialog: MatDialog) { }
+  constructor(private bookService: BookService, public dialog: MatDialog, private lendService: LendService) { }
 
   ngOnInit() {
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize);
@@ -80,6 +81,32 @@ export class BookListComponent implements OnInit {
   onDelete(id: string) {
     this.bookService.deleteBook(id).subscribe(() => {
       this.dataSource = this.dataSource.filter(book => book.id !== id)})
+  }
+
+  onLend(id: string) {
+    this.lendService.lendBook(id).subscribe((book:Book) => {
+
+      const index = this.dataSource.findIndex(b => b.id == book.id);
+
+        // update
+        this.dataSource[index] = book;
+        console.log("Book is lended");
+        console.log(this.dataSource);
+        this.table.renderRows();
+      
+    })
+  }
+
+  onReturn(id: string) {
+    this.lendService.returnBook(id).subscribe((book:Book) => {
+      const index = this.dataSource.findIndex(b => b.id == book.id);
+
+        // update
+        this.dataSource[index] = book;
+        console.log("Book is returned");
+        console.log(this.dataSource);
+        this.table.renderRows();
+    })
   }
 
   onPageChange(page: PageEvent) {

@@ -10,13 +10,13 @@ export class TokenInterceptorService implements HttpInterceptor{
 
   intercept(req, next) {
 
-    let token = localStorage.getItem('jwt')
+    let token = localStorage.getItem('jwt');
 
     let tokenizedReq = req.clone({
       setHeaders: {
         Authorization: `Bearer ${token}`
       }
     })
-    return next.handle(tokenizedReq)
+    return next.handle(tokenizedReq);
   }
 }
