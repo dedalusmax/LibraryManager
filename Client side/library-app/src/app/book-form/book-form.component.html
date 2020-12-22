@@ -1,6 +1,6 @@
 <mat-card class="example-card">
   <mat-card-header class="header">
-    <mat-card-title>Add a book</mat-card-title>
+    <mat-card-title>{{data ? 'Update a book' : 'Add a book'}}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <form class="example-form" [formGroup]="bookForm" autocomplete="off" (submit)="onSubmit(bookForm)">
@@ -20,12 +20,15 @@
         <mat-error *ngIf="bookForm.controls.publisher.touched && bookForm.controls.publisher.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>Date Of Publication</mat-label>
-        <input matInput placeholder="Date Of Publication" formControlName="dateOfPublication">
+        <mat-label>Date of publication</mat-label>
+        <input matInput [matDatepicker]="dp" formControlName="dateOfPublication">
         <mat-error *ngIf="bookForm.controls.dateOfPublication.touched && bookForm.controls.dateOfPublication.invalid">{{getErrorMessage()}}</mat-error>
+        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp></mat-datepicker>
       </mat-form-field>
       <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">{{data ? 'UPDATE' : 'ADD'}}</button>
   </form>
   </mat-card-content>
 </mat-card>
+
 

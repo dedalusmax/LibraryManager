@@ -28,7 +28,7 @@ export class BookFormComponent implements OnInit {
       title: ['', Validators.required],
       author: ['', Validators.required],
       publisher: ['', Validators.required],
-      dateOfPublication: [new Date(), Validators.required]
+      dateOfPublication: ['', Validators.required]
     })
 
     console.log(this.data)
@@ -40,7 +40,7 @@ export class BookFormComponent implements OnInit {
                 title: this.data.title,
                 author: this.data.author,
                 publisher: this.data.publisher,
-                dateOfPublication: this.data.dateOfPublication
+                dateOfPublication: this.data.dateOfPublication,
               })
     
               console.log(this.bookForm);

@@ -11,6 +11,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { JwtModule } from '@auth0/angular-jwt';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -49,6 +51,8 @@ export function tokenGetter() {
     MatIconModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
 
     RouterModule.forRoot([
       { path: '', component: BookListComponent, canActivate: [AuthGuard]},

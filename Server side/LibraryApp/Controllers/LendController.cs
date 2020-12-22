@@ -20,15 +20,13 @@ namespace LibraryApp.Controllers
 		[HttpGet("{id}")]
 		public async Task<IActionResult> Lend (Guid id, CancellationToken cancellationToken)
 		{
-			await _lendService.Lend(id, cancellationToken);
-			return Ok();
+			return Ok(await _lendService.Lend(id, cancellationToken));
 		}
 
 		[HttpGet("{id}")]
 		public async Task<IActionResult> Return(Guid id, CancellationToken cancellationToken)
 		{
-			await _lendService.Return(id, cancellationToken);
-			return Ok();
+			return Ok(await _lendService.Return(id, cancellationToken));
 		}
 	}
 }

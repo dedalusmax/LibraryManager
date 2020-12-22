@@ -1,8 +1,4 @@
-body {
-   margin: 0;
-   font-family: Roboto, "Helvetica Neue", sans-serif;
-   background: linear-gradient(45deg, #4158d0, #c850c0) !important;
-  }
+
 
 .page-container {
   width: 100%;
@@ -19,11 +15,24 @@ th {
       color: white;
   }
 
+.lended {
+  background: grey;
+}
+
 .add-button {
    margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 1%;
+}
+
+.lend-return-button {
+  width: 20px;
+  height: 20px;
+  margin-left: 10%;
+  font-size: 12px;
+  line-height: 0px;
+  margin-top: 5%;
 }
 
 .actions-button {
