@@ -10,5 +10,6 @@ namespace LibraryApp.DomainLayer.Entities
 		public string Author { get; set; }
 		public string Publisher { get; set; }
 		public DateTime DateOfPublication { get; set; }
+		public bool IsLended { get; set; }
 	}
 }
