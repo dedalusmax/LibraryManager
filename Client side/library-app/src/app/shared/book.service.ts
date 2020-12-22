@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Book } from './book.model';
 import { Subject } from 'rxjs';
 
@@ -21,6 +21,8 @@ startedEditing = new Subject<Book>();
     let params = new HttpParams();
     params = params.append('pageNumber', pageNumber.toString());
     params = params.append('pageSize', pageSize.toString());
+
+    let headers = new HttpHeaders();
 
     if(orderBy) params = params.append('orderBy', orderBy?.toString());
     if(sortDirection) params = params.append('sortDirection', sortDirection?.toString());
