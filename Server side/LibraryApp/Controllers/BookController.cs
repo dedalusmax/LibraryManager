@@ -23,7 +23,7 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpGet]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> GetAll([FromQuery] BookParameters bookParameters, CancellationToken cancellationToken)
 		{
 			var books = await _bookService.GetAll(bookParameters, cancellationToken);

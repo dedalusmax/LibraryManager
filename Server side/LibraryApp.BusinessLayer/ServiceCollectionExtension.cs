@@ -11,7 +11,8 @@ namespace LibraryApp.BusinessLayer
 	{
 		public static void RegisterBussinessServices(this IServiceCollection services)
 		{
-			services.AddTransient<IBookService, BookService>();
+			services.AddScoped<IBookService, BookService>();
+			services.AddScoped<ILendService, LendService>();
 		}
 	}
 }
