@@ -12,8 +12,6 @@ readonly url =  'https://localhost:5001/Book';
 
 formData: Book;
 
-startedEditing = new Subject<Book>();
-
   constructor(private _http: HttpClient) { }
 
   getBooks(pageNumber: number = 1, pageSize: number = 5, searchString?: string, orderBy?: string, sortDirection?: 'asc' | 'desc') {
