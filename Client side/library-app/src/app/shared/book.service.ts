@@ -24,9 +24,9 @@ formData: Book;
 
     if(orderBy) params = params.append('orderBy', orderBy?.toString());
     if(sortDirection) params = params.append('sortDirection', sortDirection?.toString());
-    if(searchString) params = params.append('searchString', searchString)
+    if(searchString) params = params.append('searchString', searchString);
 
-    return this._http.get<Book []>(`${this.url}/GetAll`, { observe: 'response', params })
+    return this._http.get<Book []>(`${this.url}/GetAll`, { observe: 'response', params });
   }
   
   createBook(formData: Book) {
@@ -38,7 +38,7 @@ formData: Book;
   }
 
   updateBook(formData: Book) {
-    return this._http.put(this.url + '/Update', formData)
+    return this._http.put(this.url + '/Update', formData);
   }
   
 }

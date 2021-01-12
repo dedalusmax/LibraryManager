@@ -13,6 +13,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { JwtModule } from '@auth0/angular-jwt';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 
@@ -53,6 +54,7 @@ export function tokenGetter() {
     MatSortModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatProgressSpinnerModule,
 
     RouterModule.forRoot([
       { path: '', component: BookListComponent, canActivate: [AuthGuard]},
