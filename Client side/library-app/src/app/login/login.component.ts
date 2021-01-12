@@ -12,7 +12,7 @@ import { trigger, transition, animate, style, keyframes } from '@angular/animati
     trigger('slideInLeft', [
       
       transition('void => *', [
-        animate('1500ms ease-in', keyframes([
+        animate('2000ms ease-in', keyframes([
           style({ transform: 'translateX(-1000px)', opacity: 0, offset: 0}),
           style({ transform: 'translateX(0px)', opacity: 1, offset: 1})
         ]))
@@ -21,7 +21,7 @@ import { trigger, transition, animate, style, keyframes } from '@angular/animati
     trigger('slideInRight', [
       
       transition('void => *', [
-        animate('1500ms ease-in', keyframes([
+        animate('2000ms ease-in', keyframes([
           style({ transform: 'translateX(1000px)', opacity: 0, offset: 0}),
           style({ transform: 'translateX(0px)', opacity: 1, offset: 1})
         ]))
@@ -30,7 +30,7 @@ import { trigger, transition, animate, style, keyframes } from '@angular/animati
     trigger('fadeIn', [
       
       transition('void => *', [
-        animate('1500ms ease-in', keyframes([
+        animate('2000ms ease-in', keyframes([
           style({ opacity: 0, offset: 0}),
           style({ opacity: 1, offset: 1})
         ]))
