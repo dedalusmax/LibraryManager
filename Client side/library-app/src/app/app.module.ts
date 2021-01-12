@@ -26,6 +26,7 @@ import { TokenInterceptorService } from './shared/token-interceptor.service';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/auth-guard.service';
 import { MatSortModule } from '@angular/material/sort';
+import { ToastrModule } from 'ngx-toastr';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
@@ -55,6 +56,7 @@ export function tokenGetter() {
     MatDatepickerModule,
     MatNativeDateModule,
     MatProgressSpinnerModule,
+    ToastrModule.forRoot(),
 
     RouterModule.forRoot([
       { path: '', component: BookListComponent, canActivate: [AuthGuard]},

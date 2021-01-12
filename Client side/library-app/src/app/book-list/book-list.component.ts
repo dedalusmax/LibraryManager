@@ -12,6 +12,7 @@ import { Sort } from '@angular/material/sort';
 import { Subject, Subscription } from 'rxjs';
 import { LendService } from '../shared/lend.service';
 import { keyframes, trigger, transition, animate, style } from '@angular/animations';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -63,7 +64,7 @@ export class BookListComponent implements OnInit {
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
-  constructor(private bookService: BookService, public dialog: MatDialog, private lendService: LendService) { }
+  constructor(private bookService: BookService, public dialog: MatDialog, private lendService: LendService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.isDeleting = false;
@@ -86,6 +87,7 @@ export class BookListComponent implements OnInit {
 
         this.dataSource.push(book);
         this.table.renderRows();
+        this.toastr.success('Book successfully added', `${book.title}`);
       });
   }
 
@@ -106,6 +108,7 @@ export class BookListComponent implements OnInit {
         this.dataSource[index] = editedBook;
         
         this.table.renderRows();
+        this.toastr.success('Book successfully updated', `${book.title}`);
           });
   }
 
@@ -114,7 +117,8 @@ export class BookListComponent implements OnInit {
   onDelete(id: string) {
     this.setDelete(true);
     this.bookService.deleteBook(id).subscribe(() => {
-      this.dataSource = this.dataSource.filter(book => book.id !== id);});
+      this.dataSource = this.dataSource.filter(book => book.id !== id);
+      this.toastr.success('Book successfully deleted', `${id}`);});
   }
 
   onLend(id: string) {
@@ -127,7 +131,9 @@ export class BookListComponent implements OnInit {
         this.dataSource[index] = book;
         console.log('Book is lended');
         console.log(this.dataSource);
+
         this.table.renderRows();
+        this.toastr.info('Book successfully lended', `${book.title}`);
       
     });
   }
@@ -141,6 +147,7 @@ export class BookListComponent implements OnInit {
         console.log('Book is returned');
         console.log(this.dataSource);
         this.table.renderRows();
+        this.toastr.info('Book successfully returned', `${book.title}`);
     });
   }
 
@@ -150,6 +157,7 @@ export class BookListComponent implements OnInit {
   }
 
   onSortChange(event: Sort) {
+    this.setDelete(false);
     console.log(event);
     console.log(this.paging.CurrentPage);
     console.log(this.paging.PageSize);

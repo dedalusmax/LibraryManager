@@ -13,17 +13,18 @@ table {
 th {
       background: #36304a;
       color: white;
+      font-size: 15px;
   }
 
 .lended {
-  color: red;
+  color: #ff073a;
   font-weight: bold;
   font-size: 16px;
   font-style: italic;
 }
 
 .not-lended {
-  color: green;
+  color: #00c712;
   font-weight: bold;
   font-size: 16px;
   font-style: italic;
@@ -52,7 +53,18 @@ th {
   margin-left: 10px;
   margin-top: 7px;
   margin-bottom: 7px;
-  
+}
+
+.purple:hover {
+  background-color: #7200ca;
+}
+
+.red:hover {
+  background-color: #ab000d;
+}
+
+.yellow:hover {
+  background-color: #c7a500;
 }
 
 mat-icon {
