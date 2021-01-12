@@ -6,12 +6,12 @@
     <button type="submit">Log in</button>
 </form> -->
 
-<img class="wave" src="assets/wave.png">
+<img @fadeIn class="wave" src="assets/wave.png">
 	<div class="container">
-		<div class="img">
+		<div @slideInLeft class="img">
 			<img src="assets/bg2.svg">
 		</div>
-		<div class="login-content">
+		<div @slideInRight class="login-content">
 			<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
 				<img src="assets/avatar2.svg">
 				<h2 class="title">Welcome</h2>
@@ -20,7 +20,7 @@
            		   		<i class="fas fa-user"></i>
            		   </div>
            		   <div class="div">
-           		   		<input type="text" id="username" name="username" ngModel class="input" placeholder="Username">
+           		   		<input type="text" id="username" name="username" ngModel  placeholder="Username" class="input" autocomplete="off">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -28,7 +28,7 @@
            		    	<i class="fas fa-lock"></i>
            		   </div>
            		   <div class="div">
-           		    	<input type="password" id="password" name="password" ngModel class="input" placeholder="Password">
+           		    	<input type="password" id="password" name="password" ngModel  placeholder="Password" class="input">
             	   </div>
             	</div>
             	<a href="#">Forgot Password?</a>

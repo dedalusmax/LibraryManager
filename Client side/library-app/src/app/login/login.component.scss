@@ -47,7 +47,7 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	color: #333;
+	color: #c850c0;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
@@ -97,7 +97,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #FFC107;
 	transition: .4s;
 }
 
@@ -118,8 +118,10 @@ form{
 	font-size: 15px;
 }
 
-.input-div.focus > .i > i{
-	color: #38d39f;
+.input-div.focus {
+	.i {
+		color: #FFC107;
+	}
 }
 
 .input-div > div > input{
@@ -151,7 +153,7 @@ a{
 }
 
 a:hover{
-	color: #38d39f;
+	color: #FFC107;
 }
 
 .btn{

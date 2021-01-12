@@ -1,11 +1,10 @@
-import { Component, OnInit, EventEmitter, Output, OnDestroy, Inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { BookService } from '../shared/book.service';
 import { take } from 'rxjs/operators';
 import { Book } from '../shared/book.model';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ConvertActionBindingResult } from '@angular/compiler/src/compiler_util/expression_converter';
-import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-book-form',
@@ -29,9 +28,9 @@ export class BookFormComponent implements OnInit {
       author: ['', Validators.required],
       publisher: ['', Validators.required],
       dateOfPublication: ['', Validators.required]
-    })
+    });
 
-    console.log(this.data)
+    console.log(this.data);
 
     if(this.data) {
       this.bookForm.addControl('id', new FormControl(''));
@@ -41,7 +40,7 @@ export class BookFormComponent implements OnInit {
                 author: this.data.author,
                 publisher: this.data.publisher,
                 dateOfPublication: this.data.dateOfPublication,
-              })
+              });
     
               console.log(this.bookForm);
     }
@@ -54,20 +53,20 @@ export class BookFormComponent implements OnInit {
 
     if(!this.data) {
       this.bookService.createBook(form.value).pipe(take(1))
-      .subscribe({next: (book: Book) => this.onClose(book) })
+      .subscribe({next: (book: Book) => this.onClose(book) });
     }
     else {
       this.bookService.updateBook(form.value).pipe(take(1))
-      .subscribe({next: (book: Book) => this.onClose(book) })
+      .subscribe({next: (book: Book) => this.onClose(book) });
     }
 
-    form.reset()
+    form.reset();
 
   }
 
   onClose(book: Book) {
     // if(!form.valid) return;
-    this.dialogRef.close(book)
+    this.dialogRef.close(book);
   }
 
   getErrorMessage() {
