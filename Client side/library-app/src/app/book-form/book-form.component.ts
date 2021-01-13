@@ -14,6 +14,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class BookFormComponent implements OnInit {
 
   bookForm: FormGroup;
+  lang: string;
 
   constructor(
     private formBuilder: FormBuilder, 
@@ -22,6 +23,8 @@ export class BookFormComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
+
+    this.lang = localStorage.getItem('lang');
 
     this.bookForm = this.formBuilder.group({
       title: ['', Validators.required],
@@ -69,20 +72,70 @@ export class BookFormComponent implements OnInit {
     this.dialogRef.close(book);
   }
 
-  getErrorMessage() {
-    if (this.bookForm.controls.title.hasError('required')) {
-      return 'Title is required';
-    }
-    if (this.bookForm.controls.author.hasError('required')) {
-      return 'Author is required';
-    }
-    if (this.bookForm.controls.publisher.hasError('required')) {
-      return 'Publisher is required';
-    }
-    if (this.bookForm.controls.dateOfPublication.hasError('required')) {
-      return 'Date of publication is required';
-    }
+  getErrorMessage(element: HTMLElement) {
+
+    switch(this.lang) {
+
+      case 'en':
+
+      switch(element.getAttribute('formControlName')) {
+
+        case 'title':
+          if (this.bookForm.controls.title.hasError('required')) {
+            return 'Title is required';
+          }
+          break;
+
+        case 'author':
+          if (this.bookForm.controls.author.hasError('required')) {
+            return 'Author is required';
+          }
+          break;
+            
+        case 'publisher':
+          if (this.bookForm.controls.publisher.hasError('required')) {
+            return 'Publisher is required';
+          }
+          break; 
+
+        case 'dateOfPublication':
+          if (this.bookForm.controls.dateOfPublication.hasError('required')) {
+            return 'Date of publication is required';
+          }
+          break;
+      }
+      break;
+      
+      case 'ru': 
+
+      switch(element.getAttribute('formControlName')) {
+
+        case 'title':
+          if (this.bookForm.controls.title.hasError('required')) {
+            return 'Требуется название';
+          }
+          break;
+
+        case 'author':  
+          if (this.bookForm.controls.author.hasError('required')) {
+            return 'Требуется автор';
+          }
+          break;
+
+        case 'publisher':  
+          if (this.bookForm.controls.publisher.hasError('required')) {
+            return 'Требуется публикация';
+          }
+          break;
+
+        case 'dateOfPublication':  
+          if (this.bookForm.controls.dateOfPublication.hasError('required')) {
+            return 'Дата публикации обязательна';
+          }
+          break;
+      }
+      break;
+    
   }
-
-
+  }
 }

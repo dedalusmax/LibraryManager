@@ -1,0 +1,29 @@
+{
+    "tableHeader": {
+        "title": "Название",
+        "author": "Автор",
+        "publisher": "Издатель",
+        "dateOfPublication": "Дата публикации",
+        "status": "Статус",
+        "actions": "Команды"
+    },
+    "status": {
+        "available": "Доступна",
+        "lended": "Одолженна"
+    },
+    "addButton": "Добавить книгу",
+    "search": "Поиск",
+    "lend": "Одалживать",
+    "return": "Вернуть",
+    "form": {
+        "addHeader": "Добавить книгу",
+        "updateHeader": "Обновить книгу",
+        "title": "Название",
+        "author": "Автор",
+        "publisher": "Издатель",
+        "dateOfPublication": "Дата публикации",
+        "addButton": "Добавить",
+        "updateButton": "Обновить"
+    }
+    
+}
