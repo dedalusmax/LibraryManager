@@ -1,0 +1,31 @@
+{
+    "tableHeader": {
+        "title": "Title",
+        "author": "Author",
+        "publisher": "Publisher",
+        "dateOfPublication": "Date of publication",
+        "status": "Status",
+        "actions": "Actions"
+    },
+    "status": {
+        "available": "Available",
+        "lended": "Lended"
+    },
+    "addButton": "Add book",
+    "search": "Search",
+    "lend": "Lend",
+    "return": "Return",
+    "form": {
+        "addHeader": "Add a book",
+        "updateHeader": "Update a book",
+        "title": "Title",
+        "author": "Author",
+        "publisher": "Publisher",
+        "dateOfPublication": "Date of publication",
+        "addButton": "ADD",
+        "updateButton": "UPDATE"
+    }
+
+
+    
+}

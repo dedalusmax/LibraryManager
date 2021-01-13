@@ -1,0 +1,14 @@
+<mat-toolbar color="accent" class="nav-bar mat-elevation-z2">
+    <img class="library-logo" src="assets/library-logo.svg" alt="library-logo">
+    <span class="spacer"></span>
+    <ng-container>
+        <mat-icon>language</mat-icon>
+        <button mat-button (click)="changeLang('en')">
+            <img src="assets/united-kingdom.svg" alt="united-kingdom">
+        </button>
+        <button mat-button mat-button (click)="changeLang('ru')">
+            <img src="assets/russia.svg" alt="russia">
+        </button>
+        
+    </ng-container>
+</mat-toolbar>

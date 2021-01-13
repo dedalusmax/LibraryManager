@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
@@ -14,6 +14,8 @@ import { JwtModule } from '@auth0/angular-jwt';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -27,9 +29,16 @@ import { RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/auth-guard.service';
 import { MatSortModule } from '@angular/material/sort';
 import { ToastrModule } from 'ngx-toastr';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
+}
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -37,7 +46,8 @@ export function tokenGetter() {
     AppComponent,
     BookListComponent,
     BookFormComponent,
-    LoginComponent
+    LoginComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -57,6 +67,16 @@ export function tokenGetter() {
     MatNativeDateModule,
     MatProgressSpinnerModule,
     ToastrModule.forRoot(),
+    MatToolbarModule,
+    MatMenuModule,
+
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
 
     RouterModule.forRoot([
       { path: '', component: BookListComponent, canActivate: [AuthGuard]},
@@ -78,6 +98,7 @@ export function tokenGetter() {
                 useClass: TokenInterceptorService,
                 multi: true
               },
+              HttpClient,
              AuthGuard],
   bootstrap: [AppComponent],
   // entryComponents: [BookFormComponent]
