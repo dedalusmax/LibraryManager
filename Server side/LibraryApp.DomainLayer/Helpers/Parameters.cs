@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LibraryApp.DomainLayer.Helpers
 {
-    public class BookParameters : PaginationQueryParams
+    public class Parameters : PaginationQueryParams
     {
         public string SearchString { get; set; }
 
