@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { BookService } from '../shared/book.service';
 import { take } from 'rxjs/operators';
@@ -135,7 +135,37 @@ export class BookFormComponent implements OnInit {
           break;
       }
       break;
+
+      case 'hr': 
+
+      switch(element.getAttribute('formControlName')) {
+
+        case 'title':
+          if (this.bookForm.controls.title.hasError('required')) {
+            return 'Unos naslova je obavezan';
+          }
+          break;
+
+        case 'author':  
+          if (this.bookForm.controls.author.hasError('required')) {
+            return 'Unos autora je obavezan';
+          }
+          break;
+
+        case 'publisher':  
+          if (this.bookForm.controls.publisher.hasError('required')) {
+            return 'Unos idavača je obavezna';
+          }
+          break;
+
+        case 'dateOfPublication':  
+          if (this.bookForm.controls.dateOfPublication.hasError('required')) {
+            return 'Unos datuma izdavanja je obavezan';
+          }
+          break;
+      }
+      break;
     
-  }
+    }
   }
 }

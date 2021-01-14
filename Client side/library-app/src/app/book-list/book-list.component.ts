@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { BookService } from '../shared/book.service';
 import { tap, take, debounceTime } from 'rxjs/operators';
 import { Book } from '../shared/book.model';
@@ -50,6 +50,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class BookListComponent implements OnInit {
 
+  lang: string;
   dataSource: Book [];
   displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication', 'status', 'actions'];
 
@@ -67,12 +68,11 @@ export class BookListComponent implements OnInit {
   constructor(private bookService: BookService, public dialog: MatDialog, private lendService: LendService, private toastr: ToastrService) { }
 
   ngOnInit() {
+    this.lang = localStorage.getItem('lang');
     this.isDeleting = false;
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize);
     this.handleFilter();
   }
-
-  
 
   onCreate() {
     this.setDelete(true);
@@ -81,13 +81,21 @@ export class BookListComponent implements OnInit {
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((book: Book) => {
 
-        console.log(book);
-
         if(!book) return;
 
         this.dataSource.push(book);
         this.table.renderRows();
-        this.toastr.success('Book successfully added', `${book.title}`);
+
+        if(this.lang == 'en') {
+          this.toastr.success('Book successfully added', `${book.title}`);
+        }
+        else if(this.lang == 'ru') {
+          this.toastr.success('Книга успешно добавлена', `${book.title}`);
+        } 
+        else if(this.lang == 'hr') {
+          this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
+        }
+        this.setDelete(false);
       });
   }
 
@@ -98,8 +106,6 @@ export class BookListComponent implements OnInit {
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((editedBook: Book) => {
 
-        console.log(editedBook);
-
         if(!editedBook) return;
 
         const index = this.dataSource.findIndex(b => b.id == book.id);
@@ -108,29 +114,48 @@ export class BookListComponent implements OnInit {
         this.dataSource[index] = editedBook;
         
         this.table.renderRows();
-        this.toastr.success('Book successfully updated', `${book.title}`);
+
+        if(this.lang == 'en') {
+          this.toastr.success('Book successfully updated', `${book.title}`);
+        }
+        else if(this.lang == 'ru') {
+          this.toastr.success('Книга успешно обновлена', `${book.title}`);
+        }
+        else if(this.lang == 'hr') {
+          this.toastr.success('Knjiga uspješno obnovljena', `${book.title}`);
+        } 
           });
   }
 
-
-
   onDelete(id: string) {
     this.setDelete(true);
+    const index = this.dataSource.findIndex( book => book.id == id);
+    const title = this.dataSource[index].title;
+
     this.bookService.deleteBook(id).subscribe(() => {
       this.dataSource = this.dataSource.filter(book => book.id !== id);
-      this.toastr.success('Book successfully deleted', `${id}`);});
+      
+      if(this.lang == 'en') {
+        this.toastr.success('Book successfully deleted', `${title}`);
+      }
+      else if(this.lang == 'ru') {
+        this.toastr.success('Книга успешно удалена', `${title}`);
+      } 
+      else if(this.lang == 'hr') {
+        this.toastr.success('Knjiga uspješno obrisana', `${title}`);
+      }
+      this.setDelete(false);
+    });
+
   }
 
   onLend(id: string) {
-    this.setDelete(false);
     this.lendService.lendBook(id).subscribe((book:Book) => {
 
       const index = this.dataSource.findIndex(b => b.id == book.id);
 
         // update
         this.dataSource[index] = book;
-        console.log('Book is lended');
-        console.log(this.dataSource);
 
         this.table.renderRows();
         this.toastr.info('Book successfully lended', `${book.title}`);
@@ -144,20 +169,16 @@ export class BookListComponent implements OnInit {
 
         // update
         this.dataSource[index] = book;
-        console.log('Book is returned');
-        console.log(this.dataSource);
         this.table.renderRows();
         this.toastr.info('Book successfully returned', `${book.title}`);
     });
   }
 
   onPageChange(page: PageEvent) {
-    this.setDelete(false);
     this.fetchBooks(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
   onSortChange(event: Sort) {
-    this.setDelete(false);
     console.log(event);
     console.log(this.paging.CurrentPage);
     console.log(this.paging.PageSize);
@@ -210,7 +231,5 @@ export class BookListComponent implements OnInit {
         res => (this.setPagemodel(res), this.setSortModel(orderBy, sortDirection))
       );
   }
-
-  
 
 }

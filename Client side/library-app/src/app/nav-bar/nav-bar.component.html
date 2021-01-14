@@ -1,5 +1,6 @@
 <mat-toolbar color="accent" class="nav-bar mat-elevation-z2">
-    <img class="library-logo" src="assets/library-logo.svg" alt="library-logo">
+    <img class="library-logo" src="assets/library-logo-square.png" alt="library-logo">
+    <h2>LibAid</h2>
     <span class="spacer"></span>
     <ng-container>
         <mat-icon>language</mat-icon>
@@ -9,6 +10,8 @@
         <button mat-button mat-button (click)="changeLang('ru')">
             <img src="assets/russia.svg" alt="russia">
         </button>
-        
+        <button mat-button mat-button (click)="changeLang('hr')">
+            <img src="assets/croatia.svg" alt="croatia">
+        </button>
     </ng-container>
 </mat-toolbar>

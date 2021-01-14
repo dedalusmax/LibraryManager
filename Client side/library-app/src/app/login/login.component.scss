@@ -42,13 +42,17 @@ form{
 }
 
 .login-content img{
-    height: 100px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid #c850c0;
+	background-color: #FFC107;
 }
 
 .login-content h2{
+	font-family: 'Sigmar One', cursive;
 	margin: 15px 0;
 	color: #c850c0;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-size: 2.9rem;
 }
 

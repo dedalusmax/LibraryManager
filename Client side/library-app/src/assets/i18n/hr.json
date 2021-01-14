@@ -1,0 +1,29 @@
+{
+    "tableHeader": {
+        "title": "Naslov",
+        "author": "Autor",
+        "publisher": "Izdavač",
+        "dateOfPublication": "Datum izdavanja",
+        "status": "Status",
+        "actions": "Naredbe"
+    },
+    "status": {
+        "available": "Dostupna",
+        "lended": "Posuđena"
+    },
+    "addButton": "Dodaj knjigu",
+    "search": "Traži",
+    "lend": "Posudi",
+    "return": "Vrati",
+    "form": {
+        "addHeader": "Dodaj knjigu",
+        "updateHeader": "Obnovi knjigu",
+        "title": "Naslov",
+        "author": "Autor",
+        "publisher": "Izdavač",
+        "dateOfPublication": "Datum izdavanja",
+        "addButton": "DODAJ",
+        "updateButton": "OBNOVI"
+    }
+
+}

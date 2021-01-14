@@ -8,10 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'library-app';
+  lang: string;
 
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang('en');
-    const lang = localStorage.getItem('lang') || 'en';
-    this.translateService.use(lang);
+    this.lang = localStorage.getItem('lang') || 'en';
+    this.translateService.use(this.lang);
   }
 }
