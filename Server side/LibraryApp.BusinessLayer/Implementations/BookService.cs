@@ -89,7 +89,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 			return book;
 		}
 
-		public async Task<PagedList<Book>> GetAll(BookParameters bookParameters, CancellationToken cancellationToken)
+		public async Task<PagedList<Book>> GetAll(Parameters bookParameters, CancellationToken cancellationToken)
 		{
 			var books = await _repository.GetAll(
 				filter: GetFilter(bookParameters.SearchString),

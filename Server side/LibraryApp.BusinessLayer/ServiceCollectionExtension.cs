@@ -13,6 +13,7 @@ namespace LibraryApp.BusinessLayer
 		{
 			services.AddScoped<IBookService, BookService>();
 			services.AddScoped<ILendService, LendService>();
+			services.AddScoped<ICustomerService, CustomerService>();
 		}
 	}
 }
