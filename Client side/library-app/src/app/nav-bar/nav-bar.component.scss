@@ -19,3 +19,38 @@ h2 {
     color:  #673ab7;
 }
 
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #673ab7;
+    
+}
+
+.active {
+    border: 3px solid  #673ab7;
+    border-radius: 40px;
+    background-color: #673ab7;
+    a {
+        color: #ffd740;
+    }
+    
+}
+

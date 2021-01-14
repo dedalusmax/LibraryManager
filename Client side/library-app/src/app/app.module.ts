@@ -32,6 +32,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { HomeComponent } from './home/home.component';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
@@ -47,7 +49,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     BookListComponent,
     BookFormComponent,
     LoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    CustomerListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -79,8 +83,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
 
     RouterModule.forRoot([
-      { path: '', component: BookListComponent, canActivate: [AuthGuard]},
-      { path: 'login', component: LoginComponent}
+      { path: '', component: HomeComponent, canActivate: [AuthGuard],
+            children: [ 
+                          { path: 'customer', component: CustomerListComponent, canActivate: [AuthGuard]},
+                          { path: 'book', component: BookListComponent, canActivate: [AuthGuard]} 
+                      ]},
+      { path: 'login', component: LoginComponent},
+      
     ]),
     JwtModule.forRoot({
       config: {
