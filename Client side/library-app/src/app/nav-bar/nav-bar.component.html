@@ -2,6 +2,10 @@
     <img class="library-logo" src="assets/library-logo-square.png" alt="library-logo">
     <h2>LibAid</h2>
     <span class="spacer"></span>
+    <ul>
+        <li routerLinkActive="active"><a routerLink="/book">Books</a></li>
+        <li routerLinkActive="active"><a routerLink="/customer">Customers</a></li>
+    </ul>
     <ng-container>
         <mat-icon>language</mat-icon>
         <button mat-button (click)="changeLang('en')">

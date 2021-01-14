@@ -5,14 +5,17 @@ import { Book } from '../shared/book.model';
 import { MatTableDataSource, MatTable } from '@angular/material/table';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import { BookFormComponent } from '../book-form/book-form.component';
-import { Paging } from './paging.model';
 import { PageEvent } from '@angular/material/paginator';
-import { SortingModel } from './sorting.model';
+
 import { Sort } from '@angular/material/sort';
 import { Subject, Subscription } from 'rxjs';
 import { LendService } from '../shared/lend.service';
 import { keyframes, trigger, transition, animate, style } from '@angular/animations';
 import { ToastrService } from 'ngx-toastr';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
+import { SortingModel } from '../pagination-sorting/sorting.model';
+import { Paging } from '../pagination-sorting/paging.model';
 
 
 @Component({
@@ -65,7 +68,8 @@ export class BookListComponent implements OnInit {
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
-  constructor(private bookService: BookService, public dialog: MatDialog, private lendService: LendService, private toastr: ToastrService) { }
+  constructor(private bookService: BookService, public dialog: MatDialog,
+              private lendService: LendService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.lang = localStorage.getItem('lang');
@@ -73,6 +77,8 @@ export class BookListComponent implements OnInit {
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize);
     this.handleFilter();
   }
+
+  
 
   onCreate() {
     this.setDelete(true);
