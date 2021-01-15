@@ -28,6 +28,10 @@ formData: Book;
 
     return this._http.get<Book []>(`${this.url}/GetAll`, { observe: 'response', params });
   }
+
+  getBook(id) {
+    return this._http.get(`${this.url}/Get/${id}`);
+  }
   
   createBook(formData: Book) {
     return this._http.post(`${this.url}/Create`, formData);

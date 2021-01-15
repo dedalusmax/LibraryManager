@@ -1,29 +1,57 @@
 {
-    "tableHeader": {
-        "title": "Naslov",
-        "author": "Autor",
-        "publisher": "Izdavač",
-        "dateOfPublication": "Datum izdavanja",
-        "status": "Status",
-        "actions": "Naredbe"
+    "nav": {
+        "books": "Knjige",
+        "customers": "Klijenti"
     },
-    "status": {
-        "available": "Dostupna",
-        "lended": "Posuđena"
+    "books": {
+        "tableHeader": {
+            "title": "Naslov",
+            "author": "Autor",
+            "publisher": "Izdavač",
+            "dateOfPublication": "Datum izdavanja",
+            "status": "Status",
+            "actions": "Naredbe"
+        },
+        "status": {
+            "available": "Dostupna",
+            "lended": "Posuđena"
+        },
+        "addButton": "Dodaj knjigu",
+        "search": "Traži",
+        "lend": "Posudi",
+        "return": "Vrati",
+        "form": {
+            "addHeader": "Dodaj knjigu",
+            "updateHeader": "Obnovi knjigu",
+            "title": "Naslov",
+            "author": "Autor",
+            "publisher": "Izdavač",
+            "dateOfPublication": "Datum izdavanja",
+            "addButton": "DODAJ",
+            "updateButton": "OBNOVI"
+        }
     },
-    "addButton": "Dodaj knjigu",
-    "search": "Traži",
-    "lend": "Posudi",
-    "return": "Vrati",
-    "form": {
-        "addHeader": "Dodaj knjigu",
-        "updateHeader": "Obnovi knjigu",
-        "title": "Naslov",
-        "author": "Autor",
-        "publisher": "Izdavač",
-        "dateOfPublication": "Datum izdavanja",
-        "addButton": "DODAJ",
-        "updateButton": "OBNOVI"
+    "customers": {
+        "tableHeader": {
+            "firstName": "Ime",
+            "lastName": "Prezime",
+            "email": "Email",
+            "cardNumber": "Broj kartice",
+            "lendedBooks": "Posuđene knjige",
+            "actions": "Naredbe"
+        },
+        "addButton": "Dodaj klijenta",
+        "seeButton": "Pogledaj knjige",
+        "search": "Search",
+        "form": {
+            "firstName": "First Name",
+            "lastName": "Prezime",
+            "email": "Email",
+            "cardNumber": "Broj kartice",
+            "addButton": "DODAJ",
+            "updateButton": "OBNOVI"
+        }
     }
+    
 
 }

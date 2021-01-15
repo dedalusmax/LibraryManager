@@ -27,6 +27,10 @@ formData: Customer;
 
     return this._http.get<Customer []>(`${this.url}/GetAll`, { observe: 'response', params });
   }
+
+  getCustomer(id: string) {
+    return this._http.get(`${this.url}/GetAll/${id}`);
+  }
   
   createCustomer(formData: Customer) {
     return this._http.post(`${this.url}/Create`, formData);

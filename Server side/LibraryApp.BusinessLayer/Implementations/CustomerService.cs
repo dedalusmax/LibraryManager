@@ -82,6 +82,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 		{
 
 			var customer = await _repository.Get(
+				include: source => source.Include(x => x.LendedBooks),
 				filter: dbCustomer => dbCustomer.Id == id,
 				cancellationToken: cancellationToken);
 
@@ -98,6 +99,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 		{
 
 			var customer = await _repository.Get(
+				include: source => source.Include(x => x.LendedBooks),
 				filter: dbCustomer => dbCustomer.CardNumber == cardNumber,
 				cancellationToken: cancellationToken);
 

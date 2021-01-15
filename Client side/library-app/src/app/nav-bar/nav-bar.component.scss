@@ -1,7 +1,7 @@
 .nav-bar {
     top: 0;
     z-index: 99;
-    }
+}
 
 .spacer {
     flex: 1 1 auto;
@@ -19,38 +19,67 @@ h2 {
     color:  #673ab7;
 }
 
-ul {
+nav{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    list-style-type: none;
-}
 
-li {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 150px;
-    text-align: center;
-}
-
-li:hover {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: #673ab7;
-    
-}
-
-.active {
-    border: 3px solid  #673ab7;
-    border-radius: 40px;
-    background-color: #673ab7;
-    a {
-        color: #ffd740;
+    input {
+        display: none;
     }
-    
-}
+
+    label{
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 50px;
+        height: 50px;
+        width: 150px;
+        flex: 1;
+        width: 100%;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      a{
+        position: relative;
+        z-index: -1;
+        color: #1d1f20;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.6s ease;
+        top: 10px;
+        
+
+        i {
+            font-size: 25px;
+            margin: 0 7px;
+          }
+      }
+
+      .tab{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        border-radius: 50px;
+        background: linear-gradient(45deg, #4158d0, #c850c0);
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+  }
+
+  nav #books:checked ~ label.books a,
+  nav #customers:checked ~ label.customers a {
+   color: #fff;
+  }
+
+  nav #books:checked ~ .tab{
+    left: -2%;
+  }
+  nav #customers:checked ~ .tab{
+    left: 48%;
+  }
+  
 

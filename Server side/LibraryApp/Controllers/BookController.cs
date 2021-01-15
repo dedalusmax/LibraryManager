@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using LibraryApp.BusinessLayer.Interfaces;
+﻿using LibraryApp.BusinessLayer.Interfaces;
 using LibraryApp.DomainLayer.Entities;
 using LibraryApp.DomainLayer.Helpers;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace LibraryApp.Controllers
 {
@@ -58,7 +55,7 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpPut]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> Update([FromBody] Book book, CancellationToken cancellationToken)
 		{
 			return Ok(await _bookService.Update(book, cancellationToken));

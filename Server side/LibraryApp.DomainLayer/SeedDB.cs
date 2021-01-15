@@ -26,7 +26,7 @@ namespace LibraryApp.DomainLayer
                 Publisher = "Skolska knjiga"
             };
 
-            builder.Entity<Book>().HasOne(b => b.Lender).WithMany(l => l.LendedBooks);
+            builder.Entity<Book>().HasOne(b => b.Lender).WithMany(l => l.LendedBooks).HasForeignKey(b => b.LenderId).IsRequired(false);
             builder.Entity<Book>().HasData(book);
 
         }

@@ -2,12 +2,20 @@
     <img class="library-logo" src="assets/library-logo-square.png" alt="library-logo">
     <h2>LibAid</h2>
     <span class="spacer"></span>
-    <ul>
-        <li routerLinkActive="active"><a routerLink="/book">Books</a></li>
-        <li routerLinkActive="active"><a routerLink="/customer">Customers</a></li>
-    </ul>
+        
+    <nav>
+        <input type="radio" name="tab" id="books" checked routerLink="/book">
+        <input type="radio" name="tab" id="customers"  routerLink="/customer">
+        <label for="books" class="books">
+            <a  ><i class="fas fa-book"></i>Books</a>
+        </label>
+        <label for="customers" class="customers" >
+            <a ><i class="far fa-user"></i>Customers</a>
+        </label>
+        <div class="tab"></div>
+    </nav>
+        
     <ng-container>
-        <mat-icon>language</mat-icon>
         <button mat-button (click)="changeLang('en')">
             <img src="assets/united-kingdom.svg" alt="united-kingdom">
         </button>

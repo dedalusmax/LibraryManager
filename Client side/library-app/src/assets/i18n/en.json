@@ -1,31 +1,56 @@
 {
-    "tableHeader": {
-        "title": "Title",
-        "author": "Author",
-        "publisher": "Publisher",
-        "dateOfPublication": "Date of publication",
-        "status": "Status",
-        "actions": "Actions"
+    "nav": {
+        "books": "Books",
+        "customers": "Customers"
     },
-    "status": {
-        "available": "Available",
-        "lended": "Lended"
+    "books": {
+        "tableHeader": {
+            "title": "Title",
+            "author": "Author",
+            "publisher": "Publisher",
+            "dateOfPublication": "Date of publication",
+            "status": "Status",
+            "actions": "Actions"
+        },
+        "status": {
+            "available": "Available",
+            "lended": "Lended"
+        },
+        "addButton": "Add book",
+        "search": "Search",
+        "lend": "Lend",
+        "return": "Return",
+        "form": {
+            "addHeader": "Add a book",
+            "updateHeader": "Update a book",
+            "title": "Title",
+            "author": "Author",
+            "publisher": "Publisher",
+            "dateOfPublication": "Date of publication",
+            "addButton": "ADD",
+            "updateButton": "UPDATE"
+        }
     },
-    "addButton": "Add book",
-    "search": "Search",
-    "lend": "Lend",
-    "return": "Return",
-    "form": {
-        "addHeader": "Add a book",
-        "updateHeader": "Update a book",
-        "title": "Title",
-        "author": "Author",
-        "publisher": "Publisher",
-        "dateOfPublication": "Date of publication",
-        "addButton": "ADD",
-        "updateButton": "UPDATE"
+    "customers": {
+        "tableHeader": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "cardNumber": "Card number",
+            "lendedBooks": "Lended books",
+            "actions": "Actions"
+        },
+        "addButton": "Add customer",
+        "seeButton": "See books",
+        "search": "Search",
+        "form": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "cardNumber": "Card number",
+            "addButton": "ADD",
+            "updateButton": "UPDATE"
+        }
     }
 
-
-    
 }

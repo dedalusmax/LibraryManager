@@ -1,3 +1,5 @@
+import { Customer } from './customer.model';
+
 export interface Book {
     id: string;
     title: string;
@@ -5,4 +7,5 @@ export interface Book {
     publisher: string;
     dateOfPublication: Date;
     isLended: boolean;
+    lender: Customer;
 }

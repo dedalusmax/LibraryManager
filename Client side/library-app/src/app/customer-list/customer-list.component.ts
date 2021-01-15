@@ -1,23 +1,21 @@
-import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { BookService } from '../shared/book.service';
-import { tap, take, debounceTime } from 'rxjs/operators';
-import { Book } from '../shared/book.model';
-import { MatTableDataSource, MatTable } from '@angular/material/table';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
-import { BookFormComponent } from '../book-form/book-form.component';
+import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { PageEvent } from '@angular/material/paginator';
-
 import { Sort } from '@angular/material/sort';
-import { Subject, Subscription } from 'rxjs';
-import { LendService } from '../shared/lend.service';
-import { keyframes, trigger, transition, animate, style } from '@angular/animations';
+import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { ToastrService } from 'ngx-toastr';
-import { Route } from '@angular/compiler/src/core';
-import { Router } from '@angular/router';
-import { SortingModel } from '../pagination-sorting/sorting.model';
+import { Subject, Subscription } from 'rxjs';
+import { debounceTime, take, tap } from 'rxjs/operators';
+import { CustomerFormComponent } from '../customer-form/customer-form.component';
+import { CustomerLendsListComponent } from '../customer-lends-list/customer-lends-list.component';
 import { Paging } from '../pagination-sorting/paging.model';
+import { SortingModel } from '../pagination-sorting/sorting.model';
+import { Book } from '../shared/book.model';
 import { Customer } from '../shared/customer.model';
 import { CustomerService } from '../shared/customer.service';
+import { LendService } from '../shared/lend.service';
+
 
 @Component({
   selector: 'app-customer-list',
@@ -44,7 +42,7 @@ import { CustomerService } from '../shared/customer.service';
     trigger('fadeIn', [
       
       transition('void => *', [
-        animate('1500ms ease-in', keyframes([
+        animate('700ms ease-in', keyframes([
           style({ opacity: 0, offset: 0}),
           style({ opacity: 1, offset: 1})
         ]))
@@ -56,7 +54,7 @@ export class CustomerListComponent implements OnInit {
 
   lang: string;
   dataSource: Customer [];
-  displayedColumns: string[] = ['cardNumber', 'firstName', 'lastName', 'email', 'actions'];
+  displayedColumns: string[] = ['cardNumber', 'firstName', 'lastName', 'email', 'lendedBooks', 'actions'];
 
   paging = new Paging();
   sorting = new SortingModel;
@@ -71,7 +69,8 @@ export class CustomerListComponent implements OnInit {
 
   constructor( public dialog: MatDialog,
                private toastr: ToastrService,
-               private service: CustomerService) { }
+               private customerService: CustomerService,
+               private lendService: LendService) { }
 
 
   ngOnInit() {
@@ -81,9 +80,13 @@ export class CustomerListComponent implements OnInit {
     this.handleFilter();
   }
 
+  onSeeLends(customer: Customer){
+    this.dialog.open(CustomerLendsListComponent, {data: customer});
+  }
+
   onCreate() {
     this.setDelete(true);
-    let dialogRef = this.dialog.open(BookFormComponent);
+    let dialogRef = this.dialog.open(CustomerFormComponent);
     
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((customer: Customer) => {
@@ -106,53 +109,54 @@ export class CustomerListComponent implements OnInit {
       });
   }
 
-  onUpdate(book: Book) {
+  onUpdate(customer: Customer) {
 
-    // let dialogRef = this.dialog.open(BookFormComponent, {data: book});
+    let dialogRef = this.dialog.open(CustomerFormComponent, {data: customer});
 
-    // dialogRef.afterClosed().pipe(take(1))
-    //   .subscribe((editedBook: Book) => {
+    dialogRef.afterClosed().pipe(take(1))
+      .subscribe((editedCustomer: Customer) => {
 
-    //     if(!editedBook) return;
+        if(!editedCustomer) return;
 
-    //     const index = this.dataSource.findIndex(b => b.id == book.id);
+        const index = this.dataSource.findIndex(c => c.id == customer.id);
 
-    //     // update
-    //     this.dataSource[index] = editedBook;
+        // update
+        this.dataSource[index] = editedCustomer;
         
-    //     this.table.renderRows();
+        this.table.renderRows();
 
-    //     if(this.lang == 'en') {
-    //       this.toastr.success('Book successfully updated', `${book.title}`);
-    //     }
-    //     else if(this.lang == 'ru') {
-    //       this.toastr.success('Книга успешно обновлена', `${book.title}`);
-    //     }
-    //     else if(this.lang == 'hr') {
-    //       this.toastr.success('Knjiga uspješno obnovljena', `${book.title}`);
-    //     } 
-    //       });
+        if(this.lang == 'en') {
+          this.toastr.success('Customer successfully updated', `${customer.firstName} ${customer.lastName}`);
+        }
+        // else if(this.lang == 'ru') {
+        //   this.toastr.success('Книга успешно обновлена', `${book.title}`);
+        // }
+        // else if(this.lang == 'hr') {
+        //   this.toastr.success('Knjiga uspješno obnovljena', `${book.title}`);
+        // } 
+          });
   }
 
   onDelete(id: string) {
-    // this.setDelete(true);
-    // const index = this.dataSource.findIndex( book => book.id == id);
-    // const title = this.dataSource[index].title;
+    this.setDelete(true);
+    const index = this.dataSource.findIndex( customer => customer.id == id);
+    const firstName = this.dataSource[index].firstName;
+    const lastName = this.dataSource[index].lastName;
 
-    // this.bookService.deleteBook(id).subscribe(() => {
-    //   this.dataSource = this.dataSource.filter(book => book.id !== id);
+    this.customerService.deleteCustomer(id).subscribe(() => {
+      this.dataSource = this.dataSource.filter(customer => customer.id !== id);
       
-    //   if(this.lang == 'en') {
-    //     this.toastr.success('Book successfully deleted', `${title}`);
-    //   }
-    //   else if(this.lang == 'ru') {
-    //     this.toastr.success('Книга успешно удалена', `${title}`);
-    //   } 
-    //   else if(this.lang == 'hr') {
-    //     this.toastr.success('Knjiga uspješno obrisana', `${title}`);
-    //   }
-    //   this.setDelete(false);
-    // });
+      if(this.lang == 'en') {
+        this.toastr.success('Customer successfully deleted', `${firstName} ${lastName}`);
+      }
+      // else if(this.lang == 'ru') {
+      //   this.toastr.success('Книга успешно удалена', `${title}`);
+      // } 
+      // else if(this.lang == 'hr') {
+      //   this.toastr.success('Knjiga uspješno obrisana', `${title}`);
+      // }
+      this.setDelete(false);
+    });
 
   }
 
@@ -232,7 +236,7 @@ export class CustomerListComponent implements OnInit {
   }
 
   fetchCustomers(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'){
-    this.service.getCustomers(page, pageSize, searchString, orderBy, sortDirection).pipe(
+    this.customerService.getCustomers(page, pageSize, searchString, orderBy, sortDirection).pipe(
       tap(res => this.dataSource = Object.assign([], res.body as  unknown as MatTableDataSource<Customer[]>)))
       .subscribe(
         res => (this.setPagemodel(res), this.setSortModel(orderBy, sortDirection))

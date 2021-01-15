@@ -1,48 +1,36 @@
 .page-container {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background: linear-gradient(45deg, #4158d0, #c850c0) !important;
   }  
   
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
   table {
-      width:100%
-    }
-  
+    width: 60%;
+  }
+
+  .paginator {
+    width: 60%;
+  }
+
   th {
         background: #ffd740;
         color: black;
         font-size: 15px;
     }
   
-  .lended {
-    color: #ff073a;
-    font-weight: bold;
-    font-size: 16px;
-    font-style: italic;
-  }
-  
-  .not-lended {
-    color: #00c712;
-    font-weight: bold;
-    font-size: 16px;
-    font-style: italic;
-  }
-  
   .add-button {
-      margin-left: 10%;
+      margin-left: 20%;
       margin-right: 3%;
       margin-top: 5%;
       margin-bottom: 1%;
-  }
-  
-  
-  .lend-return-button {
-    transform: translateY(-7px);
-    margin-left: 10px;
-  }
-  
-  .lend-return-container {
-    margin-top: -10%;
   }
   
   .actions-button {
@@ -76,11 +64,6 @@
   
   .add-circle-icon {
     margin-top: 15px;
-  }
-  
-  .table-container {
-    margin-left: 10%;
-    margin-right: 10%;
   }
   
   .search-form-field{
