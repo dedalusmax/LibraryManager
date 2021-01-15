@@ -18,15 +18,15 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpGet("{id}")]
-		public async Task<IActionResult> Lend (Guid id, CancellationToken cancellationToken)
+		public async Task<IActionResult> Lend (Guid id, string lenderCardNumber, CancellationToken cancellationToken)
 		{
-			return Ok(await _lendService.Lend(id, cancellationToken));
+			return Ok(await _lendService.Lend(id, lenderCardNumber, cancellationToken));
 		}
 
 		[HttpGet("{id}")]
-		public async Task<IActionResult> Return(Guid id, CancellationToken cancellationToken)
+		public async Task<IActionResult> Return(Guid id, string lenderCardNumber, CancellationToken cancellationToken)
 		{
-			return Ok(await _lendService.Return(id, cancellationToken));
+			return Ok(await _lendService.Return(id, lenderCardNumber, cancellationToken));
 		}
 	}
 }

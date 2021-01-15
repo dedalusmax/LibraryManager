@@ -9,7 +9,7 @@ namespace LibraryApp.BusinessLayer.Interfaces
 {
 	public interface ILendService
 	{
-		Task<Book> Lend(Guid id, CancellationToken cancellationToken);
-		Task<Book> Return(Guid id, CancellationToken cancellationToken);
+		Task<Book> Lend(Guid bookId, string lenderCardNumber, CancellationToken cancellationToken);
+		Task<Book> Return(Guid bookId, string lenderCardNumber, CancellationToken cancellationToken);
 	}
 }
