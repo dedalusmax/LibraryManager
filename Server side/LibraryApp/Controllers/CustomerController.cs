@@ -43,28 +43,28 @@ namespace LibraryApp.Controllers
 		}
 
 		[HttpGet("{id}")]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> Get(Guid id, CancellationToken cancellationToken)
 		{
 			return Ok(await _customerService.Get(id, cancellationToken));
 		}
 
 		[HttpPost]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> Create([FromBody] Customer customer, CancellationToken cancellationToken)
 		{
 			return Ok(await _customerService.Create(customer, cancellationToken));
 		}
 
 		[HttpPut]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> Update([FromBody] Customer customer, CancellationToken cancellationToken)
 		{
 			return Ok(await _customerService.Update(customer, cancellationToken));
 		}
 
 		[HttpDelete("{id}")]
-		[Authorize]
+		[AllowAnonymous]
 		public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
 		{
 			return Ok(await _customerService.Delete(id, cancellationToken));

@@ -7,6 +7,7 @@ using LibraryApp.DomainLayer.Enums;
 using LibraryApp.DomainLayer.Helpers;
 using LibraryApp.PersistanceLayer.Interfaces;
 using LinqKit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -61,10 +62,6 @@ namespace LibraryApp.BusinessLayer.Implementations
 
 		}
 
-		public Task<Customer> Create(Book customer, CancellationToken cancellationToken)
-		{
-			throw new NotImplementedException();
-		}
 
 		public async Task<Guid> Delete(Guid id, CancellationToken cancellationToken)
 		{
@@ -97,12 +94,29 @@ namespace LibraryApp.BusinessLayer.Implementations
 			return customer;
 		}
 
+		public async Task<Customer> GetByCardNumber(String cardNumber, CancellationToken cancellationToken)
+		{
+
+			var customer = await _repository.Get(
+				filter: dbCustomer => dbCustomer.CardNumber == cardNumber,
+				cancellationToken: cancellationToken);
+
+			if (customer == null)
+			{
+				throw new NotFoundException(cardNumber);
+			}
+
+			_logger.LogInformation($"Customer succesfully fetched. Customer card number: {cardNumber}");
+			return customer;
+		}
+
 		public async Task<PagedList<Customer>> GetAll(Parameters customerParameters, CancellationToken cancellationToken)
 		{
 			var customers = await _repository.GetAll(
+				include: source => source.Include(x => x.LendedBooks),
 				filter: GetFilter(customerParameters.SearchString),
 				orderBy: GetSort(customerParameters.OrderBy, customerParameters.SortDirection),
-				cancellationToken: cancellationToken);
+				cancellationToken: cancellationToken); 
 
 			return PagedList<Customer>.ToPagedList(customers, customerParameters.PageNumber, customerParameters.PageSize);
 		}

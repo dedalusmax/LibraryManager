@@ -34,6 +34,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerFormComponent } from './customer-form/customer-form.component';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
@@ -51,7 +52,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     NavBarComponent,
     CustomerListComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerFormComponent
   ],
   imports: [
     BrowserAnimationsModule,

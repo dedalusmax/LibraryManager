@@ -30,8 +30,14 @@ namespace LibraryApp
 		public IConfiguration Configuration { get; }
 
 		// This method gets called by the runtime. Use this method to add services to the container.
+		[Obsolete]
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddControllersWithViews()
+				.AddNewtonsoftJson(options =>
+				options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+				);
+
 			services.AddCors(options =>
 			{
 				options.AddPolicy("CorsPolicy",

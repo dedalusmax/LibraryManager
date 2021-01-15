@@ -15,5 +15,10 @@ namespace LibraryApp.BusinessLayer.Exceptions
 			: base($"Entity not found.\nEntity id: {id}", ex)
 		{
 		}
+
+		public NotFoundException(String cardNumber, Exception ex = null)
+			: base($"Entity not found.\nEntity card number: {cardNumber}", ex)
+		{
+		}
 	}
 }

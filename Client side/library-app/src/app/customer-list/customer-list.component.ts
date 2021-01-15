@@ -17,6 +17,7 @@ import { Router } from '@angular/router';
 import { SortingModel } from '../pagination-sorting/sorting.model';
 import { Paging } from '../pagination-sorting/paging.model';
 import { Customer } from '../shared/customer.model';
+import { CustomerService } from '../shared/customer.service';
 
 @Component({
   selector: 'app-customer-list',
@@ -54,29 +55,7 @@ import { Customer } from '../shared/customer.model';
 export class CustomerListComponent implements OnInit {
 
   lang: string;
-  dataSource: Customer [] =  [
-                                        {
-                                          id: '123543',
-                                          cardNumber: '123',
-                                          firstName: 'Marko',
-                                          lastName: 'Ivancic',
-                                          email: 'markoivancic@gmail.com'
-                                        },
-                                        {
-                                          id: '2345',
-                                          cardNumber: '234',
-                                          firstName: 'Ivan',
-                                          lastName: 'Markovic',
-                                          email: 'ivanmarkovic@gmail.com'
-                                        },
-                                        {
-                                          id: '16443',
-                                          cardNumber: '345',
-                                          firstName: 'Stjepan',
-                                          lastName: 'Tomic',
-                                          email: 'stjepantomic@gmail.com'
-                                        }
-  ];
+  dataSource: Customer [];
   displayedColumns: string[] = ['cardNumber', 'firstName', 'lastName', 'email', 'actions'];
 
   paging = new Paging();
@@ -88,42 +67,43 @@ export class CustomerListComponent implements OnInit {
 
   isDeleting: boolean;
 
-  @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
+  @ViewChild(MatTable, {static: false}) table: MatTable<Customer>;
 
   constructor( public dialog: MatDialog,
-               private toastr: ToastrService) { }
+               private toastr: ToastrService,
+               private service: CustomerService) { }
 
 
   ngOnInit() {
     this.lang = localStorage.getItem('lang');
     this.isDeleting = false;
-      
+    this.fetchCustomers(this.paging.CurrentPage, this.paging.PageSize);  
     this.handleFilter();
   }
 
   onCreate() {
-    // this.setDelete(true);
-    // let dialogRef = this.dialog.open(BookFormComponent);
+    this.setDelete(true);
+    let dialogRef = this.dialog.open(BookFormComponent);
     
-    // dialogRef.afterClosed().pipe(take(1))
-    //   .subscribe((book: Book) => {
+    dialogRef.afterClosed().pipe(take(1))
+      .subscribe((customer: Customer) => {
 
-    //     if(!book) return;
+        if(!customer) return;
 
-    //     this.dataSource.push(book);
-    //     this.table.renderRows();
+        this.dataSource.push(customer);
+        this.table.renderRows();
 
-    //     if(this.lang == 'en') {
-    //       this.toastr.success('Book successfully added', `${book.title}`);
-    //     }
-    //     else if(this.lang == 'ru') {
-    //       this.toastr.success('Книга успешно добавлена', `${book.title}`);
-    //     } 
-    //     else if(this.lang == 'hr') {
-    //       this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
-    //     }
-    //     this.setDelete(false);
-    //   });
+        if(this.lang == 'en') {
+          this.toastr.success('Customer successfully added', `${customer.firstName} ${customer.lastName}`);
+        }
+        // else if(this.lang == 'ru') {
+        //   this.toastr.success('Книга успешно добавлена', `${book.title}`);
+        // } 
+        // else if(this.lang == 'hr') {
+        //   this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
+        // }
+        this.setDelete(false);
+      });
   }
 
   onUpdate(book: Book) {
@@ -202,61 +182,61 @@ export class CustomerListComponent implements OnInit {
   }
 
   onPageChange(page: PageEvent) {
-    // this.fetchBooks(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
+    this.fetchCustomers(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
   onSortChange(event: Sort) {
-  //   console.log(event);
-  //   console.log(this.paging.CurrentPage);
-  //   console.log(this.paging.PageSize);
-  //   const split = event.active.split('.');
-  //   const orderBy = split[split.length - 1]; // only last property
-  //   const sortDirection = event.direction as  'asc' | 'desc';
+    console.log(event);
+    console.log(this.paging.CurrentPage);
+    console.log(this.paging.PageSize);
+    const split = event.active.split('.');
+    const orderBy = split[split.length - 1]; // only last property
+    const sortDirection = event.direction as  'asc' | 'desc';
 
-  //   this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
-  //   console.log(this.dataSource);
+    this.fetchCustomers(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
+    console.log(this.dataSource);
   }
 
   setDelete(setter) {
-    // this.isDeleting = setter;
+    this.isDeleting = setter;
   }
 
   setSortModel(orderBy?, sortDirection?) {
-    // this.sorting.orderBy = orderBy;
-    // this.sorting.sortDirection = sortDirection;
+    this.sorting.orderBy = orderBy;
+    this.sorting.sortDirection = sortDirection;
   }
 
   setPagemodel(res) {
-    // // retrieve paging headers
-    // let pagination = JSON.parse(res.headers.get('pagination')) as Paging;
+    // retrieve paging headers
+    let pagination = JSON.parse(res.headers.get('pagination')) as Paging;
 
-    // // update paging model
-    // // which reflects onto paginator in html
-    // this.paging.CurrentPage = pagination.CurrentPage;
-    // this.paging.PageSize = pagination.PageSize;
-    // this.paging.TotalCount = pagination.TotalCount;
+    // update paging model
+    // which reflects onto paginator in html
+    this.paging.CurrentPage = pagination.CurrentPage;
+    this.paging.PageSize = pagination.PageSize;
+    this.paging.TotalCount = pagination.TotalCount;
   }
 
   applyFilter(searchKey) {
-    // this.filterSubject.next(searchKey);
+    this.filterSubject.next(searchKey);
   }
 
   handleFilter() {
-    // this.filterSubscription = this.filterSubject
-    // .pipe(debounceTime(500))
-    // .subscribe(searchKey => {
-    //   this.searchKey = searchKey as string;
-    //   this.fetchBooks(1, this.paging.PageSize, searchKey);
-    // });
+    this.filterSubscription = this.filterSubject
+    .pipe(debounceTime(500))
+    .subscribe(searchKey => {
+      this.searchKey = searchKey as string;
+      this.fetchCustomers(1, this.paging.PageSize, searchKey);
+    });
 
   }
 
-  fetchBooks(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'){
-  //   this.bookService.getBooks(page, pageSize, searchString, orderBy, sortDirection).pipe(
-  //     tap(res => this.dataSource = Object.assign([], res.body as  unknown as MatTableDataSource<Book[]>)))
-  //     .subscribe(
-  //       res => (this.setPagemodel(res), this.setSortModel(orderBy, sortDirection))
-  //     );
+  fetchCustomers(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'){
+    this.service.getCustomers(page, pageSize, searchString, orderBy, sortDirection).pipe(
+      tap(res => this.dataSource = Object.assign([], res.body as  unknown as MatTableDataSource<Customer[]>)))
+      .subscribe(
+        res => (this.setPagemodel(res), this.setSortModel(orderBy, sortDirection))
+      );
   }
 
 }

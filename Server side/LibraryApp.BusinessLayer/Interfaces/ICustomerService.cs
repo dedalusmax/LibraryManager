@@ -12,8 +12,9 @@ namespace LibraryApp.BusinessLayer.Interfaces
 	{
 		Task<PagedList<Customer>> GetAll(Parameters customerParameters, CancellationToken cancellationToken);
 		Task<Customer> Get(Guid id, CancellationToken cancellationToken);
+		Task<Customer> GetByCardNumber(String cardNumber, CancellationToken cancellationToken);
 		Task<Customer> Create(Customer customer, CancellationToken cancellationToken);
 		Task<Customer> Update(Customer customer, CancellationToken cancellationToken);
-		Task<Guid> Delete(Guid id, CancellationToken cancellationToken);
+		Task<Guid> Delete(Guid lenderCardNumber, CancellationToken cancellationToken);
 	}
 }

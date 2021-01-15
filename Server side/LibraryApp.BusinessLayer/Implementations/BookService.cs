@@ -7,6 +7,7 @@ using LibraryApp.DomainLayer.Enums;
 using LibraryApp.DomainLayer.Helpers;
 using LibraryApp.PersistanceLayer.Interfaces;
 using LinqKit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -92,6 +93,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 		public async Task<PagedList<Book>> GetAll(Parameters bookParameters, CancellationToken cancellationToken)
 		{
 			var books = await _repository.GetAll(
+				include: source => source.Include(x => x.Lender),
 				filter: GetFilter(bookParameters.SearchString),
 				orderBy: GetSort(bookParameters.OrderBy, bookParameters.SortDirection),
 				cancellationToken: cancellationToken);
