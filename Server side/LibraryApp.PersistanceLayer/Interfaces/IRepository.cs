@@ -4,13 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace LibraryApp.PersistanceLayer.Interfaces
 {
-    public interface IRepository<TEntity> where TEntity : BaseEntity
+	public interface IRepository<TEntity> where TEntity : BaseEntity
     {
         /// <summary>
         /// Gets all entities

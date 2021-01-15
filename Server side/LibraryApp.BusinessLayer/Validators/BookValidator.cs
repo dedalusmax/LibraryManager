@@ -1,8 +1,6 @@
 ﻿using FluentValidation;
 using LibraryApp.DomainLayer.Entities;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LibraryApp.BusinessLayer.Validators
 {
