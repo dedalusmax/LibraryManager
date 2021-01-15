@@ -3,13 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace LibraryApp.DomainLayer
 {
-    public class ApplicationDbContext : DbContext
+	public class ApplicationDbContext : DbContext
     {
         public DbSet<Book> Books { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)

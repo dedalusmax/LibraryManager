@@ -1,10 +1,8 @@
 ﻿using LibraryApp.BusinessLayer.Interfaces;
 using LibraryApp.DomainLayer.Entities;
-using LibraryApp.PersistanceLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 

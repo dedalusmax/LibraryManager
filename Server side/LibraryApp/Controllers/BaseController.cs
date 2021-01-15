@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.Controllers
 {
-    [ApiController]
+	[ApiController]
 	[Route("[controller]/[action]")]
 	public abstract class BaseController : ControllerBase
     {
