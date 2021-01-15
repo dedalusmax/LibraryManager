@@ -78,6 +78,7 @@ namespace LibraryApp.BusinessLayer.Implementations
 		{
 
 			var book = await _repository.Get(
+				include: source => source.Include(x => x.Lender),
 				filter: dbBook => dbBook.Id == id,
 				cancellationToken: cancellationToken);
 

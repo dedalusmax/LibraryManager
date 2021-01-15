@@ -11,11 +11,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { JwtModule } from '@auth0/angular-jwt';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -35,6 +35,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { HomeComponent } from './home/home.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
+import { CustomerLendsListComponent } from './customer-lends-list/customer-lends-list.component';
+import { LendFormComponent } from './lend-form/lend-form.component';
 
 export function tokenGetter() {
   return localStorage.getItem('jwt');
@@ -53,7 +55,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavBarComponent,
     CustomerListComponent,
     HomeComponent,
-    CustomerFormComponent
+    CustomerFormComponent,
+    CustomerLendsListComponent,
+    LendFormComponent
   ],
   imports: [
     BrowserAnimationsModule,

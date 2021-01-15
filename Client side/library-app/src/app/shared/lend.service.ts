@@ -10,12 +10,12 @@ export class LendService {
 
   constructor(private _http: HttpClient) { }
 
-  lendBook(id: string) {
-    return this._http.get(`${this.url}/Lend/${id}`);
+  lendBook(id: string, cardNumber: string) {
+    return this._http.get(`${this.url}/Lend/${id}?lenderCardNumber=${cardNumber}`);
   }
 
-  returnBook(id: string) {
-    return this._http.get(`${this.url}/Return/${id}`);
+  returnBook(id: string, cardNumber: string) {
+    return this._http.get(`${this.url}/Return/${id}?lenderCardNumber=${cardNumber}`);
   }
 
   

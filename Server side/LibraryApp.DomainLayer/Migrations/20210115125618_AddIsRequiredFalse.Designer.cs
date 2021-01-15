@@ -4,14 +4,16 @@ using LibraryApp.DomainLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LibraryApp.DomainLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210115125618_AddIsRequiredFalse")]
+    partial class AddIsRequiredFalse
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +36,7 @@ namespace LibraryApp.DomainLayer.Migrations
                     b.Property<bool>("IsLended")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("LenderId")
+                    b.Property<Guid?>("LenderId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Publisher")
@@ -56,7 +58,6 @@ namespace LibraryApp.DomainLayer.Migrations
                             Author = "Mario Rozic",
                             DateOfPublication = new DateTime(1982, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsLended = false,
-                            LenderId = new Guid("00000000-0000-0000-0000-000000000000"),
                             Publisher = "Skolska knjiga",
                             Title = "Uspavanka za Radmilu M"
                         });

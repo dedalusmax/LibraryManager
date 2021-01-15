@@ -12,5 +12,6 @@ namespace LibraryApp.DomainLayer.Entities
 		public DateTime DateOfPublication { get; set; }
 		public bool IsLended { get; set; }
 		public Customer? Lender { get; set; }
+		public Guid? LenderId { get; set; }
 	}
 }

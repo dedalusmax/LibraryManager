@@ -50,10 +50,13 @@ namespace LibraryApp.BusinessLayer.Implementations
 			var book = await _bookService.Get(id, cancellationToken);
 			var lender = await _customerService.GetByCardNumber(lenderCardNumber, cancellationToken);
 
-			//var bookToRemove = lender.LendedBooks.Single(b => b.Id == id);
-			//lender.LendedBooks.Remove(bookToRemove);
+			
+			var bookToRemove = lender.LendedBooks.Single(b => b.Id == id);
+			lender.LendedBooks.Remove(bookToRemove);
+			
 
 			book.IsLended = false;
+			book.LenderId = null;
 			book.Lender = null;
 
 			await _bookService.Update(book, cancellationToken);

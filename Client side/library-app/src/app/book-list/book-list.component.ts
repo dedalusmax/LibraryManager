@@ -16,6 +16,8 @@ import { Route } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 import { SortingModel } from '../pagination-sorting/sorting.model';
 import { Paging } from '../pagination-sorting/paging.model';
+import { LendFormComponent } from '../lend-form/lend-form.component';
+import { CustomerService } from '../shared/customer.service';
 
 
 @Component({
@@ -43,7 +45,7 @@ import { Paging } from '../pagination-sorting/paging.model';
     trigger('fadeIn', [
       
       transition('void => *', [
-        animate('1500ms ease-in', keyframes([
+        animate('700ms ease-in', keyframes([
           style({ opacity: 0, offset: 0}),
           style({ opacity: 1, offset: 1})
         ]))
@@ -68,8 +70,11 @@ export class BookListComponent implements OnInit {
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
-  constructor(private bookService: BookService, public dialog: MatDialog,
-              private lendService: LendService, private toastr: ToastrService) { }
+  constructor(private bookService: BookService,
+              public dialog: MatDialog,
+              private lendService: LendService,
+              private customerService: CustomerService,
+              private toastr: ToastrService) { }
 
   ngOnInit() {
     this.lang = localStorage.getItem('lang');
@@ -156,28 +161,71 @@ export class BookListComponent implements OnInit {
   }
 
   onLend(id: string) {
-    this.lendService.lendBook(id).subscribe((book:Book) => {
 
-      const index = this.dataSource.findIndex(b => b.id == book.id);
+    let dialogRef = this.dialog.open(LendFormComponent, {data: id});
 
-        // update
-        this.dataSource[index] = book;
+    dialogRef.afterClosed().pipe(take(1))
+    .subscribe((cardNumber: string) => {
 
-        this.table.renderRows();
-        this.toastr.info('Book successfully lended', `${book.title}`);
+      if(!cardNumber) return;
+
+      this.lendService.lendBook(id, cardNumber).subscribe((book:Book) => {
+
+        const index = this.dataSource.findIndex(b => b.id == book.id);
+  
+          // update
+          this.dataSource[index] = book;
+  
+          this.table.renderRows();
+          this.toastr.info('Book successfully lended', `${book.title}`);
+        
+      });
       
+      this.setDelete(false);
     });
+    
+    
   }
 
   onReturn(id: string) {
-    this.lendService.returnBook(id).subscribe((book:Book) => {
-      const index = this.dataSource.findIndex(b => b.id == book.id);
 
-        // update
-        this.dataSource[index] = book;
-        this.table.renderRows();
-        this.toastr.info('Book successfully returned', `${book.title}`);
-    });
+     this.bookService.getBook(id).pipe(take(1))
+     .subscribe((book: Book) => {
+          console.log(book);
+          console.log(book.lender.cardNumber);
+          const cardNumber = book.lender.cardNumber;
+          
+          this.lendService.returnBook(id, cardNumber).subscribe((book:Book) => {
+
+            const index = this.dataSource.findIndex(b => b.id == book.id);
+      
+              // update
+              this.dataSource[index] = book;
+
+              
+      
+              this.table.renderRows();
+              this.toastr.info('Book successfully returned', `${book.title}`);
+            
+          });
+          }
+          );
+
+
+      // this.lendService.returnBook(id, cardNumber).subscribe((book:Book) => {
+
+      //   const index = this.dataSource.findIndex(b => b.id == book.id);
+  
+      //     // update
+      //     this.dataSource[index] = book;
+  
+      //     this.table.renderRows();
+      //     this.toastr.info('Book successfully returned', `${book.title}`);
+        
+      // });
+      
+      // this.setDelete(false);
+   
   }
 
   onPageChange(page: PageEvent) {

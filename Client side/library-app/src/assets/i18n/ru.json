@@ -1,29 +1,60 @@
 {
-    "tableHeader": {
-        "title": "Название",
-        "author": "Автор",
-        "publisher": "Издатель",
-        "dateOfPublication": "Дата публикации",
-        "status": "Статус",
-        "actions": "Команды"
+    "nav": {
+        "books": "Книги",
+        "customers": "Клиенты"
     },
-    "status": {
-        "available": "Доступна",
-        "lended": "Одолженна"
+    "books": {
+        "tableHeader": {
+            "title": "Название",
+            "author": "Автор",
+            "publisher": "Издатель",
+            "dateOfPublication": "Дата публикации",
+            "status": "Статус",
+            "actions": "Команды"
+        },
+        "status": {
+            "available": "Доступна",
+            "lended": "Одолженна"
+        },
+        "addButton": "Добавить книгу",
+        "search": "Поиск",
+        "lend": "Одалживать",
+        "return": "Вернуть",
+        "form": {
+            "addHeader": "Добавить книгу",
+            "updateHeader": "Обновить книгу",
+            "title": "Название",
+            "author": "Автор",
+            "publisher": "Издатель",
+            "dateOfPublication": "Дата публикации",
+            "addButton": "Добавить",
+            "updateButton": "Обновить"
+        }
     },
-    "addButton": "Добавить книгу",
-    "search": "Поиск",
-    "lend": "Одалживать",
-    "return": "Вернуть",
-    "form": {
-        "addHeader": "Добавить книгу",
-        "updateHeader": "Обновить книгу",
-        "title": "Название",
-        "author": "Автор",
-        "publisher": "Издатель",
-        "dateOfPublication": "Дата публикации",
-        "addButton": "Добавить",
-        "updateButton": "Обновить"
+    "customers": {
+        "tableHeader": {
+            "firstName": "Имя",
+            "lastName": "Фамилия",
+            "email": "Эл. адрес",
+            "cardNumber": "Номер карты",
+            "lendedBooks": "Разданные книги",
+            "actions": "Команды"
+        },
+        "addButton": "Добавить книгу",
+        "seeButton": "Смотреть книги",
+        "search": "Поиск",
+        "lend": "Одалживать",
+        "return": "Вернуть",
+        "form": {
+            "addHeader": "Добавить клиента",
+            "updateHeader": "Обновить клиента",
+            "firstName": "Имя",
+            "lastName": "Фамилия",
+            "email": "Эл. адрес",
+            "cardNumber": "Номер карты",
+            "addButton": "Добавить",
+            "updateButton": "Обновить"
+        }
     }
     
 }
