@@ -1,7 +1,7 @@
  
   
 table {
-    width:80%
+    width:100%
 }
 
 th {
@@ -9,6 +9,25 @@ th {
     color: black;
     font-size: 15px;
     width: 200px;
+}
+
+h2 {
+    color: white;
+    background: linear-gradient(45deg, #4158d0, #c850c0);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 

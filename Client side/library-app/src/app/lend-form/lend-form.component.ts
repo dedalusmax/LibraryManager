@@ -29,12 +29,9 @@ export class LendFormComponent implements OnInit {
 
   }
 
-  
-
   onSubmit(form: FormGroup) {
 
     this.onClose(form.value.cardNumber);
-      
     form.reset();
 
   }
@@ -43,6 +40,4 @@ export class LendFormComponent implements OnInit {
     // if(!form.valid) return;
     this.dialogRef.close(cardNumber);
   }
-
-
 }

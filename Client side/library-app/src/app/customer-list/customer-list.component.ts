@@ -11,7 +11,6 @@ import { CustomerFormComponent } from '../customer-form/customer-form.component'
 import { CustomerLendsListComponent } from '../customer-lends-list/customer-lends-list.component';
 import { Paging } from '../pagination-sorting/paging.model';
 import { SortingModel } from '../pagination-sorting/sorting.model';
-import { Book } from '../shared/book.model';
 import { Customer } from '../shared/customer.model';
 import { CustomerService } from '../shared/customer.service';
 import { LendService } from '../shared/lend.service';
@@ -75,18 +74,18 @@ export class CustomerListComponent implements OnInit {
 
   ngOnInit() {
     this.lang = localStorage.getItem('lang');
-    this.isDeleting = false;
+    this.isDeleting = true;
     this.fetchCustomers(this.paging.CurrentPage, this.paging.PageSize);  
     this.handleFilter();
   }
 
   onSeeLends(customer: Customer){
-    this.dialog.open(CustomerLendsListComponent, {data: customer});
+    this.dialog.open(CustomerLendsListComponent, {panelClass: 'app-full-bleed-dialog', data: customer});
   }
 
   onCreate() {
-    this.setDelete(true);
-    let dialogRef = this.dialog.open(CustomerFormComponent);
+    
+    let dialogRef = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog' });
     
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((customer: Customer) => {
@@ -111,7 +110,7 @@ export class CustomerListComponent implements OnInit {
 
   onUpdate(customer: Customer) {
 
-    let dialogRef = this.dialog.open(CustomerFormComponent, {data: customer});
+    let dialogRef = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog', data: customer});
 
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((editedCustomer: Customer) => {
@@ -138,7 +137,7 @@ export class CustomerListComponent implements OnInit {
   }
 
   onDelete(id: string) {
-    this.setDelete(true);
+    
     const index = this.dataSource.findIndex( customer => customer.id == id);
     const firstName = this.dataSource[index].firstName;
     const lastName = this.dataSource[index].lastName;
@@ -155,44 +154,18 @@ export class CustomerListComponent implements OnInit {
       // else if(this.lang == 'hr') {
       //   this.toastr.success('Knjiga uspješno obrisana', `${title}`);
       // }
-      this.setDelete(false);
+      
     });
 
   }
 
-  onLend(id: string) {
-    // this.lendService.lendBook(id).subscribe((book:Book) => {
-
-    //   const index = this.dataSource.findIndex(b => b.id == book.id);
-
-    //     // update
-    //     this.dataSource[index] = book;
-
-    //     this.table.renderRows();
-    //     this.toastr.info('Book successfully lended', `${book.title}`);
-      
-    // });
-  }
-
-  onReturn(id: string) {
-    // this.lendService.returnBook(id).subscribe((book:Book) => {
-    //   const index = this.dataSource.findIndex(b => b.id == book.id);
-
-    //     // update
-    //     this.dataSource[index] = book;
-    //     this.table.renderRows();
-    //     this.toastr.info('Book successfully returned', `${book.title}`);
-    // });
-  }
-
   onPageChange(page: PageEvent) {
+    this.setDelete(false);
     this.fetchCustomers(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
   onSortChange(event: Sort) {
-    console.log(event);
-    console.log(this.paging.CurrentPage);
-    console.log(this.paging.PageSize);
+    this.setDelete(false);
     const split = event.active.split('.');
     const orderBy = split[split.length - 1]; // only last property
     const sortDirection = event.direction as  'asc' | 'desc';
@@ -226,6 +199,7 @@ export class CustomerListComponent implements OnInit {
   }
 
   handleFilter() {
+    this.setDelete(false);
     this.filterSubscription = this.filterSubject
     .pipe(debounceTime(500))
     .subscribe(searchKey => {

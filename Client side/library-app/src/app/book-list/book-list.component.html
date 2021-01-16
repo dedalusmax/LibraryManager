@@ -50,8 +50,10 @@
           <div *ngIf="element.isLended; then thenBlock else elseBlock" ></div>
             <ng-template #thenBlock><button mat-raised-button color="warn" class="lend-return-button red" (click)="onReturn(element.id)">
               {{ 'books.return' | translate}}
+              <mat-icon class="lend-return-icon">undo</mat-icon>
             </button></ng-template>
             <ng-template #elseBlock><button mat-raised-button color="accent" class="lend-return-button yellow" (click)="onLend(element.id)">
+              <mat-icon class="lend-return-icon">pan_tool</mat-icon>
               {{ 'books.lend' | translate}}
             </button></ng-template>
           
@@ -60,7 +62,7 @@
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr  [@deleteCreateSlide] [@.disabled]="!isDeleting" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr @deleteCreateSlide [@.disabled]="!isDeleting" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     
 </table>
 

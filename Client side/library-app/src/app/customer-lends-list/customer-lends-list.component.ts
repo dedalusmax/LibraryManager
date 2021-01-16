@@ -16,8 +16,6 @@ export class CustomerLendsListComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log(this.data);
-
     if(this.data) {
       this.dataSource = this.data.lendedBooks;
     }

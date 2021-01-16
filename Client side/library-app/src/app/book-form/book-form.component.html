@@ -1,32 +1,32 @@
 <mat-card class="example-card">
   <mat-card-header class="header">
-    <mat-card-title>{{ (data ? 'form.updateHeader' : 'form.addHeader') | translate}}</mat-card-title>
+    <mat-card-title>{{ (data ? 'books.form.updateHeader' : 'books.form.addHeader') | translate}}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <form class="example-form" [formGroup]="bookForm" autocomplete="off" (submit)="onSubmit(bookForm)">
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>{{'form.title' | translate}}</mat-label>
-        <input matInput placeholder="{{'form.title' | translate}}" formControlName="title" #elementTitle required>
+        <mat-label>{{'books.form.title' | translate}}</mat-label>
+        <input matInput placeholder="{{'books.form.title' | translate}}" formControlName="title" #elementTitle required>
         <mat-error *ngIf="bookForm.controls.title.touched && bookForm.controls.title.invalid" >{{getErrorMessage(elementTitle)}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>{{'form.author' | translate}}</mat-label>
-        <input matInput placeholder="{{'form.author' | translate}}" formControlName="author" #elementAuthor>
+        <mat-label>{{'books.form.author' | translate}}</mat-label>
+        <input matInput placeholder="{{'books.form.author' | translate}}" formControlName="author" #elementAuthor>
         <mat-error *ngIf="bookForm.controls.author.touched && bookForm.controls.author.invalid">{{getErrorMessage(elementAuthor)}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>{{'form.publisher' | translate}}</mat-label>
-        <input matInput placeholder="{{'form.publisher' | translate}}" formControlName="publisher" #elementPublisher>
+        <mat-label>{{'books.form.publisher' | translate}}</mat-label>
+        <input matInput placeholder="{{'books.form.publisher' | translate}}" formControlName="publisher" #elementPublisher>
         <mat-error *ngIf="bookForm.controls.publisher.touched && bookForm.controls.publisher.invalid">{{getErrorMessage(elementPublisher)}}</mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>{{'form.dateOfPublication' | translate}}</mat-label>
+        <mat-label>{{'books.form.dateOfPublication' | translate}}</mat-label>
         <input matInput [matDatepicker]="dp" formControlName="dateOfPublication" #elementDateOfPublication>
         <mat-error *ngIf="bookForm.controls.dateOfPublication.touched && bookForm.controls.dateOfPublication.invalid">{{getErrorMessage(elementDateOfPublication)}}</mat-error>
         <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
         <mat-datepicker #dp></mat-datepicker>
       </mat-form-field>
-      <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">{{ ( data ? 'form.updateButton' : 'form.addButton') | translate}}</button>
+      <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!bookForm.valid">{{ ( data ? 'books.form.updateButton' : 'books.form.addButton') | translate}}</button>
   </form>
   </mat-card-content>
 </mat-card>

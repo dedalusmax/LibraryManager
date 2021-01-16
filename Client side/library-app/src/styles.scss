@@ -3,4 +3,9 @@
 
 html, body { height: 100%; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
-
+.app-full-bleed-dialog .mat-dialog-container {
+    margin: 0;
+    padding: 0;
+    border: 5px solid #ffd740;
+    border-radius: 20px;
+  }

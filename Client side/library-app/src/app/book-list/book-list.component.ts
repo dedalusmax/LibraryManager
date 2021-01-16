@@ -1,23 +1,21 @@
-import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { BookService } from '../shared/book.service';
-import { tap, take, debounceTime } from 'rxjs/operators';
-import { Book } from '../shared/book.model';
-import { MatTableDataSource, MatTable } from '@angular/material/table';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
-import { BookFormComponent } from '../book-form/book-form.component';
+import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { PageEvent } from '@angular/material/paginator';
-
 import { Sort } from '@angular/material/sort';
-import { Subject, Subscription } from 'rxjs';
-import { LendService } from '../shared/lend.service';
-import { keyframes, trigger, transition, animate, style } from '@angular/animations';
+import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { ToastrService } from 'ngx-toastr';
-import { Route } from '@angular/compiler/src/core';
-import { Router } from '@angular/router';
-import { SortingModel } from '../pagination-sorting/sorting.model';
-import { Paging } from '../pagination-sorting/paging.model';
+import { Subject, Subscription } from 'rxjs';
+import { debounceTime, take, tap } from 'rxjs/operators';
+import { BookFormComponent } from '../book-form/book-form.component';
 import { LendFormComponent } from '../lend-form/lend-form.component';
+import { Paging } from '../pagination-sorting/paging.model';
+import { SortingModel } from '../pagination-sorting/sorting.model';
+import { Book } from '../shared/book.model';
+import { BookService } from '../shared/book.service';
 import { CustomerService } from '../shared/customer.service';
+import { LendService } from '../shared/lend.service';
+
 
 
 @Component({
@@ -83,12 +81,11 @@ export class BookListComponent implements OnInit {
     this.handleFilter();
   }
 
-  
-
   onCreate() {
-    this.setDelete(true);
-    let dialogRef = this.dialog.open(BookFormComponent);
-    
+
+    this.isDeleting = true;
+    let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog'});
+
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((book: Book) => {
 
@@ -96,7 +93,7 @@ export class BookListComponent implements OnInit {
 
         this.dataSource.push(book);
         this.table.renderRows();
-
+        
         if(this.lang == 'en') {
           this.toastr.success('Book successfully added', `${book.title}`);
         }
@@ -106,13 +103,12 @@ export class BookListComponent implements OnInit {
         else if(this.lang == 'hr') {
           this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
         }
-        this.setDelete(false);
       });
   }
 
   onUpdate(book: Book) {
 
-    let dialogRef = this.dialog.open(BookFormComponent, {data: book});
+    let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog', data: book});
 
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((editedBook: Book) => {
@@ -139,7 +135,8 @@ export class BookListComponent implements OnInit {
   }
 
   onDelete(id: string) {
-    this.setDelete(true);
+    
+    this.isDeleting = true;
     const index = this.dataSource.findIndex( book => book.id == id);
     const title = this.dataSource[index].title;
 
@@ -155,14 +152,12 @@ export class BookListComponent implements OnInit {
       else if(this.lang == 'hr') {
         this.toastr.success('Knjiga uspješno obrisana', `${title}`);
       }
-      this.setDelete(false);
     });
-
   }
 
   onLend(id: string) {
 
-    let dialogRef = this.dialog.open(LendFormComponent, {data: id});
+    let dialogRef = this.dialog.open(LendFormComponent, {panelClass: 'app-full-bleed-dialog', data: id});
 
     dialogRef.afterClosed().pipe(take(1))
     .subscribe((cardNumber: string) => {
@@ -180,11 +175,7 @@ export class BookListComponent implements OnInit {
           this.toastr.info('Book successfully lended', `${book.title}`);
         
       });
-      
-      this.setDelete(false);
     });
-    
-    
   }
 
   onReturn(id: string) {
@@ -202,8 +193,6 @@ export class BookListComponent implements OnInit {
               // update
               this.dataSource[index] = book;
 
-              
-      
               this.table.renderRows();
               this.toastr.info('Book successfully returned', `${book.title}`);
             
@@ -229,19 +218,16 @@ export class BookListComponent implements OnInit {
   }
 
   onPageChange(page: PageEvent) {
+    this.setDelete(false);
     this.fetchBooks(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
   onSortChange(event: Sort) {
-    console.log(event);
-    console.log(this.paging.CurrentPage);
-    console.log(this.paging.PageSize);
+    this.setDelete(false);
     const split = event.active.split('.');
     const orderBy = split[split.length - 1]; // only last property
     const sortDirection = event.direction as  'asc' | 'desc';
-
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
-    console.log(this.dataSource);
   }
 
   setDelete(setter) {
@@ -269,6 +255,7 @@ export class BookListComponent implements OnInit {
   }
 
   handleFilter() {
+    this.setDelete(false);
     this.filterSubscription = this.filterSubject
     .pipe(debounceTime(500))
     .subscribe(searchKey => {

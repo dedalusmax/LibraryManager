@@ -29,6 +29,11 @@
             "dateOfPublication": "Дата публикации",
             "addButton": "Добавить",
             "updateButton": "Обновить"
+        },
+        "lend-form": {
+            "header": "Одолжить книгу",
+            "cardNumber": "Номер карты",
+            "lend": "Одалживать"
         }
     },
     "customers": {

@@ -29,7 +29,13 @@
             "dateOfPublication": "Datum izdavanja",
             "addButton": "DODAJ",
             "updateButton": "OBNOVI"
+        },
+        "lend-form": {
+            "header": "Posudi knjigu",
+            "cardNumber": "Broj kartice",
+            "lend": "Posudi"
         }
+
     },
     "customers": {
         "tableHeader": {
@@ -42,9 +48,11 @@
         },
         "addButton": "Dodaj klijenta",
         "seeButton": "Pogledaj knjige",
-        "search": "Search",
+        "search": "Traži",
         "form": {
-            "firstName": "First Name",
+            "addHeader": "Dodaj klijenta",
+            "updateHeader": "Obnovi klijenta",
+            "firstName": "Ime",
             "lastName": "Prezime",
             "email": "Email",
             "cardNumber": "Broj kartice",

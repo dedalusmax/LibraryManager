@@ -29,6 +29,11 @@
             "dateOfPublication": "Date of publication",
             "addButton": "ADD",
             "updateButton": "UPDATE"
+        },
+        "lend-form": {
+            "header": "Lend a book",
+            "cardNumber": "Card number",
+            "lend": "Lend"
         }
     },
     "customers": {
@@ -44,6 +49,8 @@
         "seeButton": "See books",
         "search": "Search",
         "form": {
+            "addHeader": "Add customer",
+            "updateHeader": "Update customer",
             "firstName": "First Name",
             "lastName": "Last Name",
             "email": "Email",
