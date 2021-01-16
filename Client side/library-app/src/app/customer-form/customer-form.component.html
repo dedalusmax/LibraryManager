@@ -1,30 +1,30 @@
 <mat-card class="example-card">
     <mat-card-header class="header">
-      <mat-card-title>{{data ? 'Update' : 'Add'}}</mat-card-title>
+      <mat-card-title>{{( data ? 'customers.form.updateHeader' : 'customers.form.addHeader' ) | translate }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <form class="example-form" [formGroup]="customerForm" autocomplete="off" (submit)="onSubmit(customerForm)">
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>First Name</mat-label>
-          <input matInput placeholder="First Name" formControlName="firstName" #elementFirstName required>
+          <mat-label>{{ 'customers.form.firstName' | translate }}</mat-label>
+          <input matInput placeholder="{{ 'customers.form.firstName' | translate }}" formControlName="firstName" #elementFirstName required>
           <mat-error *ngIf="customerForm.controls.firstName.touched && customerForm.controls.firstName.invalid" >{{getErrorMessage(elementFirstName)}}</mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Last Name</mat-label>
-          <input matInput placeholder="Last Name" formControlName="lastName" #elementLastName>
+          <mat-label>{{ 'customers.form.lastName' | translate }}</mat-label>
+          <input matInput placeholder="{{ 'customers.form.lastName' | translate }}" formControlName="lastName" #elementLastName>
           <mat-error *ngIf="customerForm.controls.lastName.touched && customerForm.controls.lastName.invalid">{{getErrorMessage(elementLastName)}}</mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Email" formControlName="email" #elementEmail>
+          <mat-label>{{ 'customers.form.email' | translate }}</mat-label>
+          <input matInput placeholder="{{ 'customers.form.email' | translate }}" formControlName="email" #elementEmail>
           <mat-error *ngIf="customerForm.controls.email.touched && customerForm.controls.email.invalid">{{getErrorMessage(elementEmail)}}</mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Card Number</mat-label>
-          <input matInput placeholder="Card Number" formControlName="cardNumber" #elementCardNumber>
+          <mat-label>{{ 'customers.form.cardNumber' | translate }}</mat-label>
+          <input matInput placeholder="{{ 'customers.form.cardNumber' | translate }}" formControlName="cardNumber" #elementCardNumber>
           <mat-error *ngIf="customerForm.controls.cardNumber.touched && customerForm.controls.cardNumber.invalid">{{getErrorMessage(elementCardNumber)}}</mat-error>
         </mat-form-field>
-        <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!customerForm.valid">{{ data ? 'Update' : 'Add'}}</button>
+        <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!customerForm.valid">{{ (data ? 'customers.form.updateButton' : 'customers.form.addButton') | translate }}</button>
       </form>
     </mat-card-content>
 </mat-card>

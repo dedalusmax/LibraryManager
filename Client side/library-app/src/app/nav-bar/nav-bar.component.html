@@ -7,10 +7,10 @@
         <input type="radio" name="tab" id="books" checked routerLink="/book">
         <input type="radio" name="tab" id="customers"  routerLink="/customer">
         <label for="books" class="books">
-            <a  ><i class="fas fa-book"></i>Books</a>
+            <a  ><i class="fas fa-book"></i>{{ 'nav.books' | translate }}</a>
         </label>
         <label for="customers" class="customers" >
-            <a ><i class="far fa-user"></i>Customers</a>
+            <a ><i class="far fa-user"></i>{{ 'nav.customers' | translate }}</a>
         </label>
         <div class="tab"></div>
     </nav>

@@ -1,15 +1,15 @@
 <mat-card class="example-card">
     <mat-card-header class="header">
-      <mat-card-title>Lend a book</mat-card-title>
+      <mat-card-title>{{ 'books.lend-form.header' | translate }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <form class="example-form" [formGroup]="lendForm" autocomplete="off" (submit)="onSubmit(lendForm)">
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Card NUmber</mat-label>
-          <input matInput placeholder="Card Number" formControlName="cardNumber" #elementCardNumber required>
+          <mat-label>{{ 'books.lend-form.cardNumber' | translate }}</mat-label>
+          <input matInput placeholder="{{ 'books.lend-form.cardNumber' | translate }}" formControlName="cardNumber" #elementCardNumber required>
           <mat-error *ngIf="lendForm.controls.cardNumber.touched && lendForm.controls.cardNumber.invalid" >{{getErrorMessage(elementCardNumber)}}</mat-error>
         </mat-form-field>
-        <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!lendForm.valid">Lend</button>
+        <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!lendForm.valid">{{ 'books.lend-form.lend' | translate }}</button>
     </form>
     </mat-card-content>
   </mat-card>

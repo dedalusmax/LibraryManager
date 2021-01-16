@@ -46,10 +46,7 @@ export class CustomerFormComponent implements OnInit {
     
               console.log(this.customerForm);
     }
-
   }
-
-  
 
   onSubmit(form: FormGroup) {
 

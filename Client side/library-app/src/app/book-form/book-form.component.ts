@@ -33,8 +33,6 @@ export class BookFormComponent implements OnInit {
       dateOfPublication: ['', Validators.required]
     });
 
-    console.log(this.data);
-
     if(this.data) {
       this.bookForm.addControl('id', new FormControl(''));
       this.bookForm.setValue({
@@ -44,10 +42,7 @@ export class BookFormComponent implements OnInit {
                 publisher: this.data.publisher,
                 dateOfPublication: this.data.dateOfPublication,
               });
-    
-              console.log(this.bookForm);
     }
-
   }
 
   
@@ -64,7 +59,6 @@ export class BookFormComponent implements OnInit {
     }
 
     form.reset();
-
   }
 
   onClose(book: Book) {
@@ -165,7 +159,6 @@ export class BookFormComponent implements OnInit {
           break;
       }
       break;
-    
     }
   }
 }
