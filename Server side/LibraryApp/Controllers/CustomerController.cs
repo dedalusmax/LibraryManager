@@ -47,6 +47,13 @@ namespace LibraryApp.Controllers
 			return Ok(await _customerService.Get(id, cancellationToken));
 		}
 
+		[HttpGet("{cardNumber}")]
+		[AllowAnonymous]
+		public async Task<IActionResult> GetByCardNumber(string cardNumber, CancellationToken cancellationToken)
+		{
+			return Ok(await _customerService.GetByCardNumber(cardNumber, cancellationToken));
+		}
+
 		[HttpPost]
 		[AllowAnonymous]
 		public async Task<IActionResult> Create([FromBody] Customer customer, CancellationToken cancellationToken)

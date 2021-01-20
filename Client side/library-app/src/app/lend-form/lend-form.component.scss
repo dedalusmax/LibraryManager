@@ -1,21 +1,48 @@
 .example-card {
-    max-width: 350px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-  
+
 .header {
     font-family: 'Sigmar One', cursive;
     color:  #673ab7;
     margin-bottom: 5%;
     border-radius: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
+.num-validation {
+    height: 70px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    margin-bottom: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:x-large;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
 
+.non-existing {
+    background-color: red;
+}
+
+.pending {
+    background-color: yellow;
+    color: black
+}
+
+.existing {
+    background-color: green;
+}
 
 .mat-card-title {
     margin-top: 10%;
@@ -24,11 +51,17 @@
 
 button {
     width: 300px;
-    margin-left: 6%;
+    
 }
 
 .example-full-width {
     width: 300px;
-    margin-left: 6%;
-    margin-right: 5%;
+    
+}
+
+.example-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

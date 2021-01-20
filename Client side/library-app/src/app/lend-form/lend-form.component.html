@@ -7,8 +7,22 @@
         <mat-form-field class="example-full-width" appearance="outline">
           <mat-label>{{ 'books.lend-form.cardNumber' | translate }}</mat-label>
           <input matInput placeholder="{{ 'books.lend-form.cardNumber' | translate }}" formControlName="cardNumber" #elementCardNumber required>
-          <mat-error *ngIf="lendForm.controls.cardNumber.touched && lendForm.controls.cardNumber.invalid" >{{getErrorMessage(elementCardNumber)}}</mat-error>
+          <mat-error *ngIf="lendForm.controls.cardNumber.touched && lendForm.controls.cardNumber.invalid && lendForm.controls.cardNumber.errors.numberNonExisting">
+           Card number does not exists
+          </mat-error>
+          <mat-error *ngIf="lendForm.controls.cardNumber.touched && lendForm.controls.cardNumber.invalid && lendForm.controls.cardNumber.errors.required">
+            {{getErrorMessage(elementCardNumber)}}
+          </mat-error>
         </mat-form-field>
+        <div *ngIf="lendForm.controls.cardNumber.dirty && lendForm.controls.cardNumber.invalid && lendForm.controls.cardNumber.errors.numberNonExisting" class="num-validation non-existing">
+          <strong>{{ lendForm.controls.cardNumber.value }}</strong>  does not exist
+        </div>
+        <div *ngIf="lendForm.controls.cardNumber.dirty && lendForm.controls.cardNumber.pending" class="num-validation pending">
+          Hold tight... Checking availability of <strong>{{ lendForm.controls.cardNumber.value }}</strong> 
+        </div>
+        <div *ngIf="lendForm.controls.cardNumber.valid" class="num-validation existing">
+           <strong>{{ lendForm.controls.cardNumber.value }}</strong> exists
+        </div>
         <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!lendForm.valid">{{ 'books.lend-form.lend' | translate }}</button>
     </form>
     </mat-card-content>

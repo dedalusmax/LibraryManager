@@ -23,9 +23,9 @@ namespace LibraryApp.PersistanceLayer
             });
 
             // Configure context for DI
-            services.AddTransient<ApplicationDbContext>();
+            services.AddScoped<ApplicationDbContext>();
 
-            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }
     }
 }

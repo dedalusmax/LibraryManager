@@ -22,8 +22,23 @@
         <mat-form-field class="example-full-width" appearance="outline">
           <mat-label>{{ 'customers.form.cardNumber' | translate }}</mat-label>
           <input matInput placeholder="{{ 'customers.form.cardNumber' | translate }}" formControlName="cardNumber" #elementCardNumber>
-          <mat-error *ngIf="customerForm.controls.cardNumber.touched && customerForm.controls.cardNumber.invalid">{{getErrorMessage(elementCardNumber)}}</mat-error>
+          <mat-error *ngIf="customerForm.controls.cardNumber.touched && customerForm.controls.cardNumber.invalid && customerForm.controls.cardNumber.errors.required">
+            {{getErrorMessage(elementCardNumber)}}
+          </mat-error>
+          <mat-error *ngIf="customerForm.controls.cardNumber.touched && customerForm.controls.cardNumber.invalid && customerForm.controls.cardNumber.errors.cardNumberTaken">
+            Card number already exists
+           </mat-error>
+           
         </mat-form-field>
+        <div *ngIf="customerForm.controls.cardNumber.dirty && customerForm.controls.cardNumber.invalid && customerForm.controls.cardNumber.errors.numberExisting" class="num-validation existing">
+          <strong>{{ customerForm.controls.cardNumber.value }}</strong>  already exists
+        </div>
+        <div *ngIf="customerForm.controls.cardNumber.dirty && customerForm.controls.cardNumber.pending" class="num-validation pending">
+          Hold tight... Checking availability of <strong>{{ customerForm.controls.cardNumber.value }}</strong> 
+        </div>
+        <div *ngIf="customerForm.controls.cardNumber.valid" class="num-validation available">
+           <strong>{{ customerForm.controls.cardNumber.value }}</strong> is available
+        </div>
         <button mat-raised-button mat-dialog-close color="primary" type="submit" [disabled]="!customerForm.valid">{{ (data ? 'customers.form.updateButton' : 'customers.form.addButton') | translate }}</button>
       </form>
     </mat-card-content>

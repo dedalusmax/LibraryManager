@@ -45,8 +45,6 @@ export class BookFormComponent implements OnInit {
     }
   }
 
-  
-
   onSubmit(form: FormGroup) {
 
     if(!this.data) {

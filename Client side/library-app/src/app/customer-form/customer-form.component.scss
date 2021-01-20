@@ -29,3 +29,32 @@ button {
     margin-left: 6%;
     margin-right: 5%;
 }
+
+.num-validation {
+    height: 70px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    margin-bottom: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:x-large;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+.available {
+    background-color: green;
+}
+
+.pending {
+    background-color: yellow;
+    color: black
+}
+
+.existing {
+    background-color: red;
+}
