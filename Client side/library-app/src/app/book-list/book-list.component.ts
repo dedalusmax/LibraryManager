@@ -13,7 +13,6 @@ import { Paging } from '../pagination-sorting/paging.model';
 import { SortingModel } from '../pagination-sorting/sorting.model';
 import { Book } from '../shared/book.model';
 import { BookService } from '../shared/book.service';
-import { CustomerService } from '../shared/customer.service';
 import { LendService } from '../shared/lend.service';
 
 
@@ -64,26 +63,25 @@ export class BookListComponent implements OnInit {
   filterSubject = new Subject();
   filterSubscription: Subscription;
 
-  isDeleting: boolean;
+  isDeletingCreating: boolean;
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
   constructor(private bookService: BookService,
               public dialog: MatDialog,
               private lendService: LendService,
-              private customerService: CustomerService,
               private toastr: ToastrService) { }
 
   ngOnInit() {
     this.lang = localStorage.getItem('lang');
-    this.isDeleting = false;
+    this.setDeleteCreate(false);
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize);
     this.handleFilter();
   }
 
   onCreate() {
 
-    this.isDeleting = true;
+    this.setDeleteCreate(true);
     let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog'});
 
     dialogRef.afterClosed().pipe(take(1))
@@ -136,7 +134,7 @@ export class BookListComponent implements OnInit {
 
   onDelete(id: string) {
     
-    this.isDeleting = true;
+    this.setDeleteCreate(true);
     const index = this.dataSource.findIndex( book => book.id == id);
     const title = this.dataSource[index].title;
 
@@ -197,41 +195,26 @@ export class BookListComponent implements OnInit {
               this.toastr.info('Book successfully returned', `${book.title}`);
             
           });
-          }
-          );
+        }
+      );
 
-
-      // this.lendService.returnBook(id, cardNumber).subscribe((book:Book) => {
-
-      //   const index = this.dataSource.findIndex(b => b.id == book.id);
-  
-      //     // update
-      //     this.dataSource[index] = book;
-  
-      //     this.table.renderRows();
-      //     this.toastr.info('Book successfully returned', `${book.title}`);
-        
-      // });
-      
-      // this.setDelete(false);
-   
   }
 
   onPageChange(page: PageEvent) {
-    this.setDelete(false);
+    this.setDeleteCreate(false);
     this.fetchBooks(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
   onSortChange(event: Sort) {
-    this.setDelete(false);
+    this.setDeleteCreate(false);
     const split = event.active.split('.');
     const orderBy = split[split.length - 1]; // only last property
     const sortDirection = event.direction as  'asc' | 'desc';
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
   }
 
-  setDelete(setter) {
-    this.isDeleting = setter;
+  setDeleteCreate(setter) {
+    this.isDeletingCreating = setter;
   }
 
   setSortModel(orderBy?, sortDirection?) {
@@ -255,7 +238,7 @@ export class BookListComponent implements OnInit {
   }
 
   handleFilter() {
-    this.setDelete(false);
+    this.setDeleteCreate(false);
     this.filterSubscription = this.filterSubject
     .pipe(debounceTime(500))
     .subscribe(searchKey => {

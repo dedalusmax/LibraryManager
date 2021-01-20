@@ -29,7 +29,11 @@ formData: Customer;
   }
 
   getCustomer(id: string) {
-    return this._http.get(`${this.url}/GetAll/${id}`);
+    return this._http.get(`${this.url}/Get/${id}`);
+  }
+
+  getCustomerByCrdNumber(cardNumber: string) {
+    return this._http.get(`${this.url}/GetByCardNumber/${cardNumber}`);
   }
   
   createCustomer(formData: Customer) {

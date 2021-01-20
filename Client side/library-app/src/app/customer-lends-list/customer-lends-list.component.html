@@ -1,4 +1,4 @@
-<h2>Lended books</h2>
+<div class="header">Lended books</div>
 <div class="table-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
@@ -26,4 +26,7 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       
   </table>
+  <div class="emptyTable" *ngIf="dataSource.length == 0">
+    No Lended Books
+  </div>
   </div>
