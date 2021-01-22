@@ -39,13 +39,10 @@ export class LendFormComponent implements OnInit {
 
     return timer(1500).pipe(
       switchMap( () => {
-        return this.customerService.getCustomers().pipe(
-          map(resp => resp.body as Customer[]),
-           mergeMap( array => [...array]),
-            filter( customer => customer.cardNumber == control.value),
-            toArray(),
-            tap( res => console.log(res)),
-            map( arr => arr.length ? null : { numberNonExisting: true }));
+        return this.customerService.getCustomerByCrdNumber(control.value).pipe(
+          catchError( async (err) => console.log(err)),
+          tap( res => console.log(res)),
+          map( (resp: Customer) => resp ? null : { numberNonExisting: true }));
       })
     );
   }
