@@ -2,7 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Observable, timer } from 'rxjs';
-import { filter, map, mergeMap, switchMap, take, tap, toArray } from 'rxjs/operators';
+import { catchError, filter, map, mergeMap, switchMap, take, tap, toArray } from 'rxjs/operators';
 import { Customer } from '../shared/customer.model';
 import { CustomerService } from '../shared/customer.service';
 
@@ -53,13 +53,10 @@ export class CustomerFormComponent implements OnInit {
 
     return timer(1500).pipe(
       switchMap( () => {
-        return this.customerService.getCustomers().pipe(
-          map(resp => resp.body as Customer[]),
-           mergeMap( array => [...array]),
-            filter( customer => customer.cardNumber == control.value),
-            toArray(),
-            tap( res => console.log(res)),
-            map( arr => arr.length ? { numberExisting: true } : null));
+        return this.customerService.getCustomerByCrdNumber(control.value).pipe(
+          catchError( async (err) => console.log(err)),
+          tap( res => console.log(res)),
+          map( (resp: Customer) => resp ? { numberExisting: true } : null));
       })
     );
   }
