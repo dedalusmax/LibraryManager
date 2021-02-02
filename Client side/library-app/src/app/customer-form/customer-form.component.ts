@@ -30,7 +30,7 @@ export class CustomerFormComponent implements OnInit {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', Validators.required],
-      cardNumber: ['', Validators.required, this.existedCardNumber.bind(this)]
+      cardNumber: ['', Validators.required, this.data ? null : this.existedCardNumber.bind(this)]
     });
 
     console.log(this.data);

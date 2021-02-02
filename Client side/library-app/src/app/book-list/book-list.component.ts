@@ -102,9 +102,12 @@ export class BookListComponent implements OnInit {
           this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
         }
       });
+
   }
 
   onUpdate(book: Book) {
+
+    this.setDeleteCreate(false);  
 
     let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog', data: book});
 
@@ -130,6 +133,8 @@ export class BookListComponent implements OnInit {
           this.toastr.success('Knjiga uspješno obnovljena', `${book.title}`);
         } 
           });
+
+        
   }
 
   onDelete(id: string) {
@@ -151,6 +156,7 @@ export class BookListComponent implements OnInit {
         this.toastr.success('Knjiga uspješno obrisana', `${title}`);
       }
     });
+
   }
 
   onLend(id: string) {

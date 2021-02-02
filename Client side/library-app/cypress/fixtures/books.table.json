@@ -1,0 +1,57 @@
+[
+        {
+            "title": "Test1",
+            "author": "Author1",
+            "publisher": "Publisher1",
+            "dateOfPublication": "2012-09-25T22:00:00",
+            "status": "available",
+            "isLended": false,
+            "lender": null,
+            "lenderId": null,
+            "id": "139d194f-264a-4781-aef3-d78317ea4a4b"
+        },
+        {
+            "title": "Test2",
+            "author": "Author2",
+            "publisher": "Publisher2",
+            "dateOfPublication": "2013-09-25T22:00:00",
+            "status": "available",
+            "isLended": false,
+            "lender": null,
+            "lenderId": null,
+            "id": "3ed260bb-c4af-479f-8787-b816aef9621a"
+        },
+        {
+            "title": "Test3",
+            "author": "Author3",
+            "publisher": "Publisher3",
+            "dateOfPublication": "2014-09-25T22:00:00",
+            "status": "available",
+            "isLended": false,
+            "lender": null,
+            "lenderId": null,
+            "id": "55d2bb32-22aa-4520-8878-31e614d24444"
+        },
+        {
+            "title": "Test4",
+            "author": "Author4",
+            "publisher": "Publisher4",
+            "dateOfPublication": "2015-09-25T22:00:00",
+            "status": "available",
+            "isLended": false,
+            "lender": null,
+            "lenderId": null,
+            "id": "09c40f09-373e-47e7-9dee-40513164a5b9"
+        },
+        {
+            "title": "Test5",
+            "author": "Author5",
+            "publisher": "Publisher5",
+            "dateOfPublication": "2016-09-25T22:00:00",
+            "status": "available",
+            "isLended": false,
+            "lender": null,
+            "lenderId": null,
+            "id": "1edbf807-fd95-4338-82a6-818cd640241d"
+        }
+]

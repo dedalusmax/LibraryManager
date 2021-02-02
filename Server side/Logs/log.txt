@@ -81,3 +81,1146 @@ Entity id: ec8e6530-fc25-4814-88eb-8413d0f38029
 2020-12-15 15:24:01.5814|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-12-15 15:24:01.5814|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
 2020-12-15 15:25:38.6408|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-25 11:37:47.6916|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-25 11:37:47.7249|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-25 11:37:47.7296|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-25 11:37:47.7296|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-25 11:37:47.7296|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-25 13:00:24.6574|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-25 13:00:29.5788|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-25 13:00:29.6295|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-25 13:00:29.6788|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-25 13:00:29.8451|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-25 13:00:29.8643|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-25 13:28:00.5304|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-25 13:28:00.5602|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-25 13:28:00.5602|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-25 13:28:00.5602|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-25 13:28:00.5602|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-25 15:51:13.0603|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-26 09:51:01.2107|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-26 09:51:01.2433|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-26 09:51:01.2485|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-26 09:51:01.2485|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-26 09:51:01.2485|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-26 09:52:43.4947|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-26 10:45:41.1231|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-26 10:45:42.8949|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-26 10:45:42.8949|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-26 10:45:43.1087|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-26 10:45:43.1087|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-26 14:35:43.2348|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-26 14:35:43.2832|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-26 14:35:43.2832|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-26 14:35:43.3087|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: e21fc472-d6ea-441a-028d-08d8a27bc02a
+2021-01-26 14:35:43.3152|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-26 14:36:38.6022|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-26 17:12:47.9671|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 677bc638-d5a5-4fbf-5b50-08d8c1ff686e
+2021-01-26 17:13:24.5179|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 4316605f-63a9-4658-5b51-08d8c1ff686e
+2021-01-26 17:14:01.0922|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: c549765a-eb92-40bd-5b52-08d8c1ff686e
+2021-01-26 17:14:44.6435|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0fc4d94e-8e3c-4048-5b53-08d8c1ff686e
+2021-01-26 17:15:18.3444|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 45f41730-57fe-464e-5b54-08d8c1ff686e
+2021-01-27 09:34:50.0422|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-27 09:34:50.0911|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-27 09:34:50.0911|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-27 09:34:50.0911|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-27 09:34:50.0911|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-27 09:37:56.1366|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-27 10:14:10.2889|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5b19a6a9-42e6-48d0-c836-08d8c2a3e808
+2021-01-27 10:17:17.7217|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5b19a6a9-42e6-48d0-c836-08d8c2a3e808
+2021-01-27 10:17:41.1542|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 11bfd25f-99c7-4953-c837-08d8c2a3e808
+2021-01-27 10:26:28.7614|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 11bfd25f-99c7-4953-c837-08d8c2a3e808
+2021-01-27 10:26:54.6720|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5ad3bbb9-12aa-4f3d-c838-08d8c2a3e808
+2021-01-27 10:29:29.4569|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5ad3bbb9-12aa-4f3d-c838-08d8c2a3e808
+2021-01-27 10:29:54.0276|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 2652781a-9a60-4255-c839-08d8c2a3e808
+2021-01-27 10:31:56.7283|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 2652781a-9a60-4255-c839-08d8c2a3e808
+2021-01-27 10:32:21.1131|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 1af30164-af96-43ea-c83a-08d8c2a3e808
+2021-01-27 10:34:05.6127|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 1af30164-af96-43ea-c83a-08d8c2a3e808
+2021-01-27 10:34:34.2429|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: e1f7aaa0-b8de-4914-c83b-08d8c2a3e808
+2021-01-27 10:38:48.3955|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: e1f7aaa0-b8de-4914-c83b-08d8c2a3e808
+2021-01-27 10:39:13.6527|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: a5ae25b4-2cd9-4351-c83c-08d8c2a3e808
+2021-01-27 10:41:45.7940|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: a5ae25b4-2cd9-4351-c83c-08d8c2a3e808
+2021-01-27 10:42:10.4914|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: c1ec2be3-10cc-4262-c83d-08d8c2a3e808
+2021-01-27 10:45:17.7726|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: c1ec2be3-10cc-4262-c83d-08d8c2a3e808
+2021-01-27 10:45:39.9411|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 764cbfe7-9f97-4be7-c83e-08d8c2a3e808
+2021-01-27 10:46:07.5726|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 764cbfe7-9f97-4be7-c83e-08d8c2a3e808
+2021-01-27 10:47:58.4464|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 849ec622-24dd-41fa-c83f-08d8c2a3e808
+2021-01-27 10:48:54.8498|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 849ec622-24dd-41fa-c83f-08d8c2a3e808
+2021-01-27 10:49:18.1489|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 89189169-c025-40eb-c840-08d8c2a3e808
+2021-01-27 10:50:08.4630|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 89189169-c025-40eb-c840-08d8c2a3e808
+2021-01-27 10:50:31.3806|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: d1917ab3-980f-4f0c-c841-08d8c2a3e808
+2021-01-27 10:51:26.8502|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: d1917ab3-980f-4f0c-c841-08d8c2a3e808
+2021-01-27 10:51:50.7050|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 33c81b70-b0d0-4d3b-c842-08d8c2a3e808
+2021-01-27 10:52:30.3489|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 33c81b70-b0d0-4d3b-c842-08d8c2a3e808
+2021-01-27 10:52:52.3281|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 87eb9729-637c-466d-c843-08d8c2a3e808
+2021-01-27 10:53:43.5120|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 87eb9729-637c-466d-c843-08d8c2a3e808
+2021-01-27 10:54:05.5613|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 918f2019-d87f-48cf-c844-08d8c2a3e808
+2021-01-27 10:55:26.0499|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 918f2019-d87f-48cf-c844-08d8c2a3e808
+2021-01-27 10:55:48.5451|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 4c674e36-ed35-45b7-c845-08d8c2a3e808
+2021-01-27 10:58:30.1305|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 4c674e36-ed35-45b7-c845-08d8c2a3e808
+2021-01-27 10:59:59.0213|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: d708fd5b-3b21-41fc-c846-08d8c2a3e808
+2021-01-27 11:00:28.6235|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: d708fd5b-3b21-41fc-c846-08d8c2a3e808
+2021-01-27 11:00:53.7090|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0088345a-c07d-420d-c847-08d8c2a3e808
+2021-01-27 11:01:37.2939|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0088345a-c07d-420d-c847-08d8c2a3e808
+2021-01-27 11:01:59.7169|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: baf906e1-582b-4428-c848-08d8c2a3e808
+2021-01-27 11:02:58.5491|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: baf906e1-582b-4428-c848-08d8c2a3e808
+2021-01-27 11:03:23.7686|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: a000a150-918a-4727-c849-08d8c2a3e808
+2021-01-27 11:03:47.7164|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: a000a150-918a-4727-c849-08d8c2a3e808
+2021-01-27 11:04:09.9458|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 6c652b05-238c-460c-c84a-08d8c2a3e808
+2021-01-27 11:04:11.3650|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 6c652b05-238c-460c-c84a-08d8c2a3e808
+2021-01-27 11:05:42.1104|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0ffe83be-6650-46f2-c84b-08d8c2a3e808
+2021-01-27 11:05:43.5146|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0ffe83be-6650-46f2-c84b-08d8c2a3e808
+2021-01-27 11:07:29.5769|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 756061fa-ff8c-48e1-c84c-08d8c2a3e808
+2021-01-27 11:07:30.9826|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 756061fa-ff8c-48e1-c84c-08d8c2a3e808
+2021-01-27 11:10:07.6408|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: faeee59a-c2af-4895-c84d-08d8c2a3e808
+2021-01-27 11:10:09.0841|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: faeee59a-c2af-4895-c84d-08d8c2a3e808
+2021-01-27 11:11:14.7700|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 99afb7ce-6542-40e7-c84e-08d8c2a3e808
+2021-01-27 11:11:16.2118|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 99afb7ce-6542-40e7-c84e-08d8c2a3e808
+2021-01-27 12:24:29.9975|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 24308a03-d915-422e-c84f-08d8c2a3e808
+2021-01-27 12:24:31.3634|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 24308a03-d915-422e-c84f-08d8c2a3e808
+2021-01-27 12:26:52.5330|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 452b740a-9044-4781-c850-08d8c2a3e808
+2021-01-27 12:26:53.9488|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 452b740a-9044-4781-c850-08d8c2a3e808
+2021-01-27 12:30:33.1088|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 38fdf038-6ae3-49be-c851-08d8c2a3e808
+2021-01-27 12:31:42.6021|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-27 12:32:11.5013|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 38fdf038-6ae3-49be-c851-08d8c2a3e808
+2021-01-27 12:32:26.3635|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-27 12:32:48.7231|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 722dc38a-dcfb-4d1a-c852-08d8c2a3e808
+2021-01-27 12:32:53.6038|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 722dc38a-dcfb-4d1a-c852-08d8c2a3e808
+2021-01-27 12:32:55.0115|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 722dc38a-dcfb-4d1a-c852-08d8c2a3e808
+2021-01-27 12:33:48.4053|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 17296388-ac8d-415c-c853-08d8c2a3e808
+2021-01-27 12:33:53.0741|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 17296388-ac8d-415c-c853-08d8c2a3e808
+2021-01-27 12:33:54.4838|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 17296388-ac8d-415c-c853-08d8c2a3e808
+2021-01-27 12:38:04.7022|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-27 12:38:04.7320|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-27 12:38:04.7320|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-27 12:38:04.7320|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-27 12:38:04.7320|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-27 12:38:20.0713|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-27 12:40:33.9304|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 02c04c3c-86d4-4961-6903-08d8c2b85b80
+2021-01-27 12:44:11.3675|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 36d11090-f2d3-4c48-6904-08d8c2b85b80
+2021-01-27 12:44:19.6980|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-27 12:44:40.4983|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 02c04c3c-86d4-4961-6903-08d8c2b85b80
+2021-01-27 12:44:41.3692|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 36d11090-f2d3-4c48-6904-08d8c2b85b80
+2021-01-27 12:45:11.8277|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: b67a0bb2-7ee3-49cd-6905-08d8c2b85b80
+2021-01-27 12:45:16.5714|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b67a0bb2-7ee3-49cd-6905-08d8c2b85b80
+2021-01-27 12:45:58.6522|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: b67a0bb2-7ee3-49cd-6905-08d8c2b85b80
+2021-01-27 12:55:52.2291|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: f28c96f4-6fc4-45f2-4dd9-08d8bbbbf807
+2021-01-27 12:55:59.2040|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 34e00d21-75fe-4a38-6906-08d8c2b85b80
+2021-01-27 12:57:57.7837|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 34e00d21-75fe-4a38-6906-08d8c2b85b80
+2021-01-27 12:59:09.2547|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 43275879-5d07-4fae-6907-08d8c2b85b80
+2021-01-27 12:59:51.2369|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 43275879-5d07-4fae-6907-08d8c2b85b80
+2021-01-27 13:00:31.9731|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 6cd36142-9e3a-4538-6908-08d8c2b85b80
+2021-01-27 13:04:16.6986|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 677bc638-d5a5-4fbf-5b50-08d8c1ff686e
+2021-01-27 13:13:50.2218|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 6cd36142-9e3a-4538-6908-08d8c2b85b80
+2021-01-27 13:13:58.7678|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 8af8fc95-e4cf-4e57-6909-08d8c2b85b80
+2021-01-27 13:15:03.5258|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 8af8fc95-e4cf-4e57-6909-08d8c2b85b80
+2021-01-27 13:15:14.5794|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5f0e1d07-9b2c-4de3-690a-08d8c2b85b80
+2021-01-27 13:15:32.3859|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 5f0e1d07-9b2c-4de3-690a-08d8c2b85b80
+2021-01-27 13:18:03.7159|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5f0e1d07-9b2c-4de3-690a-08d8c2b85b80
+2021-01-27 13:18:11.7089|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 6392c9cc-e945-47f4-690b-08d8c2b85b80
+2021-01-27 13:19:37.7169|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 6392c9cc-e945-47f4-690b-08d8c2b85b80
+2021-01-27 13:20:14.2129|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 6392c9cc-e945-47f4-690b-08d8c2b85b80
+2021-01-27 13:20:22.6361|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 6a3c162f-cc31-451b-690c-08d8c2b85b80
+2021-01-27 13:24:54.8355|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 6a3c162f-cc31-451b-690c-08d8c2b85b80
+2021-01-27 13:25:23.6819|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 6a3c162f-cc31-451b-690c-08d8c2b85b80
+2021-01-27 13:25:31.8904|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: b6c62822-5e17-4ee5-690d-08d8c2b85b80
+2021-01-27 13:27:25.1131|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 45f41730-57fe-464e-5b54-08d8c1ff686e
+2021-01-27 13:27:33.0264|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0b4af5b5-0940-4148-690e-08d8c2b85b80
+2021-01-27 13:28:41.9923|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 0b4af5b5-0940-4148-690e-08d8c2b85b80
+2021-01-27 13:29:11.7463|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0b4af5b5-0940-4148-690e-08d8c2b85b80
+2021-01-27 13:29:20.1591|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: a636b54f-8871-4ee8-690f-08d8c2b85b80
+2021-01-27 13:30:46.4024|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b6c62822-5e17-4ee5-690d-08d8c2b85b80
+2021-01-27 13:31:15.2434|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: b6c62822-5e17-4ee5-690d-08d8c2b85b80
+2021-01-27 13:31:23.6096|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: fab3637b-9302-44aa-6910-08d8c2b85b80
+2021-01-27 13:31:57.6027|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 8b434d8e-3c55-49a8-6911-08d8c2b85b80
+2021-01-27 13:32:33.9734|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 8b434d8e-3c55-49a8-6911-08d8c2b85b80
+2021-01-27 13:32:43.9620|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: a636b54f-8871-4ee8-690f-08d8c2b85b80
+2021-01-27 13:33:14.1777|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: a636b54f-8871-4ee8-690f-08d8c2b85b80
+2021-01-27 13:33:21.2194|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 9cdce2ea-4789-4835-6912-08d8c2b85b80
+2021-01-27 13:33:26.8750|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 9cdce2ea-4789-4835-6912-08d8c2b85b80
+2021-01-27 13:35:15.0923|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: fab3637b-9302-44aa-6910-08d8c2b85b80
+2021-01-27 13:35:43.7809|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: fab3637b-9302-44aa-6910-08d8c2b85b80
+2021-01-27 13:35:50.6429|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 67a992e5-66dd-49c1-6913-08d8c2b85b80
+2021-01-27 13:35:56.3975|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 67a992e5-66dd-49c1-6913-08d8c2b85b80
+2021-01-27 13:36:27.9702|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7b747488-e8eb-40c8-6914-08d8c2b85b80
+2021-01-27 13:36:36.1780|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 7b747488-e8eb-40c8-6914-08d8c2b85b80
+2021-01-27 13:36:52.2037|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 7b747488-e8eb-40c8-6914-08d8c2b85b80
+2021-01-27 13:36:52.8529|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 9cdce2ea-4789-4835-6912-08d8c2b85b80
+2021-01-27 13:38:16.6724|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7b747488-e8eb-40c8-6914-08d8c2b85b80
+2021-01-27 13:38:23.7411|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: d883c18c-d904-43d8-6915-08d8c2b85b80
+2021-01-27 13:38:29.4331|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: d883c18c-d904-43d8-6915-08d8c2b85b80
+2021-01-27 13:39:47.9853|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: d883c18c-d904-43d8-6915-08d8c2b85b80
+2021-01-27 13:40:18.4200|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: d883c18c-d904-43d8-6915-08d8c2b85b80
+2021-01-27 13:40:25.4393|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 31a8bbb5-e82b-49ab-6916-08d8c2b85b80
+2021-01-27 13:40:30.0597|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:40:55.3596|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:41:11.8166|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 31a8bbb5-e82b-49ab-6916-08d8c2b85b80
+2021-01-27 13:41:39.4782|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 31a8bbb5-e82b-49ab-6916-08d8c2b85b80
+2021-01-27 13:41:46.4961|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 690e2899-ec11-42f7-6917-08d8c2b85b80
+2021-01-27 13:41:51.1261|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:48:45.4094|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 690e2899-ec11-42f7-6917-08d8c2b85b80
+2021-01-27 13:49:15.8750|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 690e2899-ec11-42f7-6917-08d8c2b85b80
+2021-01-27 13:49:23.0251|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: af58adf3-442a-49fe-6918-08d8c2b85b80
+2021-01-27 13:49:27.6161|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:49:32.4628|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 13:49:32.6969|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:49:32.6969|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 13:49:32.7372|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 13:49:32.7372|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:00:57.0740|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 237d46c6-0bca-44b7-028c-08d8a27bc02a
+2021-01-27 14:01:16.4387|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:01:16.4826|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:01:16.4902|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:01:16.5059|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:01:16.5059|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:01:31.1832|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 508a40a0-98fd-4971-6919-08d8c2b85b80
+2021-01-27 14:02:03.1567|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 508a40a0-98fd-4971-6919-08d8c2b85b80
+2021-01-27 14:02:10.1316|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 3bc22d8f-d47c-4c0b-691a-08d8c2b85b80
+2021-01-27 14:02:14.7964|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:02:24.0758|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:02:24.3144|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:02:24.3144|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:02:24.3144|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:02:24.3299|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:04:20.9589|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:04:20.9917|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:04:20.9917|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:04:21.0055|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:04:21.0055|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:04:25.0547|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8441c658-0566-44e7-a8cd-4efa4a39e1fa
+2021-01-27 14:04:30.7359|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:05:22.1534|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: da504215-4fa9-4cc4-691b-08d8c2b85b80
+2021-01-27 14:05:41.9557|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 3bc22d8f-d47c-4c0b-691a-08d8c2b85b80
+2021-01-27 14:05:57.6148|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: af58adf3-442a-49fe-6918-08d8c2b85b80
+2021-01-27 14:06:29.5857|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: af58adf3-442a-49fe-6918-08d8c2b85b80
+2021-01-27 14:06:36.6539|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: c5667df0-ad8c-40c4-691c-08d8c2b85b80
+2021-01-27 14:06:41.2150|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:06:46.0336|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:06:46.2508|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:06:46.2542|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:06:46.2542|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:06:46.2665|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:08:04.4619|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:08:04.4933|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:08:04.4933|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:08:04.5070|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:08:04.5070|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:08:08.3872|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:08:25.6731|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: c5667df0-ad8c-40c4-691c-08d8c2b85b80
+2021-01-27 14:08:58.8855|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: c5667df0-ad8c-40c4-691c-08d8c2b85b80
+2021-01-27 14:09:05.9869|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: b8b2d133-9803-49a3-691d-08d8c2b85b80
+2021-01-27 14:09:10.6265|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:09:15.4726|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:09:15.7138|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:09:15.7138|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:09:15.7289|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:09:15.7289|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:10:05.2467|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:10:05.2766|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:10:05.2766|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:10:05.2894|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:10:05.2894|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:10:07.9853|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:10:18.0191|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b8b2d133-9803-49a3-691d-08d8c2b85b80
+2021-01-27 14:10:57.4729|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: b8b2d133-9803-49a3-691d-08d8c2b85b80
+2021-01-27 14:11:04.5448|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7dbc47c0-8507-45c2-691e-08d8c2b85b80
+2021-01-27 14:11:09.0985|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:11:13.9198|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:11:14.1438|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:11:14.1438|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:11:14.1438|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:11:14.1600|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:12:57.7693|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:12:57.8004|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:12:57.8004|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:12:57.8147|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:12:57.8147|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:13:05.0943|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:13:15.3806|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 7dbc47c0-8507-45c2-691e-08d8c2b85b80
+2021-01-27 14:13:48.1513|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7dbc47c0-8507-45c2-691e-08d8c2b85b80
+2021-01-27 14:13:55.4437|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 8f196e52-6ced-4bab-691f-08d8c2b85b80
+2021-01-27 14:14:03.7792|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:14:13.0416|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:14:13.2630|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:14:13.2666|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:14:13.2666|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:14:13.2828|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:16:42.8393|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:16:42.8698|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:16:42.8698|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:16:42.8879|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:16:42.8928|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:16:46.8149|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:16:56.5289|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8f196e52-6ced-4bab-691f-08d8c2b85b80
+2021-01-27 14:17:31.3214|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 8f196e52-6ced-4bab-691f-08d8c2b85b80
+2021-01-27 14:17:38.3270|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7dfc6f66-b6e8-407b-6920-08d8c2b85b80
+2021-01-27 14:17:42.9465|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:17:47.9062|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:17:48.1317|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:17:48.1317|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:17:48.1475|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:17:48.1475|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:20:04.4763|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:20:04.5139|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:20:04.5202|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:20:04.5202|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:20:04.5333|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:20:10.8706|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:20:20.8244|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 7dfc6f66-b6e8-407b-6920-08d8c2b85b80
+2021-01-27 14:20:55.8491|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7dfc6f66-b6e8-407b-6920-08d8c2b85b80
+2021-01-27 14:21:02.8782|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 8c3ce23b-a299-4034-6921-08d8c2b85b80
+2021-01-27 14:21:07.4779|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:21:12.2985|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:21:12.4950|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:21:12.4950|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:21:12.5053|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:21:12.5053|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:25:02.5891|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:25:02.6257|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:25:02.6257|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:25:02.6449|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:25:02.6449|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:25:05.5815|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:25:15.7347|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 8c3ce23b-a299-4034-6921-08d8c2b85b80
+2021-01-27 14:26:03.9635|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 8c3ce23b-a299-4034-6921-08d8c2b85b80
+2021-01-27 14:26:10.9381|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 4b9609a6-c9ea-4dd2-6922-08d8c2b85b80
+2021-01-27 14:26:15.4745|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:26:20.3203|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:26:20.5376|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:26:20.5376|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:26:20.5487|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:26:20.5659|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:29:09.5402|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:29:09.5772|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:29:09.5832|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:29:09.5977|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:29:09.5977|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:29:12.6749|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:29:24.8905|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 4b9609a6-c9ea-4dd2-6922-08d8c2b85b80
+2021-01-27 14:29:59.2426|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 4b9609a6-c9ea-4dd2-6922-08d8c2b85b80
+2021-01-27 14:30:06.2634|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 205e3f1d-b896-4977-6923-08d8c2b85b80
+2021-01-27 14:30:10.8356|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:30:15.6724|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:30:15.8826|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:30:15.8826|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:30:15.8976|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:30:15.8976|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:31:06.5130|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:06.5502|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:06.5502|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:31:06.5647|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:06.5647|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:31:09.3729|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:16.1281|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 205e3f1d-b896-4977-6923-08d8c2b85b80
+2021-01-27 14:31:42.3668|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 205e3f1d-b896-4977-6923-08d8c2b85b80
+2021-01-27 14:31:49.3613|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 2628ff99-f4ac-4e63-6924-08d8c2b85b80
+2021-01-27 14:31:53.9440|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:58.7775|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:31:58.9867|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:58.9867|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:31:59.0028|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:31:59.0028|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:34:39.6953|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:34:39.7341|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:34:39.7418|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:34:39.7503|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:34:39.7503|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:34:42.9429|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:35:16.3031|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 2628ff99-f4ac-4e63-6924-08d8c2b85b80
+2021-01-27 14:35:45.4081|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 2628ff99-f4ac-4e63-6924-08d8c2b85b80
+2021-01-27 14:35:52.3819|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: bcbadb9e-ffb8-4b12-6925-08d8c2b85b80
+2021-01-27 14:35:56.8647|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:01.5472|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:36:01.7730|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:01.7730|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:36:01.7830|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:01.7830|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:36:55.6052|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:55.6368|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:55.6431|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 14:36:55.6431|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:36:55.6431|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 14:36:59.6518|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 14:37:08.6818|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: bcbadb9e-ffb8-4b12-6925-08d8c2b85b80
+2021-01-27 16:49:07.1360|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: bcbadb9e-ffb8-4b12-6925-08d8c2b85b80
+2021-01-27 16:49:14.2470|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 86ca20be-ee95-4296-6926-08d8c2b85b80
+2021-01-27 16:49:18.8404|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:49:23.6818|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:49:23.8742|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:49:23.8742|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:49:23.8908|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:49:23.8908|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:51:21.9530|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:51:43.7548|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 86ca20be-ee95-4296-6926-08d8c2b85b80
+2021-01-27 16:52:12.2236|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 86ca20be-ee95-4296-6926-08d8c2b85b80
+2021-01-27 16:52:23.5084|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 2e9066ce-4a85-47ae-6927-08d8c2b85b80
+2021-01-27 16:52:28.2542|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:52:33.2040|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:52:33.4121|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:52:33.4160|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:52:33.4160|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:52:33.4160|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:53:37.8611|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:53:37.8961|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:53:37.9041|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:53:37.9041|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:53:37.9197|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:53:41.9086|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:53:49.3674|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 2e9066ce-4a85-47ae-6927-08d8c2b85b80
+2021-01-27 16:54:18.8088|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 2e9066ce-4a85-47ae-6927-08d8c2b85b80
+2021-01-27 16:54:25.8960|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 67e645a3-7b10-43ca-6928-08d8c2b85b80
+2021-01-27 16:54:30.5175|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:35.3586|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:54:35.5751|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:35.5751|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:54:35.5751|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:35.5908|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:54:42.3611|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:42.4411|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:42.4411|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:54:42.4537|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:54:42.4537|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:57:05.0979|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:57:14.6618|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 67e645a3-7b10-43ca-6928-08d8c2b85b80
+2021-01-27 16:57:41.1967|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 67e645a3-7b10-43ca-6928-08d8c2b85b80
+2021-01-27 16:57:48.2345|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: ff8d1abf-1c25-47ef-6929-08d8c2b85b80
+2021-01-27 16:57:52.8714|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:57:57.7162|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:57:57.9418|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:57:57.9418|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:57:57.9568|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:57:57.9568|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-27 16:58:04.3596|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:58:04.4355|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:58:04.4355|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-27 16:58:04.4502|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-27 16:58:04.4502|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 11:50:06.6307|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-28 11:50:06.6620|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-28 11:50:06.6660|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-28 11:50:06.6660|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-28 11:50:06.6660|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-28 12:18:32.2674|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-28 12:22:52.8905|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:23:03.2579|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: ff8d1abf-1c25-47ef-6929-08d8c2b85b80
+2021-01-28 12:24:27.5354|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: ff8d1abf-1c25-47ef-6929-08d8c2b85b80
+2021-01-28 12:24:34.9522|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: def87f1f-34e3-4333-24b0-08d8c37f4a65
+2021-01-28 12:24:43.1553|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:24:52.5019|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:24:52.7388|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:24:52.7388|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:24:52.7765|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:24:52.7849|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 12:25:00.7458|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:25:00.8540|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:25:00.8540|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:25:00.8649|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:25:00.8649|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 12:26:04.8147|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: def87f1f-34e3-4333-24b0-08d8c37f4a65
+2021-01-28 12:26:37.5250|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: def87f1f-34e3-4333-24b0-08d8c37f4a65
+2021-01-28 12:26:44.9556|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 090e2b24-3ca8-4580-24b1-08d8c37f4a65
+2021-01-28 12:26:53.2532|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:02.5352|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:27:02.7907|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:02.7907|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:27:02.8047|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:02.8047|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 12:27:10.0646|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:10.1505|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:10.1505|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:27:10.1604|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:27:10.1604|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 12:29:21.9705|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:29:33.5079|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 090e2b24-3ca8-4580-24b1-08d8c37f4a65
+2021-01-28 12:30:37.6748|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-28 12:31:06.3710|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 090e2b24-3ca8-4580-24b1-08d8c37f4a65
+2021-01-28 12:31:13.5484|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 866f1ede-3053-413f-24b2-08d8c37f4a65
+2021-01-28 12:31:18.1380|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:21.3245|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:25.0004|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:31:25.1980|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:25.1980|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:31:25.2143|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:25.2143|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 12:31:32.1344|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:32.2129|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:32.2169|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 12:31:32.2169|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 12:31:32.2328|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:13:25.5223|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: 866f1ede-3053-413f-24b2-08d8c37f4a65
+2021-01-28 13:13:58.8096|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 866f1ede-3053-413f-24b2-08d8c37f4a65
+2021-01-28 13:14:05.9249|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: e6a2706d-9c5e-4e37-24b3-08d8c37f4a65
+2021-01-28 13:14:10.5590|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:13.8531|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:17.5864|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:14:17.8124|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:17.8165|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:14:17.8165|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:17.8165|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:14:24.8778|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:24.9541|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:24.9591|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:14:24.9591|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:14:24.9591|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:21:14.0503|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: e6a2706d-9c5e-4e37-24b3-08d8c37f4a65
+2021-01-28 13:21:27.4422|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 4a3b67ad-cdd6-4534-24b4-08d8c37f4a65
+2021-01-28 13:21:32.2079|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:35.5119|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:39.3977|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:21:39.6252|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:39.6252|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:21:39.6354|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:39.6354|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:21:46.5463|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:46.6307|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:46.6307|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:21:46.6307|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:21:46.6524|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:36:09.6316|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 4a3b67ad-cdd6-4534-24b4-08d8c37f4a65
+2021-01-28 13:36:18.9628|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0a0edeae-4265-4e8f-24b5-08d8c37f4a65
+2021-01-28 13:36:23.5761|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:26.8487|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:30.5657|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:36:30.7664|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:30.7664|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:36:30.7785|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:30.7785|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:36:37.8668|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:37.9371|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:37.9371|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:36:37.9514|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:36:37.9514|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:38:19.4700|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0a0edeae-4265-4e8f-24b5-08d8c37f4a65
+2021-01-28 13:38:32.9811|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 1ff100d3-f4dc-446a-24b6-08d8c37f4a65
+2021-01-28 13:38:37.6660|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:41.0331|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:44.7391|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:38:44.9582|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:44.9582|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:38:44.9675|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:44.9675|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:38:52.2219|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:52.3009|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:52.3009|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:38:52.3115|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:38:52.3115|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:43:03.3482|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 1ff100d3-f4dc-446a-24b6-08d8c37f4a65
+2021-01-28 13:43:16.9293|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: ee258021-dede-45f5-24b7-08d8c37f4a65
+2021-01-28 13:43:21.6886|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:25.0861|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:28.8718|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:43:29.0872|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:29.0872|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:43:29.0993|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:29.0993|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:43:36.3020|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:36.3792|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:36.3837|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:43:36.3837|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:43:36.3837|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:45:28.5466|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: ee258021-dede-45f5-24b7-08d8c37f4a65
+2021-01-28 13:45:38.0596|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 84cf813f-d928-4a67-24b8-08d8c37f4a65
+2021-01-28 13:45:42.6141|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:45.8209|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:49.5173|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:45:49.7302|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:49.7302|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:45:49.7420|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:49.7420|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:45:56.5667|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:56.6487|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:56.6487|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:45:56.6487|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:45:56.6641|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:46:37.9749|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 84cf813f-d928-4a67-24b8-08d8c37f4a65
+2021-01-28 13:46:47.5447|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5957ffde-c22c-49db-24b9-08d8c37f4a65
+2021-01-28 13:46:52.2269|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:46:55.4755|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:46:59.1707|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:46:59.3826|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:46:59.3826|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:46:59.3950|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:46:59.3950|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 13:47:06.2997|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:47:06.3822|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:47:06.3822|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 13:47:06.3822|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 13:47:06.3981|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 14:59:32.0502|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5957ffde-c22c-49db-24b9-08d8c37f4a65
+2021-01-28 14:59:41.6881|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 509186f5-a641-495d-24ba-08d8c37f4a65
+2021-01-28 14:59:47.3421|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 14:59:56.4752|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 14:59:56.6914|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 14:59:56.6914|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 14:59:56.7037|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 14:59:56.7037|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:00:03.9962|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:00:04.1002|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:00:04.1068|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:00:04.1206|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:00:04.1206|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:19:40.4917|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 509186f5-a641-495d-24ba-08d8c37f4a65
+2021-01-28 15:19:50.0812|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: ea63d176-6e84-4e61-24bb-08d8c37f4a65
+2021-01-28 15:19:55.6355|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:19:58.4185|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:02.6657|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:20:02.8563|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:02.8563|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:20:02.8563|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:02.8705|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:20:09.7437|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:09.8173|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:09.8234|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:20:09.8234|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:20:09.8375|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:44:11.7315|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: ea63d176-6e84-4e61-24bb-08d8c37f4a65
+2021-01-28 15:44:21.4263|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 97b7bb9f-b99c-47ba-24bc-08d8c37f4a65
+2021-01-28 15:44:27.0658|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:37.3304|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 111
+2021-01-28 15:44:42.3368|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:44:42.5520|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:42.5555|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:44:42.5555|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:42.5555|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:44:49.7061|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:49.7738|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:49.7738|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:44:49.7738|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:44:49.7738|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:45:37.8721|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 97b7bb9f-b99c-47ba-24bc-08d8c37f4a65
+2021-01-28 15:45:47.5604|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 448868de-4aac-477e-24bd-08d8c37f4a65
+2021-01-28 15:45:53.6790|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:45:56.4730|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:02.2794|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-28 15:46:06.8888|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:46:07.1072|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:07.1072|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:46:07.1192|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:07.1192|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:46:14.7426|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:14.8288|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:14.8364|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:46:14.8364|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:46:14.8555|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:51:55.5484|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 448868de-4aac-477e-24bd-08d8c37f4a65
+2021-01-28 15:52:05.3316|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 10e2be73-2783-425d-24be-08d8c37f4a65
+2021-01-28 15:52:11.4987|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:22.8348|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:52:23.0664|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:23.0664|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:52:23.0829|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:23.0829|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:52:30.3001|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:30.3838|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:30.3838|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:52:30.3956|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:52:30.3956|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:54:20.9610|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-28 15:55:10.7936|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 10e2be73-2783-425d-24be-08d8c37f4a65
+2021-01-28 15:55:20.5186|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: af7a9604-d4d0-469e-24bf-08d8c37f4a65
+2021-01-28 15:55:26.0983|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:29.5230|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:35.0591|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-28 15:55:39.9217|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:55:40.1266|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:40.1266|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:55:40.1266|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:40.1422|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 15:55:47.2237|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:47.3240|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:47.3240|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 15:55:47.3343|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 15:55:47.3343|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 16:00:07.8960|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: af7a9604-d4d0-469e-24bf-08d8c37f4a65
+2021-01-28 16:00:17.4777|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 93a99d8c-0256-42cc-24c0-08d8c37f4a65
+2021-01-28 16:00:23.1319|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:34.1564|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-28 16:00:39.1379|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 16:00:39.4465|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:39.4507|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 16:00:39.4507|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:39.4686|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-28 16:00:46.7451|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:46.8157|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:46.8157|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-28 16:00:46.8273|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-28 16:00:46.8273|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:19:23.6108|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-01-29 08:19:23.6763|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-01-29 08:19:23.6763|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-01-29 08:19:23.7222|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-01-29 08:19:23.7222|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-01-29 08:47:04.3634|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-01-29 08:47:24.7865|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 93a99d8c-0256-42cc-24c0-08d8c37f4a65
+2021-01-29 08:47:34.2221|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7ef05b09-c336-421b-bc73-08d8c42a23d7
+2021-01-29 08:47:43.8399|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:47:55.0591|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 08:47:59.5673|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:47:59.8706|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:47:59.8765|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:47:59.9194|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:47:59.9277|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:48:08.0751|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:48:08.1789|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:48:08.1789|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:48:08.1907|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:48:08.1907|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:53:23.1542|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7ef05b09-c336-421b-bc73-08d8c42a23d7
+2021-01-29 08:53:32.8100|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 75bcf7bc-ec15-43c8-bc74-08d8c42a23d7
+2021-01-29 08:53:38.5065|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:53:41.9699|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:53:47.6887|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 08:53:54.4822|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:53:54.7342|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:53:54.7342|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:53:54.7527|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:53:54.7603|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:54:01.8807|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:54:01.9617|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:54:01.9617|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:54:01.9617|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:54:01.9812|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:54:40.8005|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 75bcf7bc-ec15-43c8-bc74-08d8c42a23d7
+2021-01-29 08:54:50.8974|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7c29613d-8bea-4d3c-bc75-08d8c42a23d7
+2021-01-29 08:54:59.8421|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:11.5915|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 08:55:14.1459|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:55:14.4119|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:14.4184|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:55:14.4360|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:14.4360|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:55:21.8078|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:21.8925|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:21.8925|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:55:21.9098|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:55:21.9153|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:57:17.2355|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7c29613d-8bea-4d3c-bc75-08d8c42a23d7
+2021-01-29 08:57:27.1564|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 7e33ca86-1f12-4fa9-bc76-08d8c42a23d7
+2021-01-29 08:57:36.0918|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:47.8028|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 08:57:50.2683|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:57:50.4915|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:50.4954|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:57:50.4954|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:50.5093|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 08:57:57.9683|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:58.0560|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:58.0560|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 08:57:58.0560|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 08:57:58.0740|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:00:32.7828|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:02.1183|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 7e33ca86-1f12-4fa9-bc76-08d8c42a23d7
+2021-01-29 09:01:11.8310|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0a816ac4-f9f3-4d4e-bc77-08d8c42a23d7
+2021-01-29 09:01:17.3841|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:28.4167|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:01:30.9464|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:01:31.1661|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:31.1661|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:01:31.1799|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:31.1799|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:01:38.3597|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:38.4319|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:38.4319|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:01:38.4319|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:01:38.4496|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:03:56.8838|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0a816ac4-f9f3-4d4e-bc77-08d8c42a23d7
+2021-01-29 09:04:06.4980|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 836d15dd-bff8-417d-bc78-08d8c42a23d7
+2021-01-29 09:04:12.0125|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:15.4130|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:21.0268|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:04:23.5598|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:04:23.7652|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:23.7652|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:04:23.7760|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:23.7760|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:04:30.8576|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:30.9371|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:30.9371|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:04:30.9483|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:04:30.9483|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:12:57.2205|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 836d15dd-bff8-417d-bc78-08d8c42a23d7
+2021-01-29 09:13:06.9317|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 0c87ce53-f3e2-4bd8-bc79-08d8c42a23d7
+2021-01-29 09:13:12.4620|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:23.4578|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:13:25.9406|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:13:26.1706|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:26.1747|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:13:26.1747|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:26.1927|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:13:33.1666|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:33.2413|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:33.2413|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:13:33.2550|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:13:33.2550|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:15:11.0881|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-29 09:15:14.8974|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-01-29 09:16:30.8565|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 0c87ce53-f3e2-4bd8-bc79-08d8c42a23d7
+2021-01-29 09:16:40.5567|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: d83265a4-ed83-4931-bc7a-08d8c42a23d7
+2021-01-29 09:16:46.1421|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:16:47.9806|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:16:53.5262|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:16:55.9737|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:16:56.2044|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:16:56.2044|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:16:56.2044|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:16:56.2235|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:17:03.3828|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:17:03.4665|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:17:03.4665|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:17:03.4762|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:17:03.4762|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:18:40.9005|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: d83265a4-ed83-4931-bc7a-08d8c42a23d7
+2021-01-29 09:18:50.6023|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 22d9fee8-b7f3-41bc-bc7b-08d8c42a23d7
+2021-01-29 09:18:56.1657|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:05.6975|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:19:08.2315|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:19:08.4532|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:08.4562|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:19:08.4562|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:08.4712|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:19:15.4571|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:15.5278|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:15.5278|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:19:15.5389|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:19:15.5389|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:22:52.2942|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 22d9fee8-b7f3-41bc-bc7b-08d8c42a23d7
+2021-01-29 09:23:01.9518|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: dacd7a0b-b58c-4faa-bc7c-08d8c42a23d7
+2021-01-29 09:23:07.5125|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:11.3027|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:16.8958|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 09:23:19.4527|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:23:19.6627|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:19.6627|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:23:19.6737|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:19.6737|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:23:26.0367|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:26.1046|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:26.1046|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:23:26.1139|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 09:23:26.1139|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 09:53:50.5967|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 154 
+2021-01-29 09:53:55.3516|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 09:54:17.0923|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 455 
+2021-01-29 09:54:17.5959|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: f2a5cb25-523e-4124-30db-08d8c43368ca
+2021-01-29 09:54:54.7970|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 788 
+2021-01-29 09:54:56.5116|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 2a8562e6-7954-4b8e-30dc-08d8c43368ca
+2021-01-29 09:55:18.2934|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 909 
+2021-01-29 09:55:18.7226|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 09:56:26.4570|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 09:56:32.3309|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 198 
+2021-01-29 09:56:33.0062|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 701e0a59-e6b1-4bb9-30de-08d8c43368ca
+2021-01-29 09:56:58.6271|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 906 
+2021-01-29 09:56:59.5105|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: a5631a71-2f6e-42fd-30df-08d8c43368ca
+2021-01-29 09:57:30.4495|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 292 
+2021-01-29 09:57:31.3872|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 3c428dcc-8747-4153-30e0-08d8c43368ca
+2021-01-29 09:59:39.2246|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 09:59:41.5494|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 513bd43b-9f57-42ca-30e1-08d8c43368ca
+2021-01-29 11:29:10.3440|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 513bd43b-9f57-42ca-30e1-08d8c43368ca
+2021-01-29 11:29:20.2658|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 11:29:20.4796|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 41cb1935-35c2-4b92-30e2-08d8c43368ca
+2021-01-29 11:29:24.9592|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:29:55.2716|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:30:19.0908|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:48:25.6662|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:48:48.3365|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 134 
+2021-01-29 11:48:56.1333|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 134 
+2021-01-29 11:49:02.2911|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:49:09.9657|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:50:07.2042|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:50:41.8807|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 11:54:23.8689|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 154
+2021-01-29 12:26:13.4804|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: ,required(control) {        return isEmptyInputValue(control.value)  
+2021-01-29 12:30:41.1633|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 41cb1935-35c2-4b92-30e2-08d8c43368ca
+2021-01-29 12:30:51.3546|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:30:51.5616|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: d7ba2f79-a2aa-4f34-30e3-08d8c43368ca
+2021-01-29 12:30:56.7610|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:31:53.6705|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:32:21.9335|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: d7ba2f79-a2aa-4f34-30e3-08d8c43368ca
+2021-01-29 12:32:32.1510|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:32:32.3939|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 63b077f9-5362-465f-30e4-08d8c43368ca
+2021-01-29 12:32:37.5540|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:33:28.0604|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:34:26.9561|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 63b077f9-5362-465f-30e4-08d8c43368ca
+2021-01-29 12:34:37.1763|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:34:37.3824|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 59d68422-0d9a-44d3-30e5-08d8c43368ca
+2021-01-29 12:34:42.5094|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:34:46.5652|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:35:44.4666|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: dacd7a0b-b58c-4faa-bc7c-08d8c42a23d7
+2021-01-29 12:35:54.5533|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5214aeed-6096-4f5c-bc7d-08d8c42a23d7
+2021-01-29 12:36:03.6105|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:15.8455|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:36:18.3370|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:36:18.5627|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:18.5627|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:36:18.5784|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:18.5784|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:36:26.3877|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:26.4854|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:26.4854|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:36:26.4985|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:36:26.4985|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:36:52.0968|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 59d68422-0d9a-44d3-30e5-08d8c43368ca
+2021-01-29 12:37:02.5100|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:37:02.7397|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 5dde502a-4c40-436d-30e6-08d8c43368ca
+2021-01-29 12:37:08.5298|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:38:26.2815|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5214aeed-6096-4f5c-bc7d-08d8c42a23d7
+2021-01-29 12:38:36.0950|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 84b7e80e-35ca-4321-bc7e-08d8c42a23d7
+2021-01-29 12:38:41.7337|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:38:45.5966|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:38:51.2707|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:38:53.7580|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:38:53.9668|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:38:53.9668|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:38:53.9827|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:38:53.9827|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:39:00.7058|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:39:00.7862|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:39:00.7862|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:39:00.7965|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:39:00.7965|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:39:25.7160|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 5dde502a-4c40-436d-30e6-08d8c43368ca
+2021-01-29 12:39:36.1183|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:39:36.3452|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: dcb8d3cb-bf7d-487c-30e7-08d8c43368ca
+2021-01-29 12:39:41.6643|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:39:45.9047|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:44:59.4989|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 84b7e80e-35ca-4321-bc7e-08d8c42a23d7
+2021-01-29 12:45:09.2188|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5462814e-3604-45d5-bc7f-08d8c42a23d7
+2021-01-29 12:45:14.8483|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:26.4795|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:45:29.0228|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:45:29.2318|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:29.2318|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:45:29.2318|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:29.2486|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:45:36.5162|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:36.5839|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:36.5839|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:45:36.5942|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:45:36.5942|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:46:01.4376|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: dcb8d3cb-bf7d-487c-30e7-08d8c43368ca
+2021-01-29 12:46:11.9685|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:46:12.1907|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: ad79bae0-9898-4203-30e8-08d8c43368ca
+2021-01-29 12:46:17.5140|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:46:21.7643|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:46:35.5833|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:46:51.9553|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:47:30.7458|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5462814e-3604-45d5-bc7f-08d8c42a23d7
+2021-01-29 12:47:40.7950|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 9a9af47e-f6c7-4db6-bc80-08d8c42a23d7
+2021-01-29 12:47:49.7415|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:01.8649|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:48:04.3783|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:48:04.6029|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:04.6073|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:48:04.6073|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:04.6249|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:48:12.4469|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:12.5391|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:12.5429|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:48:12.5429|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:48:12.5429|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:48:37.4098|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: ad79bae0-9898-4203-30e8-08d8c43368ca
+2021-01-29 12:48:47.7739|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:48:48.0136|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 69b1ae4a-3d03-4074-30e9-08d8c43368ca
+2021-01-29 12:48:53.8381|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: dd5fc8ce-e285-45f2-30da-08d8c43368ca
+2021-01-29 12:49:39.5347|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 9a9af47e-f6c7-4db6-bc80-08d8c42a23d7
+2021-01-29 12:49:49.2921|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 64b64fd3-5e09-423d-bc81-08d8c42a23d7
+2021-01-29 12:49:54.8326|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:49:58.8051|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:04.4173|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:50:06.9150|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:50:07.1357|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:07.1436|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:50:07.1544|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:07.1544|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:50:14.0362|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:14.1149|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:14.1219|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:50:14.1219|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:50:14.1421|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:50:39.0868|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 69b1ae4a-3d03-4074-30e9-08d8c43368ca
+2021-01-29 12:50:49.3991|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:50:49.6098|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 17f4519b-7544-4699-30ea-08d8c43368ca
+2021-01-29 12:50:54.9401|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:50:59.1677|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:51:38.3413|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 64b64fd3-5e09-423d-bc81-08d8c42a23d7
+2021-01-29 12:51:48.0425|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 957e715d-7671-404c-bc82-08d8c42a23d7
+2021-01-29 12:51:53.5478|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:05.0421|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 12:52:07.5388|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:52:07.7714|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:07.7714|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:52:07.7891|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:07.7932|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:52:14.8416|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:14.9155|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:14.9194|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 12:52:14.9194|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 12:52:14.9333|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 12:52:40.0355|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 17f4519b-7544-4699-30ea-08d8c43368ca
+2021-01-29 12:52:50.4732|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 12:52:50.7155|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 5bc93049-5e5b-48b0-30eb-08d8c43368ca
+2021-01-29 12:52:56.0325|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 12:53:00.2260|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 13:40:34.4104|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 957e715d-7671-404c-bc82-08d8c42a23d7
+2021-01-29 13:40:44.0884|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5965900d-6540-43a6-bc83-08d8c42a23d7
+2021-01-29 13:40:49.7074|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:40:53.6548|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:40:59.3926|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 13:41:01.8571|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:41:02.0641|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:41:02.0641|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:41:02.0798|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:41:02.0798|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 13:41:08.6723|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:41:08.7455|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:41:08.7492|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:41:08.7492|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:41:08.7631|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 13:41:33.7947|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 5bc93049-5e5b-48b0-30eb-08d8c43368ca
+2021-01-29 13:41:44.1737|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 13:41:44.3937|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 174f9250-f59a-40f5-30ec-08d8c43368ca
+2021-01-29 13:41:49.7611|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 13:41:53.8577|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 13:43:38.1250|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5965900d-6540-43a6-bc83-08d8c42a23d7
+2021-01-29 13:43:47.8106|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: c77adf82-5082-45f4-bc84-08d8c42a23d7
+2021-01-29 13:43:53.4179|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:04.9864|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 13:44:07.4669|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:44:07.6755|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:07.6755|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:44:07.6878|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:07.6878|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 13:44:15.0396|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:15.1774|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:15.1774|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 13:44:15.1905|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 13:44:15.1905|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 13:44:40.7361|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 174f9250-f59a-40f5-30ec-08d8c43368ca
+2021-01-29 13:44:51.1534|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-01-29 13:44:51.3828|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: 83ca54a8-2d66-4098-30ed-08d8c43368ca
+2021-01-29 13:44:56.7741|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 13:45:01.0407|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-01-29 14:00:09.9472|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 123
+2021-01-29 14:00:16.3118|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 1111 
+2021-01-29 15:06:17.1354|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: c77adf82-5082-45f4-bc84-08d8c42a23d7
+2021-01-29 15:06:26.7354|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: a2878e8b-4835-4932-bc85-08d8c42a23d7
+2021-01-29 15:06:32.4899|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:36.3067|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:41.9097|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-01-29 15:06:44.4153|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 15:06:44.6176|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:44.6176|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 15:06:44.6333|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:44.6333|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-01-29 15:06:51.7841|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:51.8509|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:51.8509|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-01-29 15:06:51.8634|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-01-29 15:06:51.8634|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-02-02 12:12:23.1352|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-02-02 12:12:23.2186|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-02-02 12:12:23.2186|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-02-02 12:12:23.2186|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-02-02 12:12:23.2186|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-02-02 12:16:09.1912|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-02-02 12:16:09.8525|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'books_db' on server '.\SQLEXPRESS'.
+2021-02-02 12:16:09.9609|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'LibraryApp.DomainLayer.ApplicationDbContext'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2021-02-02 12:16:10.3545|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|A task was canceled. 
+2021-02-02 12:16:33.1183|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: a2878e8b-4835-4932-bc85-08d8c42a23d7
+2021-02-02 12:16:42.7051|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 5dc8a775-0154-42d3-1266-08d8c76c04f9
+2021-02-02 12:16:52.3764|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:03.9390|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-02-02 12:17:06.4819|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:17:06.7488|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:06.7488|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:17:06.7920|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:06.7920|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-02-02 12:17:14.5975|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:14.6994|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:14.6994|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:17:14.7166|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:17:14.7166|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-02-02 12:17:40.0831|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: 83ca54a8-2d66-4098-30ed-08d8c43368ca
+2021-02-02 12:17:50.8443|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-02-02 12:17:51.0941|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: cbcdfef2-0240-4096-5f83-08d8c76c2dbf
+2021-02-02 12:17:56.5135|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-02-02 12:18:00.8975|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-02-02 12:18:38.6215|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: 5dc8a775-0154-42d3-1266-08d8c76c04f9
+2021-02-02 12:18:48.3749|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: 1fce1d11-805a-46f1-1267-08d8c76c04f9
+2021-02-02 12:18:54.0172|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:18:57.8938|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:03.5983|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 010 
+2021-02-02 12:19:06.1267|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:19:06.4365|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:06.4365|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:19:06.4571|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:06.4886|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-02-02 12:19:13.3854|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:13.4691|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:13.4691|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-02-02 12:19:13.4874|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: f70c32c4-06af-48cb-8b47-93b79b7f4eb5
+2021-02-02 12:19:13.4964|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-02-02 12:19:38.1667|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully deleted. Customer id: cbcdfef2-0240-4096-5f83-08d8c76c2dbf
+2021-02-02 12:19:48.5071|ERROR|LibraryApp.Middleware.API.Middleware.GlobalExceptionMiddleware|Entity not found.
+Entity card number: 001 
+2021-02-02 12:19:48.7166|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: d42cae41-7449-4992-5f84-08d8c76c2dbf
+2021-02-02 12:19:54.0190|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-02-02 12:19:58.1929|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca

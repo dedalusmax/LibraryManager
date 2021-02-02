@@ -49,13 +49,11 @@
               <mat-icon class="lend-return-icon">pan_tool</mat-icon>
               {{ 'books.lend' | translate}}
             </button></ng-template>
-          
-          
       </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr @deleteCreateSlide [@.disabled]="!isDeletingCreating" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr id='rows' @deleteCreateSlide [@.disabled]="!isDeletingCreating" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     
 </table>
 
