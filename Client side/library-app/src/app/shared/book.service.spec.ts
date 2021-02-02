@@ -20,7 +20,7 @@ describe('BookService', () => {
 
     injector = getTestBed();
     service = TestBed.inject(BookService);
-    httpMock = TestBed.get(HttpTestingController);
+    httpMock = TestBed.inject(HttpTestingController);
   });
 
   it('should GET books from the API', () => {
