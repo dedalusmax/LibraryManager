@@ -25,7 +25,7 @@ describe('BookService', () => {
 
   it('should GET books from the API', () => {
     
-    const dummyPosts: Book[] = [{
+    const dummyBooks: Book[] = [{
         id: '1',
         title: 'First Title',
         author: 'First Author',
@@ -47,11 +47,11 @@ describe('BookService', () => {
         expect(books.body.length).toBe(2);
         expect(books.body[0].title).toBe('First Title');
         expect(books.body[1].title).toBe('Second Title');
-        expect(books.body).toEqual(dummyPosts);
+        expect(books.body).toEqual(dummyBooks);
     });
     const request = httpMock.expectOne( `${service.url}/GetAll?pageNumber=1&pageSize=5`);
     expect(request.request.method).toBe('GET');
-    request.flush(dummyPosts);
+    request.flush(dummyBooks);
     });
 
     it('should GET book by id from the API', () => {
