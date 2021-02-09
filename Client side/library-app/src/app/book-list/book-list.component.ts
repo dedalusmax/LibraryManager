@@ -84,14 +84,15 @@ export class BookListComponent implements OnInit {
     this.setDeleteCreate(true);
     let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog'});
 
-    dialogRef.afterClosed().pipe(take(1))
+    setTimeout(() => dialogRef.afterClosed().pipe(take(1))
       .subscribe((book: Book) => {
 
         if(!book) return;
 
         this.dataSource.push(book);
+
         this.table.renderRows();
-        
+
         if(this.lang == 'en') {
           this.toastr.success('Book successfully added', `${book.title}`);
         }
@@ -101,7 +102,8 @@ export class BookListComponent implements OnInit {
         else if(this.lang == 'hr') {
           this.toastr.success('Knjiga uspješno dodana', `${book.title}`);
         }
-      });
+      }), 1000);
+
 
   }
 
