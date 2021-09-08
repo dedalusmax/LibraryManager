@@ -1,6 +1,6 @@
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { PageEvent } from '@angular/material/paginator';
 import { Sort } from '@angular/material/sort';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
@@ -14,8 +14,6 @@ import { SortingModel } from '../pagination-sorting/sorting.model';
 import { Book } from '../shared/book.model';
 import { BookService } from '../shared/book.service';
 import { LendService } from '../shared/lend.service';
-
-
 
 @Component({
   selector: 'app-book-list',
@@ -52,18 +50,18 @@ import { LendService } from '../shared/lend.service';
 })
 export class BookListComponent implements OnInit {
 
-  lang: string;
-  dataSource: Book [];
-  displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication', 'status', 'actions'];
+  public lang: string;
+  public dataSource: Book [];
+  public displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication', 'status', 'actions'];
 
-  paging = new Paging();
-  sorting = new SortingModel;
+  public paging: Paging = new Paging();
+  public sorting: SortingModel = new SortingModel;
 
-  searchKey: string;
-  filterSubject = new Subject();
-  filterSubscription: Subscription;
+  public searchKey: string;
+  public filterSubject: Subject<any> = new Subject();
+  public filterSubscription: Subscription;
 
-  isDeletingCreating: boolean;
+  public isDeletingCreating: boolean;
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Book>;
 
@@ -79,10 +77,10 @@ export class BookListComponent implements OnInit {
     this.handleFilter();
   }
 
-  onCreate() {
+  public onCreate(): void {
 
     this.setDeleteCreate(true);
-    let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog'});
+    let dialogRef: MatDialogRef<BookFormComponent, any> = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog'});
 
     setTimeout(() => dialogRef.afterClosed().pipe(take(1))
       .subscribe((book: Book) => {
@@ -107,11 +105,11 @@ export class BookListComponent implements OnInit {
 
   }
 
-  onUpdate(book: Book) {
+  public onUpdate(book: Book): void {
 
     this.setDeleteCreate(false);  
 
-    let dialogRef = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog', data: book});
+    let dialogRef: MatDialogRef<BookFormComponent, any> = this.dialog.open(BookFormComponent, { panelClass: 'app-full-bleed-dialog', data: book});
 
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((editedBook: Book) => {
@@ -139,11 +137,11 @@ export class BookListComponent implements OnInit {
         
   }
 
-  onDelete(id: string) {
+  public onDelete(id: string): void {
     
     this.setDeleteCreate(true);
-    const index = this.dataSource.findIndex( book => book.id == id);
-    const title = this.dataSource[index].title;
+    const index: number = this.dataSource.findIndex( book => book.id == id);
+    const title: string = this.dataSource[index].title;
 
     this.bookService.deleteBook(id).subscribe(() => {
       this.dataSource = this.dataSource.filter(book => book.id !== id);
@@ -161,9 +159,9 @@ export class BookListComponent implements OnInit {
 
   }
 
-  onLend(id: string) {
+  public onLend(id: string): void {
 
-    let dialogRef = this.dialog.open(LendFormComponent, {panelClass: 'app-full-bleed-dialog', data: id});
+    let dialogRef: MatDialogRef<LendFormComponent, any> = this.dialog.open(LendFormComponent, {panelClass: 'app-full-bleed-dialog', data: id});
 
     dialogRef.afterClosed().pipe(take(1))
     .subscribe((cardNumber: string) => {
@@ -172,7 +170,7 @@ export class BookListComponent implements OnInit {
 
       this.lendService.lendBook(id, cardNumber).subscribe((book:Book) => {
 
-        const index = this.dataSource.findIndex(b => b.id == book.id);
+        const index: number = this.dataSource.findIndex(b => b.id == book.id);
   
           // update
           this.dataSource[index] = book;
@@ -184,10 +182,10 @@ export class BookListComponent implements OnInit {
     });
   }
 
-  onReturn(id: string) {
+  public onReturn(id: string): void {
 
-     this.bookService.getBook(id).pipe(take(1))
-     .subscribe((book: Book) => {
+    this.bookService.getBook(id).pipe(take(1))
+    .subscribe((book: Book) => {
           console.log(book);
           console.log(book.lender.cardNumber);
           const cardNumber = book.lender.cardNumber;
@@ -208,29 +206,29 @@ export class BookListComponent implements OnInit {
 
   }
 
-  onPageChange(page: PageEvent) {
+  public onPageChange(page: PageEvent): void {
     this.setDeleteCreate(false);
     this.fetchBooks(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
-  onSortChange(event: Sort) {
+  public onSortChange(event: Sort): void {
     this.setDeleteCreate(false);
-    const split = event.active.split('.');
-    const orderBy = split[split.length - 1]; // only last property
-    const sortDirection = event.direction as  'asc' | 'desc';
+    const split: string[] = event.active.split('.');
+    const orderBy: string = split[split.length - 1]; // only last property
+    const sortDirection: 'asc' | 'desc' = event.direction as  'asc' | 'desc';
     this.fetchBooks(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
   }
 
-  setDeleteCreate(setter) {
+  public setDeleteCreate(setter): void {
     this.isDeletingCreating = setter;
   }
 
-  setSortModel(orderBy?, sortDirection?) {
+  public setSortModel(orderBy?, sortDirection?): void {
     this.sorting.orderBy = orderBy;
     this.sorting.sortDirection = sortDirection;
   }
 
-  setPagemodel(res) {
+  public setPagemodel(res): void {
     // retrieve paging headers
     let pagination = JSON.parse(res.headers.get('pagination')) as Paging;
 
@@ -241,11 +239,11 @@ export class BookListComponent implements OnInit {
     this.paging.TotalCount = pagination.TotalCount;
   }
 
-  applyFilter(searchKey) {
+  public applyFilter(searchKey): void {
     this.filterSubject.next(searchKey);
   }
 
-  handleFilter() {
+  public handleFilter(): void {
     this.setDeleteCreate(false);
     this.filterSubscription = this.filterSubject
     .pipe(debounceTime(500))
@@ -256,7 +254,7 @@ export class BookListComponent implements OnInit {
 
   }
 
-  fetchBooks(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'){
+  public fetchBooks(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'): void {
     this.bookService.getBooks(page, pageSize, searchString, orderBy, sortDirection).pipe(
       tap(res => this.dataSource = Object.assign([], res.body as  unknown as MatTableDataSource<Book[]>)))
       .subscribe(

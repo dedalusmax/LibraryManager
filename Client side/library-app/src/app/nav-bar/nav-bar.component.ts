@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 export class NavBarComponent implements OnInit {
 
-lang: string;
+public lang: string;
 
 constructor(private router: Router) { }
 
@@ -18,15 +18,15 @@ ngOnInit() {
     console.log(localStorage.getItem('lang'));
 }
 
-customerRoute(){
+public customerRoute(): void{
   this.router.navigate(['customer']);
 }
 
-booksRoute(){
+public booksRoute(): void{
   this.router.navigate(['book']);
 }
 
-changeLang(lang) {
+public changeLang(lang: string): void {
   localStorage.setItem('lang', lang);
   window.location.reload();
 }

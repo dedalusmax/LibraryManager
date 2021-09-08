@@ -1,25 +1,26 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Book } from './book.model';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
-readonly url =  'https://localhost:5001/Book';
+private readonly url =  'https://localhost:5001/Book';
 
 formData: Book;
 
   constructor(private _http: HttpClient) { }
 
-  getBooks(pageNumber: number = 1, pageSize: number = 5, searchString?: string, orderBy?: string, sortDirection?: 'asc' | 'desc') {
+  public getBooks(pageNumber: number = 1, pageSize: number = 5, searchString?: string, orderBy?: string, sortDirection?: 'asc' | 'desc'): Observable<HttpResponse<Book[]>> {
 
-    let params = new HttpParams();
+    let params: HttpParams = new HttpParams();
     params = params.append('pageNumber', pageNumber.toString());
     params = params.append('pageSize', pageSize.toString());
 
-    let headers = new HttpHeaders();
+    let headers: HttpHeaders = new HttpHeaders();
 
     if(orderBy) params = params.append('orderBy', orderBy?.toString());
     if(sortDirection) params = params.append('sortDirection', sortDirection?.toString());
@@ -28,19 +29,19 @@ formData: Book;
     return this._http.get<Book []>(`${this.url}/GetAll`, { observe: 'response', params });
   }
 
-  getBook(id) {
+  public getBook(id: string): Observable<any> {
     return this._http.get(`${this.url}/Get/${id}`);
   }
   
-  createBook(formData: Book) {
+  public createBook(formData: Book): Observable<any> {
     return this._http.post(`${this.url}/Create`, formData);
   }
 
-  deleteBook(id) {
+  public deleteBook(id: string): Observable<any> {
     return this._http.delete(`${this.url}/Delete/${id}`);
   }
 
-  updateBook(formData: Book) {
+  public updateBook(formData: Book): Observable<any> {
     return this._http.put(this.url + '/Update', formData);
   }
   

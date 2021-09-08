@@ -8,11 +8,11 @@ export class TokenInterceptorService implements HttpInterceptor{
 
   constructor() { }
 
-  intercept(req, next) {
+  intercept(req: any, next: any): any {
 
-    let token = localStorage.getItem('jwt');
+    let token: string = localStorage.getItem('jwt');
 
-    let tokenizedReq = req.clone({
+    let tokenizedReq: any = req.clone({
       setHeaders: {
         Authorization: `Bearer ${token}`
       }

@@ -13,8 +13,8 @@ import { CustomerService } from '../shared/customer.service';
 })
 export class CustomerFormComponent implements OnInit {
 
-  customerForm: FormGroup;
-  lang: string;
+  public customerForm: FormGroup;
+  public lang: string;
 
   constructor(
     private formBuilder: FormBuilder, 
@@ -49,7 +49,7 @@ export class CustomerFormComponent implements OnInit {
     }
   }
 
-  existedCardNumber(control: AbstractControl): Promise<any> | Observable<any> {
+  public existedCardNumber(control: AbstractControl): Promise<any> | Observable<any> {
 
     return timer(1500).pipe(
       switchMap( () => {
@@ -61,7 +61,7 @@ export class CustomerFormComponent implements OnInit {
     );
   }
 
-  onSubmit(form: FormGroup) {
+  public onSubmit(form: FormGroup): void {
 
     if(!this.data) {
       this.customerService.createCustomer(form.value).pipe(take(1))
@@ -76,12 +76,12 @@ export class CustomerFormComponent implements OnInit {
 
   }
 
-  onClose(customer: Customer) {
+  public onClose(customer: Customer): void {
     // if(!form.valid) return;
     this.dialogRef.close(customer);
   }
 
-  getErrorMessage(element: HTMLElement) {
+  public getErrorMessage(element: HTMLElement): string {
 
     switch(this.lang) {
 

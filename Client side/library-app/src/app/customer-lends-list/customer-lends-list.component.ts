@@ -9,8 +9,8 @@ import { Book } from '../shared/book.model';
 })
 export class CustomerLendsListComponent implements OnInit {
 
-  dataSource: Book [];
-  displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication'];
+  public dataSource: Book [];
+  public displayedColumns: string[] = ['title', 'author', 'publisher', 'dateOfPublication'];
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 

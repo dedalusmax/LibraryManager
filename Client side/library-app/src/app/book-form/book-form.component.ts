@@ -13,8 +13,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class BookFormComponent implements OnInit {
 
-  bookForm: FormGroup;
-  lang: string;
+  public bookForm: FormGroup;
+  public lang: string;
 
   constructor(
     private formBuilder: FormBuilder, 
@@ -45,7 +45,7 @@ export class BookFormComponent implements OnInit {
     }
   }
 
-  onSubmit(form: FormGroup) {
+  public onSubmit(form: FormGroup): void {
 
     if(!this.data) {
       this.bookService.createBook(form.value).pipe(take(1))
@@ -59,12 +59,12 @@ export class BookFormComponent implements OnInit {
     form.reset();
   }
 
-  onClose(book: Book) {
+  public onClose(book: Book): void {
     // if(!form.valid) return;
     this.dialogRef.close(book);
   }
 
-  getErrorMessage(element: HTMLElement) {
+  public getErrorMessage(element: HTMLElement): string {
 
     switch(this.lang) {
 

@@ -112,7 +112,7 @@ export function HttpLoaderFactory(http: HttpClient) {
                 multi: true
               },
               HttpClient,
-             AuthGuard],
+              AuthGuard],
   bootstrap: [AppComponent],
   // entryComponents: [BookFormComponent]
 })

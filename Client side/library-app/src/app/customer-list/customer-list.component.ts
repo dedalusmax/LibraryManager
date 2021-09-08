@@ -1,6 +1,6 @@
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { PageEvent } from '@angular/material/paginator';
 import { Sort } from '@angular/material/sort';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
@@ -13,8 +13,6 @@ import { Paging } from '../pagination-sorting/paging.model';
 import { SortingModel } from '../pagination-sorting/sorting.model';
 import { Customer } from '../shared/customer.model';
 import { CustomerService } from '../shared/customer.service';
-import { LendService } from '../shared/lend.service';
-
 
 @Component({
   selector: 'app-customer-list',
@@ -51,25 +49,24 @@ import { LendService } from '../shared/lend.service';
 })
 export class CustomerListComponent implements OnInit {
 
-  lang: string;
-  dataSource: Customer [];
-  displayedColumns: string[] = ['cardNumber', 'firstName', 'lastName', 'email', 'lendedBooks', 'actions'];
+  public lang: string;
+  public dataSource: Customer [];
+  public displayedColumns: string[] = ['cardNumber', 'firstName', 'lastName', 'email', 'lendedBooks', 'actions'];
 
-  paging = new Paging();
-  sorting = new SortingModel;
+  public paging: Paging = new Paging();
+  public sorting: SortingModel = new SortingModel;
 
-  searchKey: string;
-  filterSubject = new Subject();
-  filterSubscription: Subscription;
+  public searchKey: string;
+  public filterSubject: Subject<any> = new Subject();
+  public filterSubscription: Subscription;
 
-  isDeleting: boolean;
+  public isDeleting: boolean;
 
   @ViewChild(MatTable, {static: false}) table: MatTable<Customer>;
 
-  constructor( public dialog: MatDialog,
-               private toastr: ToastrService,
-               private customerService: CustomerService,
-               private lendService: LendService) { }
+  constructor(public dialog: MatDialog,
+              private toastr: ToastrService,
+              private customerService: CustomerService) { }
 
 
   ngOnInit() {
@@ -79,13 +76,13 @@ export class CustomerListComponent implements OnInit {
     this.handleFilter();
   }
 
-  onSeeLends(customer: Customer){
+  public onSeeLends(customer: Customer): void{
     this.dialog.open(CustomerLendsListComponent, {panelClass: 'app-full-bleed-dialog', data: customer});
   }
 
-  onCreate() {
+  public onCreate(): void {
     
-    let dialogRef = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog' });
+    let dialogRef: MatDialogRef<CustomerFormComponent, any> = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog' });
     
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((customer: Customer) => {
@@ -108,16 +105,16 @@ export class CustomerListComponent implements OnInit {
       });
   }
 
-  onUpdate(customer: Customer) {
+  public onUpdate(customer: Customer): void {
 
-    let dialogRef = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog', data: customer});
+    let dialogRef: MatDialogRef<CustomerFormComponent, any> = this.dialog.open(CustomerFormComponent, { panelClass: 'app-full-bleed-dialog', data: customer});
 
     dialogRef.afterClosed().pipe(take(1))
       .subscribe((editedCustomer: Customer) => {
 
         if(!editedCustomer) return;
 
-        const index = this.dataSource.findIndex(c => c.id == customer.id);
+        const index: number = this.dataSource.findIndex(c => c.id == customer.id);
 
         // update
         this.dataSource[index] = editedCustomer;
@@ -136,11 +133,11 @@ export class CustomerListComponent implements OnInit {
           });
   }
 
-  onDelete(id: string) {
+  public onDelete(id: string): void {
     
-    const index = this.dataSource.findIndex( customer => customer.id == id);
-    const firstName = this.dataSource[index].firstName;
-    const lastName = this.dataSource[index].lastName;
+    const index: number = this.dataSource.findIndex( customer => customer.id == id);
+    const firstName: string = this.dataSource[index].firstName;
+    const lastName: string = this.dataSource[index].lastName;
 
     this.customerService.deleteCustomer(id).subscribe(() => {
       this.dataSource = this.dataSource.filter(customer => customer.id !== id);
@@ -159,33 +156,33 @@ export class CustomerListComponent implements OnInit {
 
   }
 
-  onPageChange(page: PageEvent) {
+  public onPageChange(page: PageEvent): void {
     this.setDelete(false);
     this.fetchCustomers(page.pageIndex + 1, page.pageSize, this.searchKey, this.sorting.orderBy, this.sorting.sortDirection);
   }
 
-  onSortChange(event: Sort) {
+  public onSortChange(event: Sort): void {
     this.setDelete(false);
-    const split = event.active.split('.');
-    const orderBy = split[split.length - 1]; // only last property
-    const sortDirection = event.direction as  'asc' | 'desc';
+    const split: string[] = event.active.split('.');
+    const orderBy: string = split[split.length - 1]; // only last property
+    const sortDirection: 'asc' | 'desc' = event.direction as  'asc' | 'desc';
 
     this.fetchCustomers(this.paging.CurrentPage, this.paging.PageSize, this.searchKey, orderBy, sortDirection);
     console.log(this.dataSource);
   }
 
-  setDelete(setter) {
+  public setDelete(setter: boolean): void {
     this.isDeleting = setter;
   }
 
-  setSortModel(orderBy?, sortDirection?) {
+  public setSortModel(orderBy?: string, sortDirection?: 'asc' | 'desc'): void {
     this.sorting.orderBy = orderBy;
     this.sorting.sortDirection = sortDirection;
   }
 
-  setPagemodel(res) {
+  public setPagemodel(res: any): void {
     // retrieve paging headers
-    let pagination = JSON.parse(res.headers.get('pagination')) as Paging;
+    let pagination: Paging = JSON.parse(res.headers.get('pagination')) as Paging;
 
     // update paging model
     // which reflects onto paginator in html
@@ -194,11 +191,11 @@ export class CustomerListComponent implements OnInit {
     this.paging.TotalCount = pagination.TotalCount;
   }
 
-  applyFilter(searchKey) {
+  public applyFilter(searchKey: string): void {
     this.filterSubject.next(searchKey);
   }
 
-  handleFilter() {
+  public handleFilter(): void {
     this.setDelete(false);
     this.filterSubscription = this.filterSubject
     .pipe(debounceTime(500))
@@ -209,7 +206,7 @@ export class CustomerListComponent implements OnInit {
 
   }
 
-  fetchCustomers(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'){
+  public fetchCustomers(page, pageSize, searchString?, orderBy?, sortDirection?: 'asc' | 'desc'): void {
     this.customerService.getCustomers(page, pageSize, searchString, orderBy, sortDirection).pipe(
       tap(res => this.dataSource = Object.assign([], res.body as  unknown as MatTableDataSource<Customer[]>)))
       .subscribe(

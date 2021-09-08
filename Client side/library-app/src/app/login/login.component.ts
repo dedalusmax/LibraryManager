@@ -40,22 +40,21 @@ import { trigger, transition, animate, style, keyframes } from '@angular/animati
 })
 export class LoginComponent implements OnInit {
 
-  invalidLogin: boolean;
+  public invalidLogin: boolean;
 
   constructor(private _http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
 
-    const inputs = document.querySelectorAll('.input');
-
+    const inputs: NodeListOf<Element> = document.querySelectorAll('.input');
 
     function addcl(){
-      let parent = this.parentNode.parentNode;
+      let parent: any = this.parentNode.parentNode;
       parent.classList.add('focus');
     }
 
     function remcl(){
-      let parent = this.parentNode.parentNode;
+      let parent: any = this.parentNode.parentNode;
       if(this.value == ''){
         parent.classList.remove('focus');
       }
@@ -68,15 +67,15 @@ export class LoginComponent implements OnInit {
     });
       }
 
-  login(form: NgForm) {
-    const credentials = {
+  public login(form: NgForm): void {
+    const credentials: { username:string, password:string } = {
       'username': form.value.username,
       'password': form.value.password
     };
 
     this._http.post('https://localhost:5001/Auth/Login', credentials)
       .subscribe(response => {
-        const token = (<any>response).token;
+        const token: any = (<any>response).token;
         localStorage.setItem('jwt', token);
         this.invalidLogin = false;
         this.router.navigate(['book']);
