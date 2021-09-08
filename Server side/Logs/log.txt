@@ -1224,3 +1224,39 @@ Entity card number: 001
 2021-02-02 12:19:48.7166|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully inserted. Customer id: d42cae41-7449-4992-5f84-08d8c76c2dbf
 2021-02-02 12:19:54.0190|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
 2021-02-02 12:19:58.1929|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: d2dbad91-6ebb-4324-30dd-08d8c43368ca
+2021-02-09 14:55:35.1012|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-02-09 14:55:35.1505|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-02-09 14:55:35.1505|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-02-09 14:55:35.1505|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-02-09 14:55:35.1505|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-02-09 14:56:26.7340|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-02-09 15:05:07.2404|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully inserted. Book id: b859d29a-9b46-4d4b-0d13-08d8cd03b488
+2021-02-09 15:05:17.1581|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully deleted. Book id: b859d29a-9b46-4d4b-0d13-08d8cd03b488
+2021-06-03 19:38:13.0363|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-06-03 19:38:13.0677|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-06-03 19:38:13.0718|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-06-03 19:38:13.0718|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-06-03 19:38:13.0718|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-06-03 19:41:41.8806|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2021-06-03 19:43:13.1894|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-06-03 19:43:20.0579|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-06-03 19:43:20.0579|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-06-03 19:43:20.3163|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-06-03 19:43:20.3163|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-06-03 19:43:32.1683|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-06-03 19:43:32.2173|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully fetched. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-06-03 19:43:32.2173|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully fetched. Customer card number: 678
+2021-06-03 19:43:32.2385|INFO|LibraryApp.BusinessLayer.Implementations.BookService|Book succesfully updated. Book id: b30dcc1b-d26c-4dd6-5b4f-08d8c1ff686e
+2021-06-03 19:43:32.2471|INFO|LibraryApp.BusinessLayer.Implementations.CustomerService|Customer succesfully updated. Customer id: 921a6247-f55e-448d-47ee-08d8b925c4b8
+2021-06-04 14:40:19.0137|FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel.
+2021-06-04 14:40:43.7948|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-06-04 14:40:43.8266|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-06-04 14:40:43.8303|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-06-04 14:40:43.8303|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-06-04 14:40:43.8303|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-09-08 11:24:44.1948|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-09-08 11:24:44.2260|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-09-08 11:24:44.2260|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-09-08 11:24:44.2324|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-09-08 11:24:44.2324|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\repos\Server side\LibraryApp
+2021-09-08 11:26:45.8902|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
